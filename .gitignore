@@ -43,4 +43,4 @@ Thumbs.db
 # 주의: BigQuery 출력 등 일반 *.json은 추적을 유지한다(위의 자격증명 패턴만 제외).
 
 # ===== 개인 Skills Boost export (대용량 124MB·개인 데이터, 푸시 금지) =====
-0000_PLAN/LINK.html
+0000_PLAN/LINK*.html
