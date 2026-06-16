@@ -1,0 +1,46 @@
+# ===== Credentials / secrets (절대 커밋 금지) =====
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+*.env
+**/credentials.json
+**/client_secret*.json
+**/*service-account*.json
+**/*service_account*.json
+**/sa-*.json
+**/*-sa.json
+**/application_default_credentials.json
+**/gcloud-key*.json
+**/keyfile*.json
+**/.config/gcloud/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ===== Node (있을 경우) =====
+node_modules/
+
+# ===== OS / 편집기 =====
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# ===== 로그 / 임시 =====
+*.log
+# 0000_PLAN 작업용 임시파일(RULE 0): 밑줄로 시작
+0000_PLAN/_*
+
+# 주의: BigQuery 출력 등 일반 *.json은 추적을 유지한다(위의 자격증명 패턴만 제외).
+
+# ===== 개인 Skills Boost export (대용량 124MB·개인 데이터, 푸시 금지) =====
+0000_PLAN/LINK.html
