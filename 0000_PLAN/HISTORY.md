@@ -5,6 +5,20 @@
 
 ---
 
+## 2026-06-17 (am) — Claude (AI 작업자) — 릴리즈 폴더 + GitHub 푸시 + LINK.html 추적 제외
+
+**요약:** 배포 워크플로 구축 및 깃 정리.
+- **`0000_RELEASE/index.html`** 신설 = Vercel 배포본(플랜 단일 파일 복사). RULE §10 추가(빌드 후 이 경로로 복사).
+- **`.gitignore`에 `0000_PLAN/LINK.html` 추가 + 추적 해제.** (LINK.html 124MB의 99%가 인라인 style 토큰 중복 → GitHub 100MB 한도 초과·개인데이터.)
+- **GitHub 푸시**(`roroblack/google_ai_ml_engineering` main, 35795a2→99b57ca): 미푸시 커밋에서 LINK.html 제거 후 재구성. 범위 = `0000_PLAN`+`0000_RELEASE`+`.gitignore`(64파일). 개인 랩 산출물 폴더는 미푸시(로컬 유지).
+- 임시 `0000_PLAN/site/` 제거.
+
+**검증:** push 성공 · main↔origin 동기화 · 0000_RELEASE 원격 반영 · LINK.html 원격 부재 · 5MB 초과 staged 0 · 시크릿 스캔 매치는 RULE/리포트의 패턴 예시(실제 키 아님).
+
+**영향 파일:** `0000_RELEASE/`(신규), `.gitignore`, `0000_PLAN/RULE.md`(§10), GitHub main.
+
+---
+
 ## 2026-06-16 (al) — Claude (AI 작업자) — CSS 빈 선언 잔재 제거(IDE 빨간줄)
 
 **증상:** `.wk-head`에 `border-image-source/slice/outset/repeat: ;` 빈 값 4개 → IDE linter 경고(빨간줄).
