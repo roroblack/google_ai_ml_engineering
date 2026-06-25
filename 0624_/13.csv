@@ -1,0 +1,4557 @@
+label,team_school_ncaa,team_seed,opp_school_ncaa,opp_seed
+,North Carolina,1,Gonzaga,1
+,North Carolina,1,Duke,1
+,North Carolina,1,Virginia,1
+,North Carolina,1,Kentucky,2
+,North Carolina,1,Michigan St.,2
+,North Carolina,1,Tennessee,2
+,North Carolina,1,Michigan,2
+,North Carolina,1,Houston,3
+,North Carolina,1,LSU,3
+,North Carolina,1,Purdue,3
+,North Carolina,1,Texas Tech,3
+,North Carolina,1,Virginia Tech,4
+,North Carolina,1,Kansas,4
+,North Carolina,1,Florida St.,4
+,North Carolina,1,Kansas St.,4
+,North Carolina,1,Auburn,5
+,North Carolina,1,Wisconsin,5
+,North Carolina,1,Mississippi St.,5
+,North Carolina,1,Marquette,5
+,North Carolina,1,Iowa St.,6
+,North Carolina,1,Buffalo,6
+,North Carolina,1,Villanova,6
+,North Carolina,1,Maryland,6
+,North Carolina,1,Wofford,7
+,North Carolina,1,Nevada,7
+,North Carolina,1,Cincinnati,7
+,North Carolina,1,Louisville,7
+,North Carolina,1,Ole Miss,8
+,North Carolina,1,Syracuse,8
+,North Carolina,1,Utah St.,8
+,North Carolina,1,VCU,8
+,North Carolina,1,Baylor,9
+,North Carolina,1,Oklahoma,9
+,North Carolina,1,UCF,9
+,North Carolina,1,Washington,9
+,North Carolina,1,Iowa,10
+,North Carolina,1,Seton Hall,10
+,North Carolina,1,Minnesota,10
+,North Carolina,1,Florida,10
+,North Carolina,1,Arizona St.,11
+,North Carolina,1,St. John's (NY),11
+,North Carolina,1,Ohio St.,11
+,North Carolina,1,Belmont,11
+,North Carolina,1,Saint Mary's (CA),11
+,North Carolina,1,Temple,11
+,North Carolina,1,Oregon,12
+,North Carolina,1,Murray St.,12
+,North Carolina,1,New Mexico St.,12
+,North Carolina,1,Liberty,12
+,North Carolina,1,Saint Louis,13
+,North Carolina,1,UC Irvine,13
+,North Carolina,1,Vermont,13
+,North Carolina,1,Northeastern,13
+,North Carolina,1,Northern Ky.,14
+,North Carolina,1,Georgia St.,14
+,North Carolina,1,Yale,14
+,North Carolina,1,Old Dominion,14
+,North Carolina,1,Abilene Christian,15
+,North Carolina,1,Colgate,15
+,North Carolina,1,Bradley,15
+,North Carolina,1,Montana,15
+,North Carolina,1,Fairleigh Dickinson,16
+,North Carolina,1,N.C. Central,16
+,North Carolina,1,Gardner-Webb,16
+,North Carolina,1,Prairie View,16
+,North Carolina,1,North Dakota St.,16
+,North Carolina,1,Iona,16
+,Gonzaga,1,North Carolina,1
+,Gonzaga,1,Duke,1
+,Gonzaga,1,Virginia,1
+,Gonzaga,1,Kentucky,2
+,Gonzaga,1,Michigan St.,2
+,Gonzaga,1,Tennessee,2
+,Gonzaga,1,Michigan,2
+,Gonzaga,1,Houston,3
+,Gonzaga,1,LSU,3
+,Gonzaga,1,Purdue,3
+,Gonzaga,1,Texas Tech,3
+,Gonzaga,1,Virginia Tech,4
+,Gonzaga,1,Kansas,4
+,Gonzaga,1,Florida St.,4
+,Gonzaga,1,Kansas St.,4
+,Gonzaga,1,Auburn,5
+,Gonzaga,1,Wisconsin,5
+,Gonzaga,1,Mississippi St.,5
+,Gonzaga,1,Marquette,5
+,Gonzaga,1,Iowa St.,6
+,Gonzaga,1,Buffalo,6
+,Gonzaga,1,Villanova,6
+,Gonzaga,1,Maryland,6
+,Gonzaga,1,Wofford,7
+,Gonzaga,1,Nevada,7
+,Gonzaga,1,Cincinnati,7
+,Gonzaga,1,Louisville,7
+,Gonzaga,1,Ole Miss,8
+,Gonzaga,1,Syracuse,8
+,Gonzaga,1,Utah St.,8
+,Gonzaga,1,VCU,8
+,Gonzaga,1,Baylor,9
+,Gonzaga,1,Oklahoma,9
+,Gonzaga,1,UCF,9
+,Gonzaga,1,Washington,9
+,Gonzaga,1,Iowa,10
+,Gonzaga,1,Seton Hall,10
+,Gonzaga,1,Minnesota,10
+,Gonzaga,1,Florida,10
+,Gonzaga,1,Arizona St.,11
+,Gonzaga,1,St. John's (NY),11
+,Gonzaga,1,Ohio St.,11
+,Gonzaga,1,Belmont,11
+,Gonzaga,1,Saint Mary's (CA),11
+,Gonzaga,1,Temple,11
+,Gonzaga,1,Oregon,12
+,Gonzaga,1,Murray St.,12
+,Gonzaga,1,New Mexico St.,12
+,Gonzaga,1,Liberty,12
+,Gonzaga,1,Saint Louis,13
+,Gonzaga,1,UC Irvine,13
+,Gonzaga,1,Vermont,13
+,Gonzaga,1,Northeastern,13
+,Gonzaga,1,Northern Ky.,14
+,Gonzaga,1,Georgia St.,14
+,Gonzaga,1,Yale,14
+,Gonzaga,1,Old Dominion,14
+,Gonzaga,1,Abilene Christian,15
+,Gonzaga,1,Colgate,15
+,Gonzaga,1,Bradley,15
+,Gonzaga,1,Montana,15
+,Gonzaga,1,Fairleigh Dickinson,16
+,Gonzaga,1,N.C. Central,16
+,Gonzaga,1,Gardner-Webb,16
+,Gonzaga,1,Prairie View,16
+,Gonzaga,1,North Dakota St.,16
+,Gonzaga,1,Iona,16
+,Duke,1,North Carolina,1
+,Duke,1,Gonzaga,1
+,Duke,1,Virginia,1
+,Duke,1,Kentucky,2
+,Duke,1,Michigan St.,2
+,Duke,1,Tennessee,2
+,Duke,1,Michigan,2
+,Duke,1,Houston,3
+,Duke,1,LSU,3
+,Duke,1,Purdue,3
+,Duke,1,Texas Tech,3
+,Duke,1,Virginia Tech,4
+,Duke,1,Kansas,4
+,Duke,1,Florida St.,4
+,Duke,1,Kansas St.,4
+,Duke,1,Auburn,5
+,Duke,1,Wisconsin,5
+,Duke,1,Mississippi St.,5
+,Duke,1,Marquette,5
+,Duke,1,Iowa St.,6
+,Duke,1,Buffalo,6
+,Duke,1,Villanova,6
+,Duke,1,Maryland,6
+,Duke,1,Wofford,7
+,Duke,1,Nevada,7
+,Duke,1,Cincinnati,7
+,Duke,1,Louisville,7
+,Duke,1,Ole Miss,8
+,Duke,1,Syracuse,8
+,Duke,1,Utah St.,8
+,Duke,1,VCU,8
+,Duke,1,Baylor,9
+,Duke,1,Oklahoma,9
+,Duke,1,UCF,9
+,Duke,1,Washington,9
+,Duke,1,Iowa,10
+,Duke,1,Seton Hall,10
+,Duke,1,Minnesota,10
+,Duke,1,Florida,10
+,Duke,1,Arizona St.,11
+,Duke,1,St. John's (NY),11
+,Duke,1,Ohio St.,11
+,Duke,1,Belmont,11
+,Duke,1,Saint Mary's (CA),11
+,Duke,1,Temple,11
+,Duke,1,Oregon,12
+,Duke,1,Murray St.,12
+,Duke,1,New Mexico St.,12
+,Duke,1,Liberty,12
+,Duke,1,Saint Louis,13
+,Duke,1,UC Irvine,13
+,Duke,1,Vermont,13
+,Duke,1,Northeastern,13
+,Duke,1,Northern Ky.,14
+,Duke,1,Georgia St.,14
+,Duke,1,Yale,14
+,Duke,1,Old Dominion,14
+,Duke,1,Abilene Christian,15
+,Duke,1,Colgate,15
+,Duke,1,Bradley,15
+,Duke,1,Montana,15
+,Duke,1,Fairleigh Dickinson,16
+,Duke,1,N.C. Central,16
+,Duke,1,Gardner-Webb,16
+,Duke,1,Prairie View,16
+,Duke,1,North Dakota St.,16
+,Duke,1,Iona,16
+,Virginia,1,North Carolina,1
+,Virginia,1,Gonzaga,1
+,Virginia,1,Duke,1
+,Virginia,1,Kentucky,2
+,Virginia,1,Michigan St.,2
+,Virginia,1,Tennessee,2
+,Virginia,1,Michigan,2
+,Virginia,1,Houston,3
+,Virginia,1,LSU,3
+,Virginia,1,Purdue,3
+,Virginia,1,Texas Tech,3
+,Virginia,1,Virginia Tech,4
+,Virginia,1,Kansas,4
+,Virginia,1,Florida St.,4
+,Virginia,1,Kansas St.,4
+,Virginia,1,Auburn,5
+,Virginia,1,Wisconsin,5
+,Virginia,1,Mississippi St.,5
+,Virginia,1,Marquette,5
+,Virginia,1,Iowa St.,6
+,Virginia,1,Buffalo,6
+,Virginia,1,Villanova,6
+,Virginia,1,Maryland,6
+,Virginia,1,Wofford,7
+,Virginia,1,Nevada,7
+,Virginia,1,Cincinnati,7
+,Virginia,1,Louisville,7
+,Virginia,1,Ole Miss,8
+,Virginia,1,Syracuse,8
+,Virginia,1,Utah St.,8
+,Virginia,1,VCU,8
+,Virginia,1,Baylor,9
+,Virginia,1,Oklahoma,9
+,Virginia,1,UCF,9
+,Virginia,1,Washington,9
+,Virginia,1,Iowa,10
+,Virginia,1,Seton Hall,10
+,Virginia,1,Minnesota,10
+,Virginia,1,Florida,10
+,Virginia,1,Arizona St.,11
+,Virginia,1,St. John's (NY),11
+,Virginia,1,Ohio St.,11
+,Virginia,1,Belmont,11
+,Virginia,1,Saint Mary's (CA),11
+,Virginia,1,Temple,11
+,Virginia,1,Oregon,12
+,Virginia,1,Murray St.,12
+,Virginia,1,New Mexico St.,12
+,Virginia,1,Liberty,12
+,Virginia,1,Saint Louis,13
+,Virginia,1,UC Irvine,13
+,Virginia,1,Vermont,13
+,Virginia,1,Northeastern,13
+,Virginia,1,Northern Ky.,14
+,Virginia,1,Georgia St.,14
+,Virginia,1,Yale,14
+,Virginia,1,Old Dominion,14
+,Virginia,1,Abilene Christian,15
+,Virginia,1,Colgate,15
+,Virginia,1,Bradley,15
+,Virginia,1,Montana,15
+,Virginia,1,Fairleigh Dickinson,16
+,Virginia,1,N.C. Central,16
+,Virginia,1,Gardner-Webb,16
+,Virginia,1,Prairie View,16
+,Virginia,1,North Dakota St.,16
+,Virginia,1,Iona,16
+,Kentucky,2,North Carolina,1
+,Kentucky,2,Gonzaga,1
+,Kentucky,2,Duke,1
+,Kentucky,2,Virginia,1
+,Kentucky,2,Michigan St.,2
+,Kentucky,2,Tennessee,2
+,Kentucky,2,Michigan,2
+,Kentucky,2,Houston,3
+,Kentucky,2,LSU,3
+,Kentucky,2,Purdue,3
+,Kentucky,2,Texas Tech,3
+,Kentucky,2,Virginia Tech,4
+,Kentucky,2,Kansas,4
+,Kentucky,2,Florida St.,4
+,Kentucky,2,Kansas St.,4
+,Kentucky,2,Auburn,5
+,Kentucky,2,Wisconsin,5
+,Kentucky,2,Mississippi St.,5
+,Kentucky,2,Marquette,5
+,Kentucky,2,Iowa St.,6
+,Kentucky,2,Buffalo,6
+,Kentucky,2,Villanova,6
+,Kentucky,2,Maryland,6
+,Kentucky,2,Wofford,7
+,Kentucky,2,Nevada,7
+,Kentucky,2,Cincinnati,7
+,Kentucky,2,Louisville,7
+,Kentucky,2,Ole Miss,8
+,Kentucky,2,Syracuse,8
+,Kentucky,2,Utah St.,8
+,Kentucky,2,VCU,8
+,Kentucky,2,Baylor,9
+,Kentucky,2,Oklahoma,9
+,Kentucky,2,UCF,9
+,Kentucky,2,Washington,9
+,Kentucky,2,Iowa,10
+,Kentucky,2,Seton Hall,10
+,Kentucky,2,Minnesota,10
+,Kentucky,2,Florida,10
+,Kentucky,2,Arizona St.,11
+,Kentucky,2,St. John's (NY),11
+,Kentucky,2,Ohio St.,11
+,Kentucky,2,Belmont,11
+,Kentucky,2,Saint Mary's (CA),11
+,Kentucky,2,Temple,11
+,Kentucky,2,Oregon,12
+,Kentucky,2,Murray St.,12
+,Kentucky,2,New Mexico St.,12
+,Kentucky,2,Liberty,12
+,Kentucky,2,Saint Louis,13
+,Kentucky,2,UC Irvine,13
+,Kentucky,2,Vermont,13
+,Kentucky,2,Northeastern,13
+,Kentucky,2,Northern Ky.,14
+,Kentucky,2,Georgia St.,14
+,Kentucky,2,Yale,14
+,Kentucky,2,Old Dominion,14
+,Kentucky,2,Abilene Christian,15
+,Kentucky,2,Colgate,15
+,Kentucky,2,Bradley,15
+,Kentucky,2,Montana,15
+,Kentucky,2,Fairleigh Dickinson,16
+,Kentucky,2,N.C. Central,16
+,Kentucky,2,Gardner-Webb,16
+,Kentucky,2,Prairie View,16
+,Kentucky,2,North Dakota St.,16
+,Kentucky,2,Iona,16
+,Michigan St.,2,North Carolina,1
+,Michigan St.,2,Gonzaga,1
+,Michigan St.,2,Duke,1
+,Michigan St.,2,Virginia,1
+,Michigan St.,2,Kentucky,2
+,Michigan St.,2,Tennessee,2
+,Michigan St.,2,Michigan,2
+,Michigan St.,2,Houston,3
+,Michigan St.,2,LSU,3
+,Michigan St.,2,Purdue,3
+,Michigan St.,2,Texas Tech,3
+,Michigan St.,2,Virginia Tech,4
+,Michigan St.,2,Kansas,4
+,Michigan St.,2,Florida St.,4
+,Michigan St.,2,Kansas St.,4
+,Michigan St.,2,Auburn,5
+,Michigan St.,2,Wisconsin,5
+,Michigan St.,2,Mississippi St.,5
+,Michigan St.,2,Marquette,5
+,Michigan St.,2,Iowa St.,6
+,Michigan St.,2,Buffalo,6
+,Michigan St.,2,Villanova,6
+,Michigan St.,2,Maryland,6
+,Michigan St.,2,Wofford,7
+,Michigan St.,2,Nevada,7
+,Michigan St.,2,Cincinnati,7
+,Michigan St.,2,Louisville,7
+,Michigan St.,2,Ole Miss,8
+,Michigan St.,2,Syracuse,8
+,Michigan St.,2,Utah St.,8
+,Michigan St.,2,VCU,8
+,Michigan St.,2,Baylor,9
+,Michigan St.,2,Oklahoma,9
+,Michigan St.,2,UCF,9
+,Michigan St.,2,Washington,9
+,Michigan St.,2,Iowa,10
+,Michigan St.,2,Seton Hall,10
+,Michigan St.,2,Minnesota,10
+,Michigan St.,2,Florida,10
+,Michigan St.,2,Arizona St.,11
+,Michigan St.,2,St. John's (NY),11
+,Michigan St.,2,Ohio St.,11
+,Michigan St.,2,Belmont,11
+,Michigan St.,2,Saint Mary's (CA),11
+,Michigan St.,2,Temple,11
+,Michigan St.,2,Oregon,12
+,Michigan St.,2,Murray St.,12
+,Michigan St.,2,New Mexico St.,12
+,Michigan St.,2,Liberty,12
+,Michigan St.,2,Saint Louis,13
+,Michigan St.,2,UC Irvine,13
+,Michigan St.,2,Vermont,13
+,Michigan St.,2,Northeastern,13
+,Michigan St.,2,Northern Ky.,14
+,Michigan St.,2,Georgia St.,14
+,Michigan St.,2,Yale,14
+,Michigan St.,2,Old Dominion,14
+,Michigan St.,2,Abilene Christian,15
+,Michigan St.,2,Colgate,15
+,Michigan St.,2,Bradley,15
+,Michigan St.,2,Montana,15
+,Michigan St.,2,Fairleigh Dickinson,16
+,Michigan St.,2,N.C. Central,16
+,Michigan St.,2,Gardner-Webb,16
+,Michigan St.,2,Prairie View,16
+,Michigan St.,2,North Dakota St.,16
+,Michigan St.,2,Iona,16
+,Tennessee,2,North Carolina,1
+,Tennessee,2,Gonzaga,1
+,Tennessee,2,Duke,1
+,Tennessee,2,Virginia,1
+,Tennessee,2,Kentucky,2
+,Tennessee,2,Michigan St.,2
+,Tennessee,2,Michigan,2
+,Tennessee,2,Houston,3
+,Tennessee,2,LSU,3
+,Tennessee,2,Purdue,3
+,Tennessee,2,Texas Tech,3
+,Tennessee,2,Virginia Tech,4
+,Tennessee,2,Kansas,4
+,Tennessee,2,Florida St.,4
+,Tennessee,2,Kansas St.,4
+,Tennessee,2,Auburn,5
+,Tennessee,2,Wisconsin,5
+,Tennessee,2,Mississippi St.,5
+,Tennessee,2,Marquette,5
+,Tennessee,2,Iowa St.,6
+,Tennessee,2,Buffalo,6
+,Tennessee,2,Villanova,6
+,Tennessee,2,Maryland,6
+,Tennessee,2,Wofford,7
+,Tennessee,2,Nevada,7
+,Tennessee,2,Cincinnati,7
+,Tennessee,2,Louisville,7
+,Tennessee,2,Ole Miss,8
+,Tennessee,2,Syracuse,8
+,Tennessee,2,Utah St.,8
+,Tennessee,2,VCU,8
+,Tennessee,2,Baylor,9
+,Tennessee,2,Oklahoma,9
+,Tennessee,2,UCF,9
+,Tennessee,2,Washington,9
+,Tennessee,2,Iowa,10
+,Tennessee,2,Seton Hall,10
+,Tennessee,2,Minnesota,10
+,Tennessee,2,Florida,10
+,Tennessee,2,Arizona St.,11
+,Tennessee,2,St. John's (NY),11
+,Tennessee,2,Ohio St.,11
+,Tennessee,2,Belmont,11
+,Tennessee,2,Saint Mary's (CA),11
+,Tennessee,2,Temple,11
+,Tennessee,2,Oregon,12
+,Tennessee,2,Murray St.,12
+,Tennessee,2,New Mexico St.,12
+,Tennessee,2,Liberty,12
+,Tennessee,2,Saint Louis,13
+,Tennessee,2,UC Irvine,13
+,Tennessee,2,Vermont,13
+,Tennessee,2,Northeastern,13
+,Tennessee,2,Northern Ky.,14
+,Tennessee,2,Georgia St.,14
+,Tennessee,2,Yale,14
+,Tennessee,2,Old Dominion,14
+,Tennessee,2,Abilene Christian,15
+,Tennessee,2,Colgate,15
+,Tennessee,2,Bradley,15
+,Tennessee,2,Montana,15
+,Tennessee,2,Fairleigh Dickinson,16
+,Tennessee,2,N.C. Central,16
+,Tennessee,2,Gardner-Webb,16
+,Tennessee,2,Prairie View,16
+,Tennessee,2,North Dakota St.,16
+,Tennessee,2,Iona,16
+,Michigan,2,North Carolina,1
+,Michigan,2,Gonzaga,1
+,Michigan,2,Duke,1
+,Michigan,2,Virginia,1
+,Michigan,2,Kentucky,2
+,Michigan,2,Michigan St.,2
+,Michigan,2,Tennessee,2
+,Michigan,2,Houston,3
+,Michigan,2,LSU,3
+,Michigan,2,Purdue,3
+,Michigan,2,Texas Tech,3
+,Michigan,2,Virginia Tech,4
+,Michigan,2,Kansas,4
+,Michigan,2,Florida St.,4
+,Michigan,2,Kansas St.,4
+,Michigan,2,Auburn,5
+,Michigan,2,Wisconsin,5
+,Michigan,2,Mississippi St.,5
+,Michigan,2,Marquette,5
+,Michigan,2,Iowa St.,6
+,Michigan,2,Buffalo,6
+,Michigan,2,Villanova,6
+,Michigan,2,Maryland,6
+,Michigan,2,Wofford,7
+,Michigan,2,Nevada,7
+,Michigan,2,Cincinnati,7
+,Michigan,2,Louisville,7
+,Michigan,2,Ole Miss,8
+,Michigan,2,Syracuse,8
+,Michigan,2,Utah St.,8
+,Michigan,2,VCU,8
+,Michigan,2,Baylor,9
+,Michigan,2,Oklahoma,9
+,Michigan,2,UCF,9
+,Michigan,2,Washington,9
+,Michigan,2,Iowa,10
+,Michigan,2,Seton Hall,10
+,Michigan,2,Minnesota,10
+,Michigan,2,Florida,10
+,Michigan,2,Arizona St.,11
+,Michigan,2,St. John's (NY),11
+,Michigan,2,Ohio St.,11
+,Michigan,2,Belmont,11
+,Michigan,2,Saint Mary's (CA),11
+,Michigan,2,Temple,11
+,Michigan,2,Oregon,12
+,Michigan,2,Murray St.,12
+,Michigan,2,New Mexico St.,12
+,Michigan,2,Liberty,12
+,Michigan,2,Saint Louis,13
+,Michigan,2,UC Irvine,13
+,Michigan,2,Vermont,13
+,Michigan,2,Northeastern,13
+,Michigan,2,Northern Ky.,14
+,Michigan,2,Georgia St.,14
+,Michigan,2,Yale,14
+,Michigan,2,Old Dominion,14
+,Michigan,2,Abilene Christian,15
+,Michigan,2,Colgate,15
+,Michigan,2,Bradley,15
+,Michigan,2,Montana,15
+,Michigan,2,Fairleigh Dickinson,16
+,Michigan,2,N.C. Central,16
+,Michigan,2,Gardner-Webb,16
+,Michigan,2,Prairie View,16
+,Michigan,2,North Dakota St.,16
+,Michigan,2,Iona,16
+,Houston,3,North Carolina,1
+,Houston,3,Gonzaga,1
+,Houston,3,Duke,1
+,Houston,3,Virginia,1
+,Houston,3,Kentucky,2
+,Houston,3,Michigan St.,2
+,Houston,3,Tennessee,2
+,Houston,3,Michigan,2
+,Houston,3,LSU,3
+,Houston,3,Purdue,3
+,Houston,3,Texas Tech,3
+,Houston,3,Virginia Tech,4
+,Houston,3,Kansas,4
+,Houston,3,Florida St.,4
+,Houston,3,Kansas St.,4
+,Houston,3,Auburn,5
+,Houston,3,Wisconsin,5
+,Houston,3,Mississippi St.,5
+,Houston,3,Marquette,5
+,Houston,3,Iowa St.,6
+,Houston,3,Buffalo,6
+,Houston,3,Villanova,6
+,Houston,3,Maryland,6
+,Houston,3,Wofford,7
+,Houston,3,Nevada,7
+,Houston,3,Cincinnati,7
+,Houston,3,Louisville,7
+,Houston,3,Ole Miss,8
+,Houston,3,Syracuse,8
+,Houston,3,Utah St.,8
+,Houston,3,VCU,8
+,Houston,3,Baylor,9
+,Houston,3,Oklahoma,9
+,Houston,3,UCF,9
+,Houston,3,Washington,9
+,Houston,3,Iowa,10
+,Houston,3,Seton Hall,10
+,Houston,3,Minnesota,10
+,Houston,3,Florida,10
+,Houston,3,Arizona St.,11
+,Houston,3,St. John's (NY),11
+,Houston,3,Ohio St.,11
+,Houston,3,Belmont,11
+,Houston,3,Saint Mary's (CA),11
+,Houston,3,Temple,11
+,Houston,3,Oregon,12
+,Houston,3,Murray St.,12
+,Houston,3,New Mexico St.,12
+,Houston,3,Liberty,12
+,Houston,3,Saint Louis,13
+,Houston,3,UC Irvine,13
+,Houston,3,Vermont,13
+,Houston,3,Northeastern,13
+,Houston,3,Northern Ky.,14
+,Houston,3,Georgia St.,14
+,Houston,3,Yale,14
+,Houston,3,Old Dominion,14
+,Houston,3,Abilene Christian,15
+,Houston,3,Colgate,15
+,Houston,3,Bradley,15
+,Houston,3,Montana,15
+,Houston,3,Fairleigh Dickinson,16
+,Houston,3,N.C. Central,16
+,Houston,3,Gardner-Webb,16
+,Houston,3,Prairie View,16
+,Houston,3,North Dakota St.,16
+,Houston,3,Iona,16
+,LSU,3,North Carolina,1
+,LSU,3,Gonzaga,1
+,LSU,3,Duke,1
+,LSU,3,Virginia,1
+,LSU,3,Kentucky,2
+,LSU,3,Michigan St.,2
+,LSU,3,Tennessee,2
+,LSU,3,Michigan,2
+,LSU,3,Houston,3
+,LSU,3,Purdue,3
+,LSU,3,Texas Tech,3
+,LSU,3,Virginia Tech,4
+,LSU,3,Kansas,4
+,LSU,3,Florida St.,4
+,LSU,3,Kansas St.,4
+,LSU,3,Auburn,5
+,LSU,3,Wisconsin,5
+,LSU,3,Mississippi St.,5
+,LSU,3,Marquette,5
+,LSU,3,Iowa St.,6
+,LSU,3,Buffalo,6
+,LSU,3,Villanova,6
+,LSU,3,Maryland,6
+,LSU,3,Wofford,7
+,LSU,3,Nevada,7
+,LSU,3,Cincinnati,7
+,LSU,3,Louisville,7
+,LSU,3,Ole Miss,8
+,LSU,3,Syracuse,8
+,LSU,3,Utah St.,8
+,LSU,3,VCU,8
+,LSU,3,Baylor,9
+,LSU,3,Oklahoma,9
+,LSU,3,UCF,9
+,LSU,3,Washington,9
+,LSU,3,Iowa,10
+,LSU,3,Seton Hall,10
+,LSU,3,Minnesota,10
+,LSU,3,Florida,10
+,LSU,3,Arizona St.,11
+,LSU,3,St. John's (NY),11
+,LSU,3,Ohio St.,11
+,LSU,3,Belmont,11
+,LSU,3,Saint Mary's (CA),11
+,LSU,3,Temple,11
+,LSU,3,Oregon,12
+,LSU,3,Murray St.,12
+,LSU,3,New Mexico St.,12
+,LSU,3,Liberty,12
+,LSU,3,Saint Louis,13
+,LSU,3,UC Irvine,13
+,LSU,3,Vermont,13
+,LSU,3,Northeastern,13
+,LSU,3,Northern Ky.,14
+,LSU,3,Georgia St.,14
+,LSU,3,Yale,14
+,LSU,3,Old Dominion,14
+,LSU,3,Abilene Christian,15
+,LSU,3,Colgate,15
+,LSU,3,Bradley,15
+,LSU,3,Montana,15
+,LSU,3,Fairleigh Dickinson,16
+,LSU,3,N.C. Central,16
+,LSU,3,Gardner-Webb,16
+,LSU,3,Prairie View,16
+,LSU,3,North Dakota St.,16
+,LSU,3,Iona,16
+,Purdue,3,North Carolina,1
+,Purdue,3,Gonzaga,1
+,Purdue,3,Duke,1
+,Purdue,3,Virginia,1
+,Purdue,3,Kentucky,2
+,Purdue,3,Michigan St.,2
+,Purdue,3,Tennessee,2
+,Purdue,3,Michigan,2
+,Purdue,3,Houston,3
+,Purdue,3,LSU,3
+,Purdue,3,Texas Tech,3
+,Purdue,3,Virginia Tech,4
+,Purdue,3,Kansas,4
+,Purdue,3,Florida St.,4
+,Purdue,3,Kansas St.,4
+,Purdue,3,Auburn,5
+,Purdue,3,Wisconsin,5
+,Purdue,3,Mississippi St.,5
+,Purdue,3,Marquette,5
+,Purdue,3,Iowa St.,6
+,Purdue,3,Buffalo,6
+,Purdue,3,Villanova,6
+,Purdue,3,Maryland,6
+,Purdue,3,Wofford,7
+,Purdue,3,Nevada,7
+,Purdue,3,Cincinnati,7
+,Purdue,3,Louisville,7
+,Purdue,3,Ole Miss,8
+,Purdue,3,Syracuse,8
+,Purdue,3,Utah St.,8
+,Purdue,3,VCU,8
+,Purdue,3,Baylor,9
+,Purdue,3,Oklahoma,9
+,Purdue,3,UCF,9
+,Purdue,3,Washington,9
+,Purdue,3,Iowa,10
+,Purdue,3,Seton Hall,10
+,Purdue,3,Minnesota,10
+,Purdue,3,Florida,10
+,Purdue,3,Arizona St.,11
+,Purdue,3,St. John's (NY),11
+,Purdue,3,Ohio St.,11
+,Purdue,3,Belmont,11
+,Purdue,3,Saint Mary's (CA),11
+,Purdue,3,Temple,11
+,Purdue,3,Oregon,12
+,Purdue,3,Murray St.,12
+,Purdue,3,New Mexico St.,12
+,Purdue,3,Liberty,12
+,Purdue,3,Saint Louis,13
+,Purdue,3,UC Irvine,13
+,Purdue,3,Vermont,13
+,Purdue,3,Northeastern,13
+,Purdue,3,Northern Ky.,14
+,Purdue,3,Georgia St.,14
+,Purdue,3,Yale,14
+,Purdue,3,Old Dominion,14
+,Purdue,3,Abilene Christian,15
+,Purdue,3,Colgate,15
+,Purdue,3,Bradley,15
+,Purdue,3,Montana,15
+,Purdue,3,Fairleigh Dickinson,16
+,Purdue,3,N.C. Central,16
+,Purdue,3,Gardner-Webb,16
+,Purdue,3,Prairie View,16
+,Purdue,3,North Dakota St.,16
+,Purdue,3,Iona,16
+,Texas Tech,3,North Carolina,1
+,Texas Tech,3,Gonzaga,1
+,Texas Tech,3,Duke,1
+,Texas Tech,3,Virginia,1
+,Texas Tech,3,Kentucky,2
+,Texas Tech,3,Michigan St.,2
+,Texas Tech,3,Tennessee,2
+,Texas Tech,3,Michigan,2
+,Texas Tech,3,Houston,3
+,Texas Tech,3,LSU,3
+,Texas Tech,3,Purdue,3
+,Texas Tech,3,Virginia Tech,4
+,Texas Tech,3,Kansas,4
+,Texas Tech,3,Florida St.,4
+,Texas Tech,3,Kansas St.,4
+,Texas Tech,3,Auburn,5
+,Texas Tech,3,Wisconsin,5
+,Texas Tech,3,Mississippi St.,5
+,Texas Tech,3,Marquette,5
+,Texas Tech,3,Iowa St.,6
+,Texas Tech,3,Buffalo,6
+,Texas Tech,3,Villanova,6
+,Texas Tech,3,Maryland,6
+,Texas Tech,3,Wofford,7
+,Texas Tech,3,Nevada,7
+,Texas Tech,3,Cincinnati,7
+,Texas Tech,3,Louisville,7
+,Texas Tech,3,Ole Miss,8
+,Texas Tech,3,Syracuse,8
+,Texas Tech,3,Utah St.,8
+,Texas Tech,3,VCU,8
+,Texas Tech,3,Baylor,9
+,Texas Tech,3,Oklahoma,9
+,Texas Tech,3,UCF,9
+,Texas Tech,3,Washington,9
+,Texas Tech,3,Iowa,10
+,Texas Tech,3,Seton Hall,10
+,Texas Tech,3,Minnesota,10
+,Texas Tech,3,Florida,10
+,Texas Tech,3,Arizona St.,11
+,Texas Tech,3,St. John's (NY),11
+,Texas Tech,3,Ohio St.,11
+,Texas Tech,3,Belmont,11
+,Texas Tech,3,Saint Mary's (CA),11
+,Texas Tech,3,Temple,11
+,Texas Tech,3,Oregon,12
+,Texas Tech,3,Murray St.,12
+,Texas Tech,3,New Mexico St.,12
+,Texas Tech,3,Liberty,12
+,Texas Tech,3,Saint Louis,13
+,Texas Tech,3,UC Irvine,13
+,Texas Tech,3,Vermont,13
+,Texas Tech,3,Northeastern,13
+,Texas Tech,3,Northern Ky.,14
+,Texas Tech,3,Georgia St.,14
+,Texas Tech,3,Yale,14
+,Texas Tech,3,Old Dominion,14
+,Texas Tech,3,Abilene Christian,15
+,Texas Tech,3,Colgate,15
+,Texas Tech,3,Bradley,15
+,Texas Tech,3,Montana,15
+,Texas Tech,3,Fairleigh Dickinson,16
+,Texas Tech,3,N.C. Central,16
+,Texas Tech,3,Gardner-Webb,16
+,Texas Tech,3,Prairie View,16
+,Texas Tech,3,North Dakota St.,16
+,Texas Tech,3,Iona,16
+,Virginia Tech,4,North Carolina,1
+,Virginia Tech,4,Gonzaga,1
+,Virginia Tech,4,Duke,1
+,Virginia Tech,4,Virginia,1
+,Virginia Tech,4,Kentucky,2
+,Virginia Tech,4,Michigan St.,2
+,Virginia Tech,4,Tennessee,2
+,Virginia Tech,4,Michigan,2
+,Virginia Tech,4,Houston,3
+,Virginia Tech,4,LSU,3
+,Virginia Tech,4,Purdue,3
+,Virginia Tech,4,Texas Tech,3
+,Virginia Tech,4,Kansas,4
+,Virginia Tech,4,Florida St.,4
+,Virginia Tech,4,Kansas St.,4
+,Virginia Tech,4,Auburn,5
+,Virginia Tech,4,Wisconsin,5
+,Virginia Tech,4,Mississippi St.,5
+,Virginia Tech,4,Marquette,5
+,Virginia Tech,4,Iowa St.,6
+,Virginia Tech,4,Buffalo,6
+,Virginia Tech,4,Villanova,6
+,Virginia Tech,4,Maryland,6
+,Virginia Tech,4,Wofford,7
+,Virginia Tech,4,Nevada,7
+,Virginia Tech,4,Cincinnati,7
+,Virginia Tech,4,Louisville,7
+,Virginia Tech,4,Ole Miss,8
+,Virginia Tech,4,Syracuse,8
+,Virginia Tech,4,Utah St.,8
+,Virginia Tech,4,VCU,8
+,Virginia Tech,4,Baylor,9
+,Virginia Tech,4,Oklahoma,9
+,Virginia Tech,4,UCF,9
+,Virginia Tech,4,Washington,9
+,Virginia Tech,4,Iowa,10
+,Virginia Tech,4,Seton Hall,10
+,Virginia Tech,4,Minnesota,10
+,Virginia Tech,4,Florida,10
+,Virginia Tech,4,Arizona St.,11
+,Virginia Tech,4,St. John's (NY),11
+,Virginia Tech,4,Ohio St.,11
+,Virginia Tech,4,Belmont,11
+,Virginia Tech,4,Saint Mary's (CA),11
+,Virginia Tech,4,Temple,11
+,Virginia Tech,4,Oregon,12
+,Virginia Tech,4,Murray St.,12
+,Virginia Tech,4,New Mexico St.,12
+,Virginia Tech,4,Liberty,12
+,Virginia Tech,4,Saint Louis,13
+,Virginia Tech,4,UC Irvine,13
+,Virginia Tech,4,Vermont,13
+,Virginia Tech,4,Northeastern,13
+,Virginia Tech,4,Northern Ky.,14
+,Virginia Tech,4,Georgia St.,14
+,Virginia Tech,4,Yale,14
+,Virginia Tech,4,Old Dominion,14
+,Virginia Tech,4,Abilene Christian,15
+,Virginia Tech,4,Colgate,15
+,Virginia Tech,4,Bradley,15
+,Virginia Tech,4,Montana,15
+,Virginia Tech,4,Fairleigh Dickinson,16
+,Virginia Tech,4,N.C. Central,16
+,Virginia Tech,4,Gardner-Webb,16
+,Virginia Tech,4,Prairie View,16
+,Virginia Tech,4,North Dakota St.,16
+,Virginia Tech,4,Iona,16
+,Kansas,4,North Carolina,1
+,Kansas,4,Gonzaga,1
+,Kansas,4,Duke,1
+,Kansas,4,Virginia,1
+,Kansas,4,Kentucky,2
+,Kansas,4,Michigan St.,2
+,Kansas,4,Tennessee,2
+,Kansas,4,Michigan,2
+,Kansas,4,Houston,3
+,Kansas,4,LSU,3
+,Kansas,4,Purdue,3
+,Kansas,4,Texas Tech,3
+,Kansas,4,Virginia Tech,4
+,Kansas,4,Florida St.,4
+,Kansas,4,Kansas St.,4
+,Kansas,4,Auburn,5
+,Kansas,4,Wisconsin,5
+,Kansas,4,Mississippi St.,5
+,Kansas,4,Marquette,5
+,Kansas,4,Iowa St.,6
+,Kansas,4,Buffalo,6
+,Kansas,4,Villanova,6
+,Kansas,4,Maryland,6
+,Kansas,4,Wofford,7
+,Kansas,4,Nevada,7
+,Kansas,4,Cincinnati,7
+,Kansas,4,Louisville,7
+,Kansas,4,Ole Miss,8
+,Kansas,4,Syracuse,8
+,Kansas,4,Utah St.,8
+,Kansas,4,VCU,8
+,Kansas,4,Baylor,9
+,Kansas,4,Oklahoma,9
+,Kansas,4,UCF,9
+,Kansas,4,Washington,9
+,Kansas,4,Iowa,10
+,Kansas,4,Seton Hall,10
+,Kansas,4,Minnesota,10
+,Kansas,4,Florida,10
+,Kansas,4,Arizona St.,11
+,Kansas,4,St. John's (NY),11
+,Kansas,4,Ohio St.,11
+,Kansas,4,Belmont,11
+,Kansas,4,Saint Mary's (CA),11
+,Kansas,4,Temple,11
+,Kansas,4,Oregon,12
+,Kansas,4,Murray St.,12
+,Kansas,4,New Mexico St.,12
+,Kansas,4,Liberty,12
+,Kansas,4,Saint Louis,13
+,Kansas,4,UC Irvine,13
+,Kansas,4,Vermont,13
+,Kansas,4,Northeastern,13
+,Kansas,4,Northern Ky.,14
+,Kansas,4,Georgia St.,14
+,Kansas,4,Yale,14
+,Kansas,4,Old Dominion,14
+,Kansas,4,Abilene Christian,15
+,Kansas,4,Colgate,15
+,Kansas,4,Bradley,15
+,Kansas,4,Montana,15
+,Kansas,4,Fairleigh Dickinson,16
+,Kansas,4,N.C. Central,16
+,Kansas,4,Gardner-Webb,16
+,Kansas,4,Prairie View,16
+,Kansas,4,North Dakota St.,16
+,Kansas,4,Iona,16
+,Florida St.,4,North Carolina,1
+,Florida St.,4,Gonzaga,1
+,Florida St.,4,Duke,1
+,Florida St.,4,Virginia,1
+,Florida St.,4,Kentucky,2
+,Florida St.,4,Michigan St.,2
+,Florida St.,4,Tennessee,2
+,Florida St.,4,Michigan,2
+,Florida St.,4,Houston,3
+,Florida St.,4,LSU,3
+,Florida St.,4,Purdue,3
+,Florida St.,4,Texas Tech,3
+,Florida St.,4,Virginia Tech,4
+,Florida St.,4,Kansas,4
+,Florida St.,4,Kansas St.,4
+,Florida St.,4,Auburn,5
+,Florida St.,4,Wisconsin,5
+,Florida St.,4,Mississippi St.,5
+,Florida St.,4,Marquette,5
+,Florida St.,4,Iowa St.,6
+,Florida St.,4,Buffalo,6
+,Florida St.,4,Villanova,6
+,Florida St.,4,Maryland,6
+,Florida St.,4,Wofford,7
+,Florida St.,4,Nevada,7
+,Florida St.,4,Cincinnati,7
+,Florida St.,4,Louisville,7
+,Florida St.,4,Ole Miss,8
+,Florida St.,4,Syracuse,8
+,Florida St.,4,Utah St.,8
+,Florida St.,4,VCU,8
+,Florida St.,4,Baylor,9
+,Florida St.,4,Oklahoma,9
+,Florida St.,4,UCF,9
+,Florida St.,4,Washington,9
+,Florida St.,4,Iowa,10
+,Florida St.,4,Seton Hall,10
+,Florida St.,4,Minnesota,10
+,Florida St.,4,Florida,10
+,Florida St.,4,Arizona St.,11
+,Florida St.,4,St. John's (NY),11
+,Florida St.,4,Ohio St.,11
+,Florida St.,4,Belmont,11
+,Florida St.,4,Saint Mary's (CA),11
+,Florida St.,4,Temple,11
+,Florida St.,4,Oregon,12
+,Florida St.,4,Murray St.,12
+,Florida St.,4,New Mexico St.,12
+,Florida St.,4,Liberty,12
+,Florida St.,4,Saint Louis,13
+,Florida St.,4,UC Irvine,13
+,Florida St.,4,Vermont,13
+,Florida St.,4,Northeastern,13
+,Florida St.,4,Northern Ky.,14
+,Florida St.,4,Georgia St.,14
+,Florida St.,4,Yale,14
+,Florida St.,4,Old Dominion,14
+,Florida St.,4,Abilene Christian,15
+,Florida St.,4,Colgate,15
+,Florida St.,4,Bradley,15
+,Florida St.,4,Montana,15
+,Florida St.,4,Fairleigh Dickinson,16
+,Florida St.,4,N.C. Central,16
+,Florida St.,4,Gardner-Webb,16
+,Florida St.,4,Prairie View,16
+,Florida St.,4,North Dakota St.,16
+,Florida St.,4,Iona,16
+,Kansas St.,4,North Carolina,1
+,Kansas St.,4,Gonzaga,1
+,Kansas St.,4,Duke,1
+,Kansas St.,4,Virginia,1
+,Kansas St.,4,Kentucky,2
+,Kansas St.,4,Michigan St.,2
+,Kansas St.,4,Tennessee,2
+,Kansas St.,4,Michigan,2
+,Kansas St.,4,Houston,3
+,Kansas St.,4,LSU,3
+,Kansas St.,4,Purdue,3
+,Kansas St.,4,Texas Tech,3
+,Kansas St.,4,Virginia Tech,4
+,Kansas St.,4,Kansas,4
+,Kansas St.,4,Florida St.,4
+,Kansas St.,4,Auburn,5
+,Kansas St.,4,Wisconsin,5
+,Kansas St.,4,Mississippi St.,5
+,Kansas St.,4,Marquette,5
+,Kansas St.,4,Iowa St.,6
+,Kansas St.,4,Buffalo,6
+,Kansas St.,4,Villanova,6
+,Kansas St.,4,Maryland,6
+,Kansas St.,4,Wofford,7
+,Kansas St.,4,Nevada,7
+,Kansas St.,4,Cincinnati,7
+,Kansas St.,4,Louisville,7
+,Kansas St.,4,Ole Miss,8
+,Kansas St.,4,Syracuse,8
+,Kansas St.,4,Utah St.,8
+,Kansas St.,4,VCU,8
+,Kansas St.,4,Baylor,9
+,Kansas St.,4,Oklahoma,9
+,Kansas St.,4,UCF,9
+,Kansas St.,4,Washington,9
+,Kansas St.,4,Iowa,10
+,Kansas St.,4,Seton Hall,10
+,Kansas St.,4,Minnesota,10
+,Kansas St.,4,Florida,10
+,Kansas St.,4,Arizona St.,11
+,Kansas St.,4,St. John's (NY),11
+,Kansas St.,4,Ohio St.,11
+,Kansas St.,4,Belmont,11
+,Kansas St.,4,Saint Mary's (CA),11
+,Kansas St.,4,Temple,11
+,Kansas St.,4,Oregon,12
+,Kansas St.,4,Murray St.,12
+,Kansas St.,4,New Mexico St.,12
+,Kansas St.,4,Liberty,12
+,Kansas St.,4,Saint Louis,13
+,Kansas St.,4,UC Irvine,13
+,Kansas St.,4,Vermont,13
+,Kansas St.,4,Northeastern,13
+,Kansas St.,4,Northern Ky.,14
+,Kansas St.,4,Georgia St.,14
+,Kansas St.,4,Yale,14
+,Kansas St.,4,Old Dominion,14
+,Kansas St.,4,Abilene Christian,15
+,Kansas St.,4,Colgate,15
+,Kansas St.,4,Bradley,15
+,Kansas St.,4,Montana,15
+,Kansas St.,4,Fairleigh Dickinson,16
+,Kansas St.,4,N.C. Central,16
+,Kansas St.,4,Gardner-Webb,16
+,Kansas St.,4,Prairie View,16
+,Kansas St.,4,North Dakota St.,16
+,Kansas St.,4,Iona,16
+,Auburn,5,North Carolina,1
+,Auburn,5,Gonzaga,1
+,Auburn,5,Duke,1
+,Auburn,5,Virginia,1
+,Auburn,5,Kentucky,2
+,Auburn,5,Michigan St.,2
+,Auburn,5,Tennessee,2
+,Auburn,5,Michigan,2
+,Auburn,5,Houston,3
+,Auburn,5,LSU,3
+,Auburn,5,Purdue,3
+,Auburn,5,Texas Tech,3
+,Auburn,5,Virginia Tech,4
+,Auburn,5,Kansas,4
+,Auburn,5,Florida St.,4
+,Auburn,5,Kansas St.,4
+,Auburn,5,Wisconsin,5
+,Auburn,5,Mississippi St.,5
+,Auburn,5,Marquette,5
+,Auburn,5,Iowa St.,6
+,Auburn,5,Buffalo,6
+,Auburn,5,Villanova,6
+,Auburn,5,Maryland,6
+,Auburn,5,Wofford,7
+,Auburn,5,Nevada,7
+,Auburn,5,Cincinnati,7
+,Auburn,5,Louisville,7
+,Auburn,5,Ole Miss,8
+,Auburn,5,Syracuse,8
+,Auburn,5,Utah St.,8
+,Auburn,5,VCU,8
+,Auburn,5,Baylor,9
+,Auburn,5,Oklahoma,9
+,Auburn,5,UCF,9
+,Auburn,5,Washington,9
+,Auburn,5,Iowa,10
+,Auburn,5,Seton Hall,10
+,Auburn,5,Minnesota,10
+,Auburn,5,Florida,10
+,Auburn,5,Arizona St.,11
+,Auburn,5,St. John's (NY),11
+,Auburn,5,Ohio St.,11
+,Auburn,5,Belmont,11
+,Auburn,5,Saint Mary's (CA),11
+,Auburn,5,Temple,11
+,Auburn,5,Oregon,12
+,Auburn,5,Murray St.,12
+,Auburn,5,New Mexico St.,12
+,Auburn,5,Liberty,12
+,Auburn,5,Saint Louis,13
+,Auburn,5,UC Irvine,13
+,Auburn,5,Vermont,13
+,Auburn,5,Northeastern,13
+,Auburn,5,Northern Ky.,14
+,Auburn,5,Georgia St.,14
+,Auburn,5,Yale,14
+,Auburn,5,Old Dominion,14
+,Auburn,5,Abilene Christian,15
+,Auburn,5,Colgate,15
+,Auburn,5,Bradley,15
+,Auburn,5,Montana,15
+,Auburn,5,Fairleigh Dickinson,16
+,Auburn,5,N.C. Central,16
+,Auburn,5,Gardner-Webb,16
+,Auburn,5,Prairie View,16
+,Auburn,5,North Dakota St.,16
+,Auburn,5,Iona,16
+,Wisconsin,5,North Carolina,1
+,Wisconsin,5,Gonzaga,1
+,Wisconsin,5,Duke,1
+,Wisconsin,5,Virginia,1
+,Wisconsin,5,Kentucky,2
+,Wisconsin,5,Michigan St.,2
+,Wisconsin,5,Tennessee,2
+,Wisconsin,5,Michigan,2
+,Wisconsin,5,Houston,3
+,Wisconsin,5,LSU,3
+,Wisconsin,5,Purdue,3
+,Wisconsin,5,Texas Tech,3
+,Wisconsin,5,Virginia Tech,4
+,Wisconsin,5,Kansas,4
+,Wisconsin,5,Florida St.,4
+,Wisconsin,5,Kansas St.,4
+,Wisconsin,5,Auburn,5
+,Wisconsin,5,Mississippi St.,5
+,Wisconsin,5,Marquette,5
+,Wisconsin,5,Iowa St.,6
+,Wisconsin,5,Buffalo,6
+,Wisconsin,5,Villanova,6
+,Wisconsin,5,Maryland,6
+,Wisconsin,5,Wofford,7
+,Wisconsin,5,Nevada,7
+,Wisconsin,5,Cincinnati,7
+,Wisconsin,5,Louisville,7
+,Wisconsin,5,Ole Miss,8
+,Wisconsin,5,Syracuse,8
+,Wisconsin,5,Utah St.,8
+,Wisconsin,5,VCU,8
+,Wisconsin,5,Baylor,9
+,Wisconsin,5,Oklahoma,9
+,Wisconsin,5,UCF,9
+,Wisconsin,5,Washington,9
+,Wisconsin,5,Iowa,10
+,Wisconsin,5,Seton Hall,10
+,Wisconsin,5,Minnesota,10
+,Wisconsin,5,Florida,10
+,Wisconsin,5,Arizona St.,11
+,Wisconsin,5,St. John's (NY),11
+,Wisconsin,5,Ohio St.,11
+,Wisconsin,5,Belmont,11
+,Wisconsin,5,Saint Mary's (CA),11
+,Wisconsin,5,Temple,11
+,Wisconsin,5,Oregon,12
+,Wisconsin,5,Murray St.,12
+,Wisconsin,5,New Mexico St.,12
+,Wisconsin,5,Liberty,12
+,Wisconsin,5,Saint Louis,13
+,Wisconsin,5,UC Irvine,13
+,Wisconsin,5,Vermont,13
+,Wisconsin,5,Northeastern,13
+,Wisconsin,5,Northern Ky.,14
+,Wisconsin,5,Georgia St.,14
+,Wisconsin,5,Yale,14
+,Wisconsin,5,Old Dominion,14
+,Wisconsin,5,Abilene Christian,15
+,Wisconsin,5,Colgate,15
+,Wisconsin,5,Bradley,15
+,Wisconsin,5,Montana,15
+,Wisconsin,5,Fairleigh Dickinson,16
+,Wisconsin,5,N.C. Central,16
+,Wisconsin,5,Gardner-Webb,16
+,Wisconsin,5,Prairie View,16
+,Wisconsin,5,North Dakota St.,16
+,Wisconsin,5,Iona,16
+,Mississippi St.,5,North Carolina,1
+,Mississippi St.,5,Gonzaga,1
+,Mississippi St.,5,Duke,1
+,Mississippi St.,5,Virginia,1
+,Mississippi St.,5,Kentucky,2
+,Mississippi St.,5,Michigan St.,2
+,Mississippi St.,5,Tennessee,2
+,Mississippi St.,5,Michigan,2
+,Mississippi St.,5,Houston,3
+,Mississippi St.,5,LSU,3
+,Mississippi St.,5,Purdue,3
+,Mississippi St.,5,Texas Tech,3
+,Mississippi St.,5,Virginia Tech,4
+,Mississippi St.,5,Kansas,4
+,Mississippi St.,5,Florida St.,4
+,Mississippi St.,5,Kansas St.,4
+,Mississippi St.,5,Auburn,5
+,Mississippi St.,5,Wisconsin,5
+,Mississippi St.,5,Marquette,5
+,Mississippi St.,5,Iowa St.,6
+,Mississippi St.,5,Buffalo,6
+,Mississippi St.,5,Villanova,6
+,Mississippi St.,5,Maryland,6
+,Mississippi St.,5,Wofford,7
+,Mississippi St.,5,Nevada,7
+,Mississippi St.,5,Cincinnati,7
+,Mississippi St.,5,Louisville,7
+,Mississippi St.,5,Ole Miss,8
+,Mississippi St.,5,Syracuse,8
+,Mississippi St.,5,Utah St.,8
+,Mississippi St.,5,VCU,8
+,Mississippi St.,5,Baylor,9
+,Mississippi St.,5,Oklahoma,9
+,Mississippi St.,5,UCF,9
+,Mississippi St.,5,Washington,9
+,Mississippi St.,5,Iowa,10
+,Mississippi St.,5,Seton Hall,10
+,Mississippi St.,5,Minnesota,10
+,Mississippi St.,5,Florida,10
+,Mississippi St.,5,Arizona St.,11
+,Mississippi St.,5,St. John's (NY),11
+,Mississippi St.,5,Ohio St.,11
+,Mississippi St.,5,Belmont,11
+,Mississippi St.,5,Saint Mary's (CA),11
+,Mississippi St.,5,Temple,11
+,Mississippi St.,5,Oregon,12
+,Mississippi St.,5,Murray St.,12
+,Mississippi St.,5,New Mexico St.,12
+,Mississippi St.,5,Liberty,12
+,Mississippi St.,5,Saint Louis,13
+,Mississippi St.,5,UC Irvine,13
+,Mississippi St.,5,Vermont,13
+,Mississippi St.,5,Northeastern,13
+,Mississippi St.,5,Northern Ky.,14
+,Mississippi St.,5,Georgia St.,14
+,Mississippi St.,5,Yale,14
+,Mississippi St.,5,Old Dominion,14
+,Mississippi St.,5,Abilene Christian,15
+,Mississippi St.,5,Colgate,15
+,Mississippi St.,5,Bradley,15
+,Mississippi St.,5,Montana,15
+,Mississippi St.,5,Fairleigh Dickinson,16
+,Mississippi St.,5,N.C. Central,16
+,Mississippi St.,5,Gardner-Webb,16
+,Mississippi St.,5,Prairie View,16
+,Mississippi St.,5,North Dakota St.,16
+,Mississippi St.,5,Iona,16
+,Marquette,5,North Carolina,1
+,Marquette,5,Gonzaga,1
+,Marquette,5,Duke,1
+,Marquette,5,Virginia,1
+,Marquette,5,Kentucky,2
+,Marquette,5,Michigan St.,2
+,Marquette,5,Tennessee,2
+,Marquette,5,Michigan,2
+,Marquette,5,Houston,3
+,Marquette,5,LSU,3
+,Marquette,5,Purdue,3
+,Marquette,5,Texas Tech,3
+,Marquette,5,Virginia Tech,4
+,Marquette,5,Kansas,4
+,Marquette,5,Florida St.,4
+,Marquette,5,Kansas St.,4
+,Marquette,5,Auburn,5
+,Marquette,5,Wisconsin,5
+,Marquette,5,Mississippi St.,5
+,Marquette,5,Iowa St.,6
+,Marquette,5,Buffalo,6
+,Marquette,5,Villanova,6
+,Marquette,5,Maryland,6
+,Marquette,5,Wofford,7
+,Marquette,5,Nevada,7
+,Marquette,5,Cincinnati,7
+,Marquette,5,Louisville,7
+,Marquette,5,Ole Miss,8
+,Marquette,5,Syracuse,8
+,Marquette,5,Utah St.,8
+,Marquette,5,VCU,8
+,Marquette,5,Baylor,9
+,Marquette,5,Oklahoma,9
+,Marquette,5,UCF,9
+,Marquette,5,Washington,9
+,Marquette,5,Iowa,10
+,Marquette,5,Seton Hall,10
+,Marquette,5,Minnesota,10
+,Marquette,5,Florida,10
+,Marquette,5,Arizona St.,11
+,Marquette,5,St. John's (NY),11
+,Marquette,5,Ohio St.,11
+,Marquette,5,Belmont,11
+,Marquette,5,Saint Mary's (CA),11
+,Marquette,5,Temple,11
+,Marquette,5,Oregon,12
+,Marquette,5,Murray St.,12
+,Marquette,5,New Mexico St.,12
+,Marquette,5,Liberty,12
+,Marquette,5,Saint Louis,13
+,Marquette,5,UC Irvine,13
+,Marquette,5,Vermont,13
+,Marquette,5,Northeastern,13
+,Marquette,5,Northern Ky.,14
+,Marquette,5,Georgia St.,14
+,Marquette,5,Yale,14
+,Marquette,5,Old Dominion,14
+,Marquette,5,Abilene Christian,15
+,Marquette,5,Colgate,15
+,Marquette,5,Bradley,15
+,Marquette,5,Montana,15
+,Marquette,5,Fairleigh Dickinson,16
+,Marquette,5,N.C. Central,16
+,Marquette,5,Gardner-Webb,16
+,Marquette,5,Prairie View,16
+,Marquette,5,North Dakota St.,16
+,Marquette,5,Iona,16
+,Iowa St.,6,North Carolina,1
+,Iowa St.,6,Gonzaga,1
+,Iowa St.,6,Duke,1
+,Iowa St.,6,Virginia,1
+,Iowa St.,6,Kentucky,2
+,Iowa St.,6,Michigan St.,2
+,Iowa St.,6,Tennessee,2
+,Iowa St.,6,Michigan,2
+,Iowa St.,6,Houston,3
+,Iowa St.,6,LSU,3
+,Iowa St.,6,Purdue,3
+,Iowa St.,6,Texas Tech,3
+,Iowa St.,6,Virginia Tech,4
+,Iowa St.,6,Kansas,4
+,Iowa St.,6,Florida St.,4
+,Iowa St.,6,Kansas St.,4
+,Iowa St.,6,Auburn,5
+,Iowa St.,6,Wisconsin,5
+,Iowa St.,6,Mississippi St.,5
+,Iowa St.,6,Marquette,5
+,Iowa St.,6,Buffalo,6
+,Iowa St.,6,Villanova,6
+,Iowa St.,6,Maryland,6
+,Iowa St.,6,Wofford,7
+,Iowa St.,6,Nevada,7
+,Iowa St.,6,Cincinnati,7
+,Iowa St.,6,Louisville,7
+,Iowa St.,6,Ole Miss,8
+,Iowa St.,6,Syracuse,8
+,Iowa St.,6,Utah St.,8
+,Iowa St.,6,VCU,8
+,Iowa St.,6,Baylor,9
+,Iowa St.,6,Oklahoma,9
+,Iowa St.,6,UCF,9
+,Iowa St.,6,Washington,9
+,Iowa St.,6,Iowa,10
+,Iowa St.,6,Seton Hall,10
+,Iowa St.,6,Minnesota,10
+,Iowa St.,6,Florida,10
+,Iowa St.,6,Arizona St.,11
+,Iowa St.,6,St. John's (NY),11
+,Iowa St.,6,Ohio St.,11
+,Iowa St.,6,Belmont,11
+,Iowa St.,6,Saint Mary's (CA),11
+,Iowa St.,6,Temple,11
+,Iowa St.,6,Oregon,12
+,Iowa St.,6,Murray St.,12
+,Iowa St.,6,New Mexico St.,12
+,Iowa St.,6,Liberty,12
+,Iowa St.,6,Saint Louis,13
+,Iowa St.,6,UC Irvine,13
+,Iowa St.,6,Vermont,13
+,Iowa St.,6,Northeastern,13
+,Iowa St.,6,Northern Ky.,14
+,Iowa St.,6,Georgia St.,14
+,Iowa St.,6,Yale,14
+,Iowa St.,6,Old Dominion,14
+,Iowa St.,6,Abilene Christian,15
+,Iowa St.,6,Colgate,15
+,Iowa St.,6,Bradley,15
+,Iowa St.,6,Montana,15
+,Iowa St.,6,Fairleigh Dickinson,16
+,Iowa St.,6,N.C. Central,16
+,Iowa St.,6,Gardner-Webb,16
+,Iowa St.,6,Prairie View,16
+,Iowa St.,6,North Dakota St.,16
+,Iowa St.,6,Iona,16
+,Buffalo,6,North Carolina,1
+,Buffalo,6,Gonzaga,1
+,Buffalo,6,Duke,1
+,Buffalo,6,Virginia,1
+,Buffalo,6,Kentucky,2
+,Buffalo,6,Michigan St.,2
+,Buffalo,6,Tennessee,2
+,Buffalo,6,Michigan,2
+,Buffalo,6,Houston,3
+,Buffalo,6,LSU,3
+,Buffalo,6,Purdue,3
+,Buffalo,6,Texas Tech,3
+,Buffalo,6,Virginia Tech,4
+,Buffalo,6,Kansas,4
+,Buffalo,6,Florida St.,4
+,Buffalo,6,Kansas St.,4
+,Buffalo,6,Auburn,5
+,Buffalo,6,Wisconsin,5
+,Buffalo,6,Mississippi St.,5
+,Buffalo,6,Marquette,5
+,Buffalo,6,Iowa St.,6
+,Buffalo,6,Villanova,6
+,Buffalo,6,Maryland,6
+,Buffalo,6,Wofford,7
+,Buffalo,6,Nevada,7
+,Buffalo,6,Cincinnati,7
+,Buffalo,6,Louisville,7
+,Buffalo,6,Ole Miss,8
+,Buffalo,6,Syracuse,8
+,Buffalo,6,Utah St.,8
+,Buffalo,6,VCU,8
+,Buffalo,6,Baylor,9
+,Buffalo,6,Oklahoma,9
+,Buffalo,6,UCF,9
+,Buffalo,6,Washington,9
+,Buffalo,6,Iowa,10
+,Buffalo,6,Seton Hall,10
+,Buffalo,6,Minnesota,10
+,Buffalo,6,Florida,10
+,Buffalo,6,Arizona St.,11
+,Buffalo,6,St. John's (NY),11
+,Buffalo,6,Ohio St.,11
+,Buffalo,6,Belmont,11
+,Buffalo,6,Saint Mary's (CA),11
+,Buffalo,6,Temple,11
+,Buffalo,6,Oregon,12
+,Buffalo,6,Murray St.,12
+,Buffalo,6,New Mexico St.,12
+,Buffalo,6,Liberty,12
+,Buffalo,6,Saint Louis,13
+,Buffalo,6,UC Irvine,13
+,Buffalo,6,Vermont,13
+,Buffalo,6,Northeastern,13
+,Buffalo,6,Northern Ky.,14
+,Buffalo,6,Georgia St.,14
+,Buffalo,6,Yale,14
+,Buffalo,6,Old Dominion,14
+,Buffalo,6,Abilene Christian,15
+,Buffalo,6,Colgate,15
+,Buffalo,6,Bradley,15
+,Buffalo,6,Montana,15
+,Buffalo,6,Fairleigh Dickinson,16
+,Buffalo,6,N.C. Central,16
+,Buffalo,6,Gardner-Webb,16
+,Buffalo,6,Prairie View,16
+,Buffalo,6,North Dakota St.,16
+,Buffalo,6,Iona,16
+,Villanova,6,North Carolina,1
+,Villanova,6,Gonzaga,1
+,Villanova,6,Duke,1
+,Villanova,6,Virginia,1
+,Villanova,6,Kentucky,2
+,Villanova,6,Michigan St.,2
+,Villanova,6,Tennessee,2
+,Villanova,6,Michigan,2
+,Villanova,6,Houston,3
+,Villanova,6,LSU,3
+,Villanova,6,Purdue,3
+,Villanova,6,Texas Tech,3
+,Villanova,6,Virginia Tech,4
+,Villanova,6,Kansas,4
+,Villanova,6,Florida St.,4
+,Villanova,6,Kansas St.,4
+,Villanova,6,Auburn,5
+,Villanova,6,Wisconsin,5
+,Villanova,6,Mississippi St.,5
+,Villanova,6,Marquette,5
+,Villanova,6,Iowa St.,6
+,Villanova,6,Buffalo,6
+,Villanova,6,Maryland,6
+,Villanova,6,Wofford,7
+,Villanova,6,Nevada,7
+,Villanova,6,Cincinnati,7
+,Villanova,6,Louisville,7
+,Villanova,6,Ole Miss,8
+,Villanova,6,Syracuse,8
+,Villanova,6,Utah St.,8
+,Villanova,6,VCU,8
+,Villanova,6,Baylor,9
+,Villanova,6,Oklahoma,9
+,Villanova,6,UCF,9
+,Villanova,6,Washington,9
+,Villanova,6,Iowa,10
+,Villanova,6,Seton Hall,10
+,Villanova,6,Minnesota,10
+,Villanova,6,Florida,10
+,Villanova,6,Arizona St.,11
+,Villanova,6,St. John's (NY),11
+,Villanova,6,Ohio St.,11
+,Villanova,6,Belmont,11
+,Villanova,6,Saint Mary's (CA),11
+,Villanova,6,Temple,11
+,Villanova,6,Oregon,12
+,Villanova,6,Murray St.,12
+,Villanova,6,New Mexico St.,12
+,Villanova,6,Liberty,12
+,Villanova,6,Saint Louis,13
+,Villanova,6,UC Irvine,13
+,Villanova,6,Vermont,13
+,Villanova,6,Northeastern,13
+,Villanova,6,Northern Ky.,14
+,Villanova,6,Georgia St.,14
+,Villanova,6,Yale,14
+,Villanova,6,Old Dominion,14
+,Villanova,6,Abilene Christian,15
+,Villanova,6,Colgate,15
+,Villanova,6,Bradley,15
+,Villanova,6,Montana,15
+,Villanova,6,Fairleigh Dickinson,16
+,Villanova,6,N.C. Central,16
+,Villanova,6,Gardner-Webb,16
+,Villanova,6,Prairie View,16
+,Villanova,6,North Dakota St.,16
+,Villanova,6,Iona,16
+,Maryland,6,North Carolina,1
+,Maryland,6,Gonzaga,1
+,Maryland,6,Duke,1
+,Maryland,6,Virginia,1
+,Maryland,6,Kentucky,2
+,Maryland,6,Michigan St.,2
+,Maryland,6,Tennessee,2
+,Maryland,6,Michigan,2
+,Maryland,6,Houston,3
+,Maryland,6,LSU,3
+,Maryland,6,Purdue,3
+,Maryland,6,Texas Tech,3
+,Maryland,6,Virginia Tech,4
+,Maryland,6,Kansas,4
+,Maryland,6,Florida St.,4
+,Maryland,6,Kansas St.,4
+,Maryland,6,Auburn,5
+,Maryland,6,Wisconsin,5
+,Maryland,6,Mississippi St.,5
+,Maryland,6,Marquette,5
+,Maryland,6,Iowa St.,6
+,Maryland,6,Buffalo,6
+,Maryland,6,Villanova,6
+,Maryland,6,Wofford,7
+,Maryland,6,Nevada,7
+,Maryland,6,Cincinnati,7
+,Maryland,6,Louisville,7
+,Maryland,6,Ole Miss,8
+,Maryland,6,Syracuse,8
+,Maryland,6,Utah St.,8
+,Maryland,6,VCU,8
+,Maryland,6,Baylor,9
+,Maryland,6,Oklahoma,9
+,Maryland,6,UCF,9
+,Maryland,6,Washington,9
+,Maryland,6,Iowa,10
+,Maryland,6,Seton Hall,10
+,Maryland,6,Minnesota,10
+,Maryland,6,Florida,10
+,Maryland,6,Arizona St.,11
+,Maryland,6,St. John's (NY),11
+,Maryland,6,Ohio St.,11
+,Maryland,6,Belmont,11
+,Maryland,6,Saint Mary's (CA),11
+,Maryland,6,Temple,11
+,Maryland,6,Oregon,12
+,Maryland,6,Murray St.,12
+,Maryland,6,New Mexico St.,12
+,Maryland,6,Liberty,12
+,Maryland,6,Saint Louis,13
+,Maryland,6,UC Irvine,13
+,Maryland,6,Vermont,13
+,Maryland,6,Northeastern,13
+,Maryland,6,Northern Ky.,14
+,Maryland,6,Georgia St.,14
+,Maryland,6,Yale,14
+,Maryland,6,Old Dominion,14
+,Maryland,6,Abilene Christian,15
+,Maryland,6,Colgate,15
+,Maryland,6,Bradley,15
+,Maryland,6,Montana,15
+,Maryland,6,Fairleigh Dickinson,16
+,Maryland,6,N.C. Central,16
+,Maryland,6,Gardner-Webb,16
+,Maryland,6,Prairie View,16
+,Maryland,6,North Dakota St.,16
+,Maryland,6,Iona,16
+,Wofford,7,North Carolina,1
+,Wofford,7,Gonzaga,1
+,Wofford,7,Duke,1
+,Wofford,7,Virginia,1
+,Wofford,7,Kentucky,2
+,Wofford,7,Michigan St.,2
+,Wofford,7,Tennessee,2
+,Wofford,7,Michigan,2
+,Wofford,7,Houston,3
+,Wofford,7,LSU,3
+,Wofford,7,Purdue,3
+,Wofford,7,Texas Tech,3
+,Wofford,7,Virginia Tech,4
+,Wofford,7,Kansas,4
+,Wofford,7,Florida St.,4
+,Wofford,7,Kansas St.,4
+,Wofford,7,Auburn,5
+,Wofford,7,Wisconsin,5
+,Wofford,7,Mississippi St.,5
+,Wofford,7,Marquette,5
+,Wofford,7,Iowa St.,6
+,Wofford,7,Buffalo,6
+,Wofford,7,Villanova,6
+,Wofford,7,Maryland,6
+,Wofford,7,Nevada,7
+,Wofford,7,Cincinnati,7
+,Wofford,7,Louisville,7
+,Wofford,7,Ole Miss,8
+,Wofford,7,Syracuse,8
+,Wofford,7,Utah St.,8
+,Wofford,7,VCU,8
+,Wofford,7,Baylor,9
+,Wofford,7,Oklahoma,9
+,Wofford,7,UCF,9
+,Wofford,7,Washington,9
+,Wofford,7,Iowa,10
+,Wofford,7,Seton Hall,10
+,Wofford,7,Minnesota,10
+,Wofford,7,Florida,10
+,Wofford,7,Arizona St.,11
+,Wofford,7,St. John's (NY),11
+,Wofford,7,Ohio St.,11
+,Wofford,7,Belmont,11
+,Wofford,7,Saint Mary's (CA),11
+,Wofford,7,Temple,11
+,Wofford,7,Oregon,12
+,Wofford,7,Murray St.,12
+,Wofford,7,New Mexico St.,12
+,Wofford,7,Liberty,12
+,Wofford,7,Saint Louis,13
+,Wofford,7,UC Irvine,13
+,Wofford,7,Vermont,13
+,Wofford,7,Northeastern,13
+,Wofford,7,Northern Ky.,14
+,Wofford,7,Georgia St.,14
+,Wofford,7,Yale,14
+,Wofford,7,Old Dominion,14
+,Wofford,7,Abilene Christian,15
+,Wofford,7,Colgate,15
+,Wofford,7,Bradley,15
+,Wofford,7,Montana,15
+,Wofford,7,Fairleigh Dickinson,16
+,Wofford,7,N.C. Central,16
+,Wofford,7,Gardner-Webb,16
+,Wofford,7,Prairie View,16
+,Wofford,7,North Dakota St.,16
+,Wofford,7,Iona,16
+,Nevada,7,North Carolina,1
+,Nevada,7,Gonzaga,1
+,Nevada,7,Duke,1
+,Nevada,7,Virginia,1
+,Nevada,7,Kentucky,2
+,Nevada,7,Michigan St.,2
+,Nevada,7,Tennessee,2
+,Nevada,7,Michigan,2
+,Nevada,7,Houston,3
+,Nevada,7,LSU,3
+,Nevada,7,Purdue,3
+,Nevada,7,Texas Tech,3
+,Nevada,7,Virginia Tech,4
+,Nevada,7,Kansas,4
+,Nevada,7,Florida St.,4
+,Nevada,7,Kansas St.,4
+,Nevada,7,Auburn,5
+,Nevada,7,Wisconsin,5
+,Nevada,7,Mississippi St.,5
+,Nevada,7,Marquette,5
+,Nevada,7,Iowa St.,6
+,Nevada,7,Buffalo,6
+,Nevada,7,Villanova,6
+,Nevada,7,Maryland,6
+,Nevada,7,Wofford,7
+,Nevada,7,Cincinnati,7
+,Nevada,7,Louisville,7
+,Nevada,7,Ole Miss,8
+,Nevada,7,Syracuse,8
+,Nevada,7,Utah St.,8
+,Nevada,7,VCU,8
+,Nevada,7,Baylor,9
+,Nevada,7,Oklahoma,9
+,Nevada,7,UCF,9
+,Nevada,7,Washington,9
+,Nevada,7,Iowa,10
+,Nevada,7,Seton Hall,10
+,Nevada,7,Minnesota,10
+,Nevada,7,Florida,10
+,Nevada,7,Arizona St.,11
+,Nevada,7,St. John's (NY),11
+,Nevada,7,Ohio St.,11
+,Nevada,7,Belmont,11
+,Nevada,7,Saint Mary's (CA),11
+,Nevada,7,Temple,11
+,Nevada,7,Oregon,12
+,Nevada,7,Murray St.,12
+,Nevada,7,New Mexico St.,12
+,Nevada,7,Liberty,12
+,Nevada,7,Saint Louis,13
+,Nevada,7,UC Irvine,13
+,Nevada,7,Vermont,13
+,Nevada,7,Northeastern,13
+,Nevada,7,Northern Ky.,14
+,Nevada,7,Georgia St.,14
+,Nevada,7,Yale,14
+,Nevada,7,Old Dominion,14
+,Nevada,7,Abilene Christian,15
+,Nevada,7,Colgate,15
+,Nevada,7,Bradley,15
+,Nevada,7,Montana,15
+,Nevada,7,Fairleigh Dickinson,16
+,Nevada,7,N.C. Central,16
+,Nevada,7,Gardner-Webb,16
+,Nevada,7,Prairie View,16
+,Nevada,7,North Dakota St.,16
+,Nevada,7,Iona,16
+,Cincinnati,7,North Carolina,1
+,Cincinnati,7,Gonzaga,1
+,Cincinnati,7,Duke,1
+,Cincinnati,7,Virginia,1
+,Cincinnati,7,Kentucky,2
+,Cincinnati,7,Michigan St.,2
+,Cincinnati,7,Tennessee,2
+,Cincinnati,7,Michigan,2
+,Cincinnati,7,Houston,3
+,Cincinnati,7,LSU,3
+,Cincinnati,7,Purdue,3
+,Cincinnati,7,Texas Tech,3
+,Cincinnati,7,Virginia Tech,4
+,Cincinnati,7,Kansas,4
+,Cincinnati,7,Florida St.,4
+,Cincinnati,7,Kansas St.,4
+,Cincinnati,7,Auburn,5
+,Cincinnati,7,Wisconsin,5
+,Cincinnati,7,Mississippi St.,5
+,Cincinnati,7,Marquette,5
+,Cincinnati,7,Iowa St.,6
+,Cincinnati,7,Buffalo,6
+,Cincinnati,7,Villanova,6
+,Cincinnati,7,Maryland,6
+,Cincinnati,7,Wofford,7
+,Cincinnati,7,Nevada,7
+,Cincinnati,7,Louisville,7
+,Cincinnati,7,Ole Miss,8
+,Cincinnati,7,Syracuse,8
+,Cincinnati,7,Utah St.,8
+,Cincinnati,7,VCU,8
+,Cincinnati,7,Baylor,9
+,Cincinnati,7,Oklahoma,9
+,Cincinnati,7,UCF,9
+,Cincinnati,7,Washington,9
+,Cincinnati,7,Iowa,10
+,Cincinnati,7,Seton Hall,10
+,Cincinnati,7,Minnesota,10
+,Cincinnati,7,Florida,10
+,Cincinnati,7,Arizona St.,11
+,Cincinnati,7,St. John's (NY),11
+,Cincinnati,7,Ohio St.,11
+,Cincinnati,7,Belmont,11
+,Cincinnati,7,Saint Mary's (CA),11
+,Cincinnati,7,Temple,11
+,Cincinnati,7,Oregon,12
+,Cincinnati,7,Murray St.,12
+,Cincinnati,7,New Mexico St.,12
+,Cincinnati,7,Liberty,12
+,Cincinnati,7,Saint Louis,13
+,Cincinnati,7,UC Irvine,13
+,Cincinnati,7,Vermont,13
+,Cincinnati,7,Northeastern,13
+,Cincinnati,7,Northern Ky.,14
+,Cincinnati,7,Georgia St.,14
+,Cincinnati,7,Yale,14
+,Cincinnati,7,Old Dominion,14
+,Cincinnati,7,Abilene Christian,15
+,Cincinnati,7,Colgate,15
+,Cincinnati,7,Bradley,15
+,Cincinnati,7,Montana,15
+,Cincinnati,7,Fairleigh Dickinson,16
+,Cincinnati,7,N.C. Central,16
+,Cincinnati,7,Gardner-Webb,16
+,Cincinnati,7,Prairie View,16
+,Cincinnati,7,North Dakota St.,16
+,Cincinnati,7,Iona,16
+,Louisville,7,North Carolina,1
+,Louisville,7,Gonzaga,1
+,Louisville,7,Duke,1
+,Louisville,7,Virginia,1
+,Louisville,7,Kentucky,2
+,Louisville,7,Michigan St.,2
+,Louisville,7,Tennessee,2
+,Louisville,7,Michigan,2
+,Louisville,7,Houston,3
+,Louisville,7,LSU,3
+,Louisville,7,Purdue,3
+,Louisville,7,Texas Tech,3
+,Louisville,7,Virginia Tech,4
+,Louisville,7,Kansas,4
+,Louisville,7,Florida St.,4
+,Louisville,7,Kansas St.,4
+,Louisville,7,Auburn,5
+,Louisville,7,Wisconsin,5
+,Louisville,7,Mississippi St.,5
+,Louisville,7,Marquette,5
+,Louisville,7,Iowa St.,6
+,Louisville,7,Buffalo,6
+,Louisville,7,Villanova,6
+,Louisville,7,Maryland,6
+,Louisville,7,Wofford,7
+,Louisville,7,Nevada,7
+,Louisville,7,Cincinnati,7
+,Louisville,7,Ole Miss,8
+,Louisville,7,Syracuse,8
+,Louisville,7,Utah St.,8
+,Louisville,7,VCU,8
+,Louisville,7,Baylor,9
+,Louisville,7,Oklahoma,9
+,Louisville,7,UCF,9
+,Louisville,7,Washington,9
+,Louisville,7,Iowa,10
+,Louisville,7,Seton Hall,10
+,Louisville,7,Minnesota,10
+,Louisville,7,Florida,10
+,Louisville,7,Arizona St.,11
+,Louisville,7,St. John's (NY),11
+,Louisville,7,Ohio St.,11
+,Louisville,7,Belmont,11
+,Louisville,7,Saint Mary's (CA),11
+,Louisville,7,Temple,11
+,Louisville,7,Oregon,12
+,Louisville,7,Murray St.,12
+,Louisville,7,New Mexico St.,12
+,Louisville,7,Liberty,12
+,Louisville,7,Saint Louis,13
+,Louisville,7,UC Irvine,13
+,Louisville,7,Vermont,13
+,Louisville,7,Northeastern,13
+,Louisville,7,Northern Ky.,14
+,Louisville,7,Georgia St.,14
+,Louisville,7,Yale,14
+,Louisville,7,Old Dominion,14
+,Louisville,7,Abilene Christian,15
+,Louisville,7,Colgate,15
+,Louisville,7,Bradley,15
+,Louisville,7,Montana,15
+,Louisville,7,Fairleigh Dickinson,16
+,Louisville,7,N.C. Central,16
+,Louisville,7,Gardner-Webb,16
+,Louisville,7,Prairie View,16
+,Louisville,7,North Dakota St.,16
+,Louisville,7,Iona,16
+,Ole Miss,8,North Carolina,1
+,Ole Miss,8,Gonzaga,1
+,Ole Miss,8,Duke,1
+,Ole Miss,8,Virginia,1
+,Ole Miss,8,Kentucky,2
+,Ole Miss,8,Michigan St.,2
+,Ole Miss,8,Tennessee,2
+,Ole Miss,8,Michigan,2
+,Ole Miss,8,Houston,3
+,Ole Miss,8,LSU,3
+,Ole Miss,8,Purdue,3
+,Ole Miss,8,Texas Tech,3
+,Ole Miss,8,Virginia Tech,4
+,Ole Miss,8,Kansas,4
+,Ole Miss,8,Florida St.,4
+,Ole Miss,8,Kansas St.,4
+,Ole Miss,8,Auburn,5
+,Ole Miss,8,Wisconsin,5
+,Ole Miss,8,Mississippi St.,5
+,Ole Miss,8,Marquette,5
+,Ole Miss,8,Iowa St.,6
+,Ole Miss,8,Buffalo,6
+,Ole Miss,8,Villanova,6
+,Ole Miss,8,Maryland,6
+,Ole Miss,8,Wofford,7
+,Ole Miss,8,Nevada,7
+,Ole Miss,8,Cincinnati,7
+,Ole Miss,8,Louisville,7
+,Ole Miss,8,Syracuse,8
+,Ole Miss,8,Utah St.,8
+,Ole Miss,8,VCU,8
+,Ole Miss,8,Baylor,9
+,Ole Miss,8,Oklahoma,9
+,Ole Miss,8,UCF,9
+,Ole Miss,8,Washington,9
+,Ole Miss,8,Iowa,10
+,Ole Miss,8,Seton Hall,10
+,Ole Miss,8,Minnesota,10
+,Ole Miss,8,Florida,10
+,Ole Miss,8,Arizona St.,11
+,Ole Miss,8,St. John's (NY),11
+,Ole Miss,8,Ohio St.,11
+,Ole Miss,8,Belmont,11
+,Ole Miss,8,Saint Mary's (CA),11
+,Ole Miss,8,Temple,11
+,Ole Miss,8,Oregon,12
+,Ole Miss,8,Murray St.,12
+,Ole Miss,8,New Mexico St.,12
+,Ole Miss,8,Liberty,12
+,Ole Miss,8,Saint Louis,13
+,Ole Miss,8,UC Irvine,13
+,Ole Miss,8,Vermont,13
+,Ole Miss,8,Northeastern,13
+,Ole Miss,8,Northern Ky.,14
+,Ole Miss,8,Georgia St.,14
+,Ole Miss,8,Yale,14
+,Ole Miss,8,Old Dominion,14
+,Ole Miss,8,Abilene Christian,15
+,Ole Miss,8,Colgate,15
+,Ole Miss,8,Bradley,15
+,Ole Miss,8,Montana,15
+,Ole Miss,8,Fairleigh Dickinson,16
+,Ole Miss,8,N.C. Central,16
+,Ole Miss,8,Gardner-Webb,16
+,Ole Miss,8,Prairie View,16
+,Ole Miss,8,North Dakota St.,16
+,Ole Miss,8,Iona,16
+,Syracuse,8,North Carolina,1
+,Syracuse,8,Gonzaga,1
+,Syracuse,8,Duke,1
+,Syracuse,8,Virginia,1
+,Syracuse,8,Kentucky,2
+,Syracuse,8,Michigan St.,2
+,Syracuse,8,Tennessee,2
+,Syracuse,8,Michigan,2
+,Syracuse,8,Houston,3
+,Syracuse,8,LSU,3
+,Syracuse,8,Purdue,3
+,Syracuse,8,Texas Tech,3
+,Syracuse,8,Virginia Tech,4
+,Syracuse,8,Kansas,4
+,Syracuse,8,Florida St.,4
+,Syracuse,8,Kansas St.,4
+,Syracuse,8,Auburn,5
+,Syracuse,8,Wisconsin,5
+,Syracuse,8,Mississippi St.,5
+,Syracuse,8,Marquette,5
+,Syracuse,8,Iowa St.,6
+,Syracuse,8,Buffalo,6
+,Syracuse,8,Villanova,6
+,Syracuse,8,Maryland,6
+,Syracuse,8,Wofford,7
+,Syracuse,8,Nevada,7
+,Syracuse,8,Cincinnati,7
+,Syracuse,8,Louisville,7
+,Syracuse,8,Ole Miss,8
+,Syracuse,8,Utah St.,8
+,Syracuse,8,VCU,8
+,Syracuse,8,Baylor,9
+,Syracuse,8,Oklahoma,9
+,Syracuse,8,UCF,9
+,Syracuse,8,Washington,9
+,Syracuse,8,Iowa,10
+,Syracuse,8,Seton Hall,10
+,Syracuse,8,Minnesota,10
+,Syracuse,8,Florida,10
+,Syracuse,8,Arizona St.,11
+,Syracuse,8,St. John's (NY),11
+,Syracuse,8,Ohio St.,11
+,Syracuse,8,Belmont,11
+,Syracuse,8,Saint Mary's (CA),11
+,Syracuse,8,Temple,11
+,Syracuse,8,Oregon,12
+,Syracuse,8,Murray St.,12
+,Syracuse,8,New Mexico St.,12
+,Syracuse,8,Liberty,12
+,Syracuse,8,Saint Louis,13
+,Syracuse,8,UC Irvine,13
+,Syracuse,8,Vermont,13
+,Syracuse,8,Northeastern,13
+,Syracuse,8,Northern Ky.,14
+,Syracuse,8,Georgia St.,14
+,Syracuse,8,Yale,14
+,Syracuse,8,Old Dominion,14
+,Syracuse,8,Abilene Christian,15
+,Syracuse,8,Colgate,15
+,Syracuse,8,Bradley,15
+,Syracuse,8,Montana,15
+,Syracuse,8,Fairleigh Dickinson,16
+,Syracuse,8,N.C. Central,16
+,Syracuse,8,Gardner-Webb,16
+,Syracuse,8,Prairie View,16
+,Syracuse,8,North Dakota St.,16
+,Syracuse,8,Iona,16
+,Utah St.,8,North Carolina,1
+,Utah St.,8,Gonzaga,1
+,Utah St.,8,Duke,1
+,Utah St.,8,Virginia,1
+,Utah St.,8,Kentucky,2
+,Utah St.,8,Michigan St.,2
+,Utah St.,8,Tennessee,2
+,Utah St.,8,Michigan,2
+,Utah St.,8,Houston,3
+,Utah St.,8,LSU,3
+,Utah St.,8,Purdue,3
+,Utah St.,8,Texas Tech,3
+,Utah St.,8,Virginia Tech,4
+,Utah St.,8,Kansas,4
+,Utah St.,8,Florida St.,4
+,Utah St.,8,Kansas St.,4
+,Utah St.,8,Auburn,5
+,Utah St.,8,Wisconsin,5
+,Utah St.,8,Mississippi St.,5
+,Utah St.,8,Marquette,5
+,Utah St.,8,Iowa St.,6
+,Utah St.,8,Buffalo,6
+,Utah St.,8,Villanova,6
+,Utah St.,8,Maryland,6
+,Utah St.,8,Wofford,7
+,Utah St.,8,Nevada,7
+,Utah St.,8,Cincinnati,7
+,Utah St.,8,Louisville,7
+,Utah St.,8,Ole Miss,8
+,Utah St.,8,Syracuse,8
+,Utah St.,8,VCU,8
+,Utah St.,8,Baylor,9
+,Utah St.,8,Oklahoma,9
+,Utah St.,8,UCF,9
+,Utah St.,8,Washington,9
+,Utah St.,8,Iowa,10
+,Utah St.,8,Seton Hall,10
+,Utah St.,8,Minnesota,10
+,Utah St.,8,Florida,10
+,Utah St.,8,Arizona St.,11
+,Utah St.,8,St. John's (NY),11
+,Utah St.,8,Ohio St.,11
+,Utah St.,8,Belmont,11
+,Utah St.,8,Saint Mary's (CA),11
+,Utah St.,8,Temple,11
+,Utah St.,8,Oregon,12
+,Utah St.,8,Murray St.,12
+,Utah St.,8,New Mexico St.,12
+,Utah St.,8,Liberty,12
+,Utah St.,8,Saint Louis,13
+,Utah St.,8,UC Irvine,13
+,Utah St.,8,Vermont,13
+,Utah St.,8,Northeastern,13
+,Utah St.,8,Northern Ky.,14
+,Utah St.,8,Georgia St.,14
+,Utah St.,8,Yale,14
+,Utah St.,8,Old Dominion,14
+,Utah St.,8,Abilene Christian,15
+,Utah St.,8,Colgate,15
+,Utah St.,8,Bradley,15
+,Utah St.,8,Montana,15
+,Utah St.,8,Fairleigh Dickinson,16
+,Utah St.,8,N.C. Central,16
+,Utah St.,8,Gardner-Webb,16
+,Utah St.,8,Prairie View,16
+,Utah St.,8,North Dakota St.,16
+,Utah St.,8,Iona,16
+,VCU,8,North Carolina,1
+,VCU,8,Gonzaga,1
+,VCU,8,Duke,1
+,VCU,8,Virginia,1
+,VCU,8,Kentucky,2
+,VCU,8,Michigan St.,2
+,VCU,8,Tennessee,2
+,VCU,8,Michigan,2
+,VCU,8,Houston,3
+,VCU,8,LSU,3
+,VCU,8,Purdue,3
+,VCU,8,Texas Tech,3
+,VCU,8,Virginia Tech,4
+,VCU,8,Kansas,4
+,VCU,8,Florida St.,4
+,VCU,8,Kansas St.,4
+,VCU,8,Auburn,5
+,VCU,8,Wisconsin,5
+,VCU,8,Mississippi St.,5
+,VCU,8,Marquette,5
+,VCU,8,Iowa St.,6
+,VCU,8,Buffalo,6
+,VCU,8,Villanova,6
+,VCU,8,Maryland,6
+,VCU,8,Wofford,7
+,VCU,8,Nevada,7
+,VCU,8,Cincinnati,7
+,VCU,8,Louisville,7
+,VCU,8,Ole Miss,8
+,VCU,8,Syracuse,8
+,VCU,8,Utah St.,8
+,VCU,8,Baylor,9
+,VCU,8,Oklahoma,9
+,VCU,8,UCF,9
+,VCU,8,Washington,9
+,VCU,8,Iowa,10
+,VCU,8,Seton Hall,10
+,VCU,8,Minnesota,10
+,VCU,8,Florida,10
+,VCU,8,Arizona St.,11
+,VCU,8,St. John's (NY),11
+,VCU,8,Ohio St.,11
+,VCU,8,Belmont,11
+,VCU,8,Saint Mary's (CA),11
+,VCU,8,Temple,11
+,VCU,8,Oregon,12
+,VCU,8,Murray St.,12
+,VCU,8,New Mexico St.,12
+,VCU,8,Liberty,12
+,VCU,8,Saint Louis,13
+,VCU,8,UC Irvine,13
+,VCU,8,Vermont,13
+,VCU,8,Northeastern,13
+,VCU,8,Northern Ky.,14
+,VCU,8,Georgia St.,14
+,VCU,8,Yale,14
+,VCU,8,Old Dominion,14
+,VCU,8,Abilene Christian,15
+,VCU,8,Colgate,15
+,VCU,8,Bradley,15
+,VCU,8,Montana,15
+,VCU,8,Fairleigh Dickinson,16
+,VCU,8,N.C. Central,16
+,VCU,8,Gardner-Webb,16
+,VCU,8,Prairie View,16
+,VCU,8,North Dakota St.,16
+,VCU,8,Iona,16
+,Baylor,9,North Carolina,1
+,Baylor,9,Gonzaga,1
+,Baylor,9,Duke,1
+,Baylor,9,Virginia,1
+,Baylor,9,Kentucky,2
+,Baylor,9,Michigan St.,2
+,Baylor,9,Tennessee,2
+,Baylor,9,Michigan,2
+,Baylor,9,Houston,3
+,Baylor,9,LSU,3
+,Baylor,9,Purdue,3
+,Baylor,9,Texas Tech,3
+,Baylor,9,Virginia Tech,4
+,Baylor,9,Kansas,4
+,Baylor,9,Florida St.,4
+,Baylor,9,Kansas St.,4
+,Baylor,9,Auburn,5
+,Baylor,9,Wisconsin,5
+,Baylor,9,Mississippi St.,5
+,Baylor,9,Marquette,5
+,Baylor,9,Iowa St.,6
+,Baylor,9,Buffalo,6
+,Baylor,9,Villanova,6
+,Baylor,9,Maryland,6
+,Baylor,9,Wofford,7
+,Baylor,9,Nevada,7
+,Baylor,9,Cincinnati,7
+,Baylor,9,Louisville,7
+,Baylor,9,Ole Miss,8
+,Baylor,9,Syracuse,8
+,Baylor,9,Utah St.,8
+,Baylor,9,VCU,8
+,Baylor,9,Oklahoma,9
+,Baylor,9,UCF,9
+,Baylor,9,Washington,9
+,Baylor,9,Iowa,10
+,Baylor,9,Seton Hall,10
+,Baylor,9,Minnesota,10
+,Baylor,9,Florida,10
+,Baylor,9,Arizona St.,11
+,Baylor,9,St. John's (NY),11
+,Baylor,9,Ohio St.,11
+,Baylor,9,Belmont,11
+,Baylor,9,Saint Mary's (CA),11
+,Baylor,9,Temple,11
+,Baylor,9,Oregon,12
+,Baylor,9,Murray St.,12
+,Baylor,9,New Mexico St.,12
+,Baylor,9,Liberty,12
+,Baylor,9,Saint Louis,13
+,Baylor,9,UC Irvine,13
+,Baylor,9,Vermont,13
+,Baylor,9,Northeastern,13
+,Baylor,9,Northern Ky.,14
+,Baylor,9,Georgia St.,14
+,Baylor,9,Yale,14
+,Baylor,9,Old Dominion,14
+,Baylor,9,Abilene Christian,15
+,Baylor,9,Colgate,15
+,Baylor,9,Bradley,15
+,Baylor,9,Montana,15
+,Baylor,9,Fairleigh Dickinson,16
+,Baylor,9,N.C. Central,16
+,Baylor,9,Gardner-Webb,16
+,Baylor,9,Prairie View,16
+,Baylor,9,North Dakota St.,16
+,Baylor,9,Iona,16
+,Oklahoma,9,North Carolina,1
+,Oklahoma,9,Gonzaga,1
+,Oklahoma,9,Duke,1
+,Oklahoma,9,Virginia,1
+,Oklahoma,9,Kentucky,2
+,Oklahoma,9,Michigan St.,2
+,Oklahoma,9,Tennessee,2
+,Oklahoma,9,Michigan,2
+,Oklahoma,9,Houston,3
+,Oklahoma,9,LSU,3
+,Oklahoma,9,Purdue,3
+,Oklahoma,9,Texas Tech,3
+,Oklahoma,9,Virginia Tech,4
+,Oklahoma,9,Kansas,4
+,Oklahoma,9,Florida St.,4
+,Oklahoma,9,Kansas St.,4
+,Oklahoma,9,Auburn,5
+,Oklahoma,9,Wisconsin,5
+,Oklahoma,9,Mississippi St.,5
+,Oklahoma,9,Marquette,5
+,Oklahoma,9,Iowa St.,6
+,Oklahoma,9,Buffalo,6
+,Oklahoma,9,Villanova,6
+,Oklahoma,9,Maryland,6
+,Oklahoma,9,Wofford,7
+,Oklahoma,9,Nevada,7
+,Oklahoma,9,Cincinnati,7
+,Oklahoma,9,Louisville,7
+,Oklahoma,9,Ole Miss,8
+,Oklahoma,9,Syracuse,8
+,Oklahoma,9,Utah St.,8
+,Oklahoma,9,VCU,8
+,Oklahoma,9,Baylor,9
+,Oklahoma,9,UCF,9
+,Oklahoma,9,Washington,9
+,Oklahoma,9,Iowa,10
+,Oklahoma,9,Seton Hall,10
+,Oklahoma,9,Minnesota,10
+,Oklahoma,9,Florida,10
+,Oklahoma,9,Arizona St.,11
+,Oklahoma,9,St. John's (NY),11
+,Oklahoma,9,Ohio St.,11
+,Oklahoma,9,Belmont,11
+,Oklahoma,9,Saint Mary's (CA),11
+,Oklahoma,9,Temple,11
+,Oklahoma,9,Oregon,12
+,Oklahoma,9,Murray St.,12
+,Oklahoma,9,New Mexico St.,12
+,Oklahoma,9,Liberty,12
+,Oklahoma,9,Saint Louis,13
+,Oklahoma,9,UC Irvine,13
+,Oklahoma,9,Vermont,13
+,Oklahoma,9,Northeastern,13
+,Oklahoma,9,Northern Ky.,14
+,Oklahoma,9,Georgia St.,14
+,Oklahoma,9,Yale,14
+,Oklahoma,9,Old Dominion,14
+,Oklahoma,9,Abilene Christian,15
+,Oklahoma,9,Colgate,15
+,Oklahoma,9,Bradley,15
+,Oklahoma,9,Montana,15
+,Oklahoma,9,Fairleigh Dickinson,16
+,Oklahoma,9,N.C. Central,16
+,Oklahoma,9,Gardner-Webb,16
+,Oklahoma,9,Prairie View,16
+,Oklahoma,9,North Dakota St.,16
+,Oklahoma,9,Iona,16
+,UCF,9,North Carolina,1
+,UCF,9,Gonzaga,1
+,UCF,9,Duke,1
+,UCF,9,Virginia,1
+,UCF,9,Kentucky,2
+,UCF,9,Michigan St.,2
+,UCF,9,Tennessee,2
+,UCF,9,Michigan,2
+,UCF,9,Houston,3
+,UCF,9,LSU,3
+,UCF,9,Purdue,3
+,UCF,9,Texas Tech,3
+,UCF,9,Virginia Tech,4
+,UCF,9,Kansas,4
+,UCF,9,Florida St.,4
+,UCF,9,Kansas St.,4
+,UCF,9,Auburn,5
+,UCF,9,Wisconsin,5
+,UCF,9,Mississippi St.,5
+,UCF,9,Marquette,5
+,UCF,9,Iowa St.,6
+,UCF,9,Buffalo,6
+,UCF,9,Villanova,6
+,UCF,9,Maryland,6
+,UCF,9,Wofford,7
+,UCF,9,Nevada,7
+,UCF,9,Cincinnati,7
+,UCF,9,Louisville,7
+,UCF,9,Ole Miss,8
+,UCF,9,Syracuse,8
+,UCF,9,Utah St.,8
+,UCF,9,VCU,8
+,UCF,9,Baylor,9
+,UCF,9,Oklahoma,9
+,UCF,9,Washington,9
+,UCF,9,Iowa,10
+,UCF,9,Seton Hall,10
+,UCF,9,Minnesota,10
+,UCF,9,Florida,10
+,UCF,9,Arizona St.,11
+,UCF,9,St. John's (NY),11
+,UCF,9,Ohio St.,11
+,UCF,9,Belmont,11
+,UCF,9,Saint Mary's (CA),11
+,UCF,9,Temple,11
+,UCF,9,Oregon,12
+,UCF,9,Murray St.,12
+,UCF,9,New Mexico St.,12
+,UCF,9,Liberty,12
+,UCF,9,Saint Louis,13
+,UCF,9,UC Irvine,13
+,UCF,9,Vermont,13
+,UCF,9,Northeastern,13
+,UCF,9,Northern Ky.,14
+,UCF,9,Georgia St.,14
+,UCF,9,Yale,14
+,UCF,9,Old Dominion,14
+,UCF,9,Abilene Christian,15
+,UCF,9,Colgate,15
+,UCF,9,Bradley,15
+,UCF,9,Montana,15
+,UCF,9,Fairleigh Dickinson,16
+,UCF,9,N.C. Central,16
+,UCF,9,Gardner-Webb,16
+,UCF,9,Prairie View,16
+,UCF,9,North Dakota St.,16
+,UCF,9,Iona,16
+,Washington,9,North Carolina,1
+,Washington,9,Gonzaga,1
+,Washington,9,Duke,1
+,Washington,9,Virginia,1
+,Washington,9,Kentucky,2
+,Washington,9,Michigan St.,2
+,Washington,9,Tennessee,2
+,Washington,9,Michigan,2
+,Washington,9,Houston,3
+,Washington,9,LSU,3
+,Washington,9,Purdue,3
+,Washington,9,Texas Tech,3
+,Washington,9,Virginia Tech,4
+,Washington,9,Kansas,4
+,Washington,9,Florida St.,4
+,Washington,9,Kansas St.,4
+,Washington,9,Auburn,5
+,Washington,9,Wisconsin,5
+,Washington,9,Mississippi St.,5
+,Washington,9,Marquette,5
+,Washington,9,Iowa St.,6
+,Washington,9,Buffalo,6
+,Washington,9,Villanova,6
+,Washington,9,Maryland,6
+,Washington,9,Wofford,7
+,Washington,9,Nevada,7
+,Washington,9,Cincinnati,7
+,Washington,9,Louisville,7
+,Washington,9,Ole Miss,8
+,Washington,9,Syracuse,8
+,Washington,9,Utah St.,8
+,Washington,9,VCU,8
+,Washington,9,Baylor,9
+,Washington,9,Oklahoma,9
+,Washington,9,UCF,9
+,Washington,9,Iowa,10
+,Washington,9,Seton Hall,10
+,Washington,9,Minnesota,10
+,Washington,9,Florida,10
+,Washington,9,Arizona St.,11
+,Washington,9,St. John's (NY),11
+,Washington,9,Ohio St.,11
+,Washington,9,Belmont,11
+,Washington,9,Saint Mary's (CA),11
+,Washington,9,Temple,11
+,Washington,9,Oregon,12
+,Washington,9,Murray St.,12
+,Washington,9,New Mexico St.,12
+,Washington,9,Liberty,12
+,Washington,9,Saint Louis,13
+,Washington,9,UC Irvine,13
+,Washington,9,Vermont,13
+,Washington,9,Northeastern,13
+,Washington,9,Northern Ky.,14
+,Washington,9,Georgia St.,14
+,Washington,9,Yale,14
+,Washington,9,Old Dominion,14
+,Washington,9,Abilene Christian,15
+,Washington,9,Colgate,15
+,Washington,9,Bradley,15
+,Washington,9,Montana,15
+,Washington,9,Fairleigh Dickinson,16
+,Washington,9,N.C. Central,16
+,Washington,9,Gardner-Webb,16
+,Washington,9,Prairie View,16
+,Washington,9,North Dakota St.,16
+,Washington,9,Iona,16
+,Iowa,10,North Carolina,1
+,Iowa,10,Gonzaga,1
+,Iowa,10,Duke,1
+,Iowa,10,Virginia,1
+,Iowa,10,Kentucky,2
+,Iowa,10,Michigan St.,2
+,Iowa,10,Tennessee,2
+,Iowa,10,Michigan,2
+,Iowa,10,Houston,3
+,Iowa,10,LSU,3
+,Iowa,10,Purdue,3
+,Iowa,10,Texas Tech,3
+,Iowa,10,Virginia Tech,4
+,Iowa,10,Kansas,4
+,Iowa,10,Florida St.,4
+,Iowa,10,Kansas St.,4
+,Iowa,10,Auburn,5
+,Iowa,10,Wisconsin,5
+,Iowa,10,Mississippi St.,5
+,Iowa,10,Marquette,5
+,Iowa,10,Iowa St.,6
+,Iowa,10,Buffalo,6
+,Iowa,10,Villanova,6
+,Iowa,10,Maryland,6
+,Iowa,10,Wofford,7
+,Iowa,10,Nevada,7
+,Iowa,10,Cincinnati,7
+,Iowa,10,Louisville,7
+,Iowa,10,Ole Miss,8
+,Iowa,10,Syracuse,8
+,Iowa,10,Utah St.,8
+,Iowa,10,VCU,8
+,Iowa,10,Baylor,9
+,Iowa,10,Oklahoma,9
+,Iowa,10,UCF,9
+,Iowa,10,Washington,9
+,Iowa,10,Seton Hall,10
+,Iowa,10,Minnesota,10
+,Iowa,10,Florida,10
+,Iowa,10,Arizona St.,11
+,Iowa,10,St. John's (NY),11
+,Iowa,10,Ohio St.,11
+,Iowa,10,Belmont,11
+,Iowa,10,Saint Mary's (CA),11
+,Iowa,10,Temple,11
+,Iowa,10,Oregon,12
+,Iowa,10,Murray St.,12
+,Iowa,10,New Mexico St.,12
+,Iowa,10,Liberty,12
+,Iowa,10,Saint Louis,13
+,Iowa,10,UC Irvine,13
+,Iowa,10,Vermont,13
+,Iowa,10,Northeastern,13
+,Iowa,10,Northern Ky.,14
+,Iowa,10,Georgia St.,14
+,Iowa,10,Yale,14
+,Iowa,10,Old Dominion,14
+,Iowa,10,Abilene Christian,15
+,Iowa,10,Colgate,15
+,Iowa,10,Bradley,15
+,Iowa,10,Montana,15
+,Iowa,10,Fairleigh Dickinson,16
+,Iowa,10,N.C. Central,16
+,Iowa,10,Gardner-Webb,16
+,Iowa,10,Prairie View,16
+,Iowa,10,North Dakota St.,16
+,Iowa,10,Iona,16
+,Seton Hall,10,North Carolina,1
+,Seton Hall,10,Gonzaga,1
+,Seton Hall,10,Duke,1
+,Seton Hall,10,Virginia,1
+,Seton Hall,10,Kentucky,2
+,Seton Hall,10,Michigan St.,2
+,Seton Hall,10,Tennessee,2
+,Seton Hall,10,Michigan,2
+,Seton Hall,10,Houston,3
+,Seton Hall,10,LSU,3
+,Seton Hall,10,Purdue,3
+,Seton Hall,10,Texas Tech,3
+,Seton Hall,10,Virginia Tech,4
+,Seton Hall,10,Kansas,4
+,Seton Hall,10,Florida St.,4
+,Seton Hall,10,Kansas St.,4
+,Seton Hall,10,Auburn,5
+,Seton Hall,10,Wisconsin,5
+,Seton Hall,10,Mississippi St.,5
+,Seton Hall,10,Marquette,5
+,Seton Hall,10,Iowa St.,6
+,Seton Hall,10,Buffalo,6
+,Seton Hall,10,Villanova,6
+,Seton Hall,10,Maryland,6
+,Seton Hall,10,Wofford,7
+,Seton Hall,10,Nevada,7
+,Seton Hall,10,Cincinnati,7
+,Seton Hall,10,Louisville,7
+,Seton Hall,10,Ole Miss,8
+,Seton Hall,10,Syracuse,8
+,Seton Hall,10,Utah St.,8
+,Seton Hall,10,VCU,8
+,Seton Hall,10,Baylor,9
+,Seton Hall,10,Oklahoma,9
+,Seton Hall,10,UCF,9
+,Seton Hall,10,Washington,9
+,Seton Hall,10,Iowa,10
+,Seton Hall,10,Minnesota,10
+,Seton Hall,10,Florida,10
+,Seton Hall,10,Arizona St.,11
+,Seton Hall,10,St. John's (NY),11
+,Seton Hall,10,Ohio St.,11
+,Seton Hall,10,Belmont,11
+,Seton Hall,10,Saint Mary's (CA),11
+,Seton Hall,10,Temple,11
+,Seton Hall,10,Oregon,12
+,Seton Hall,10,Murray St.,12
+,Seton Hall,10,New Mexico St.,12
+,Seton Hall,10,Liberty,12
+,Seton Hall,10,Saint Louis,13
+,Seton Hall,10,UC Irvine,13
+,Seton Hall,10,Vermont,13
+,Seton Hall,10,Northeastern,13
+,Seton Hall,10,Northern Ky.,14
+,Seton Hall,10,Georgia St.,14
+,Seton Hall,10,Yale,14
+,Seton Hall,10,Old Dominion,14
+,Seton Hall,10,Abilene Christian,15
+,Seton Hall,10,Colgate,15
+,Seton Hall,10,Bradley,15
+,Seton Hall,10,Montana,15
+,Seton Hall,10,Fairleigh Dickinson,16
+,Seton Hall,10,N.C. Central,16
+,Seton Hall,10,Gardner-Webb,16
+,Seton Hall,10,Prairie View,16
+,Seton Hall,10,North Dakota St.,16
+,Seton Hall,10,Iona,16
+,Minnesota,10,North Carolina,1
+,Minnesota,10,Gonzaga,1
+,Minnesota,10,Duke,1
+,Minnesota,10,Virginia,1
+,Minnesota,10,Kentucky,2
+,Minnesota,10,Michigan St.,2
+,Minnesota,10,Tennessee,2
+,Minnesota,10,Michigan,2
+,Minnesota,10,Houston,3
+,Minnesota,10,LSU,3
+,Minnesota,10,Purdue,3
+,Minnesota,10,Texas Tech,3
+,Minnesota,10,Virginia Tech,4
+,Minnesota,10,Kansas,4
+,Minnesota,10,Florida St.,4
+,Minnesota,10,Kansas St.,4
+,Minnesota,10,Auburn,5
+,Minnesota,10,Wisconsin,5
+,Minnesota,10,Mississippi St.,5
+,Minnesota,10,Marquette,5
+,Minnesota,10,Iowa St.,6
+,Minnesota,10,Buffalo,6
+,Minnesota,10,Villanova,6
+,Minnesota,10,Maryland,6
+,Minnesota,10,Wofford,7
+,Minnesota,10,Nevada,7
+,Minnesota,10,Cincinnati,7
+,Minnesota,10,Louisville,7
+,Minnesota,10,Ole Miss,8
+,Minnesota,10,Syracuse,8
+,Minnesota,10,Utah St.,8
+,Minnesota,10,VCU,8
+,Minnesota,10,Baylor,9
+,Minnesota,10,Oklahoma,9
+,Minnesota,10,UCF,9
+,Minnesota,10,Washington,9
+,Minnesota,10,Iowa,10
+,Minnesota,10,Seton Hall,10
+,Minnesota,10,Florida,10
+,Minnesota,10,Arizona St.,11
+,Minnesota,10,St. John's (NY),11
+,Minnesota,10,Ohio St.,11
+,Minnesota,10,Belmont,11
+,Minnesota,10,Saint Mary's (CA),11
+,Minnesota,10,Temple,11
+,Minnesota,10,Oregon,12
+,Minnesota,10,Murray St.,12
+,Minnesota,10,New Mexico St.,12
+,Minnesota,10,Liberty,12
+,Minnesota,10,Saint Louis,13
+,Minnesota,10,UC Irvine,13
+,Minnesota,10,Vermont,13
+,Minnesota,10,Northeastern,13
+,Minnesota,10,Northern Ky.,14
+,Minnesota,10,Georgia St.,14
+,Minnesota,10,Yale,14
+,Minnesota,10,Old Dominion,14
+,Minnesota,10,Abilene Christian,15
+,Minnesota,10,Colgate,15
+,Minnesota,10,Bradley,15
+,Minnesota,10,Montana,15
+,Minnesota,10,Fairleigh Dickinson,16
+,Minnesota,10,N.C. Central,16
+,Minnesota,10,Gardner-Webb,16
+,Minnesota,10,Prairie View,16
+,Minnesota,10,North Dakota St.,16
+,Minnesota,10,Iona,16
+,Florida,10,North Carolina,1
+,Florida,10,Gonzaga,1
+,Florida,10,Duke,1
+,Florida,10,Virginia,1
+,Florida,10,Kentucky,2
+,Florida,10,Michigan St.,2
+,Florida,10,Tennessee,2
+,Florida,10,Michigan,2
+,Florida,10,Houston,3
+,Florida,10,LSU,3
+,Florida,10,Purdue,3
+,Florida,10,Texas Tech,3
+,Florida,10,Virginia Tech,4
+,Florida,10,Kansas,4
+,Florida,10,Florida St.,4
+,Florida,10,Kansas St.,4
+,Florida,10,Auburn,5
+,Florida,10,Wisconsin,5
+,Florida,10,Mississippi St.,5
+,Florida,10,Marquette,5
+,Florida,10,Iowa St.,6
+,Florida,10,Buffalo,6
+,Florida,10,Villanova,6
+,Florida,10,Maryland,6
+,Florida,10,Wofford,7
+,Florida,10,Nevada,7
+,Florida,10,Cincinnati,7
+,Florida,10,Louisville,7
+,Florida,10,Ole Miss,8
+,Florida,10,Syracuse,8
+,Florida,10,Utah St.,8
+,Florida,10,VCU,8
+,Florida,10,Baylor,9
+,Florida,10,Oklahoma,9
+,Florida,10,UCF,9
+,Florida,10,Washington,9
+,Florida,10,Iowa,10
+,Florida,10,Seton Hall,10
+,Florida,10,Minnesota,10
+,Florida,10,Arizona St.,11
+,Florida,10,St. John's (NY),11
+,Florida,10,Ohio St.,11
+,Florida,10,Belmont,11
+,Florida,10,Saint Mary's (CA),11
+,Florida,10,Temple,11
+,Florida,10,Oregon,12
+,Florida,10,Murray St.,12
+,Florida,10,New Mexico St.,12
+,Florida,10,Liberty,12
+,Florida,10,Saint Louis,13
+,Florida,10,UC Irvine,13
+,Florida,10,Vermont,13
+,Florida,10,Northeastern,13
+,Florida,10,Northern Ky.,14
+,Florida,10,Georgia St.,14
+,Florida,10,Yale,14
+,Florida,10,Old Dominion,14
+,Florida,10,Abilene Christian,15
+,Florida,10,Colgate,15
+,Florida,10,Bradley,15
+,Florida,10,Montana,15
+,Florida,10,Fairleigh Dickinson,16
+,Florida,10,N.C. Central,16
+,Florida,10,Gardner-Webb,16
+,Florida,10,Prairie View,16
+,Florida,10,North Dakota St.,16
+,Florida,10,Iona,16
+,Arizona St.,11,North Carolina,1
+,Arizona St.,11,Gonzaga,1
+,Arizona St.,11,Duke,1
+,Arizona St.,11,Virginia,1
+,Arizona St.,11,Kentucky,2
+,Arizona St.,11,Michigan St.,2
+,Arizona St.,11,Tennessee,2
+,Arizona St.,11,Michigan,2
+,Arizona St.,11,Houston,3
+,Arizona St.,11,LSU,3
+,Arizona St.,11,Purdue,3
+,Arizona St.,11,Texas Tech,3
+,Arizona St.,11,Virginia Tech,4
+,Arizona St.,11,Kansas,4
+,Arizona St.,11,Florida St.,4
+,Arizona St.,11,Kansas St.,4
+,Arizona St.,11,Auburn,5
+,Arizona St.,11,Wisconsin,5
+,Arizona St.,11,Mississippi St.,5
+,Arizona St.,11,Marquette,5
+,Arizona St.,11,Iowa St.,6
+,Arizona St.,11,Buffalo,6
+,Arizona St.,11,Villanova,6
+,Arizona St.,11,Maryland,6
+,Arizona St.,11,Wofford,7
+,Arizona St.,11,Nevada,7
+,Arizona St.,11,Cincinnati,7
+,Arizona St.,11,Louisville,7
+,Arizona St.,11,Ole Miss,8
+,Arizona St.,11,Syracuse,8
+,Arizona St.,11,Utah St.,8
+,Arizona St.,11,VCU,8
+,Arizona St.,11,Baylor,9
+,Arizona St.,11,Oklahoma,9
+,Arizona St.,11,UCF,9
+,Arizona St.,11,Washington,9
+,Arizona St.,11,Iowa,10
+,Arizona St.,11,Seton Hall,10
+,Arizona St.,11,Minnesota,10
+,Arizona St.,11,Florida,10
+,Arizona St.,11,St. John's (NY),11
+,Arizona St.,11,Ohio St.,11
+,Arizona St.,11,Belmont,11
+,Arizona St.,11,Saint Mary's (CA),11
+,Arizona St.,11,Temple,11
+,Arizona St.,11,Oregon,12
+,Arizona St.,11,Murray St.,12
+,Arizona St.,11,New Mexico St.,12
+,Arizona St.,11,Liberty,12
+,Arizona St.,11,Saint Louis,13
+,Arizona St.,11,UC Irvine,13
+,Arizona St.,11,Vermont,13
+,Arizona St.,11,Northeastern,13
+,Arizona St.,11,Northern Ky.,14
+,Arizona St.,11,Georgia St.,14
+,Arizona St.,11,Yale,14
+,Arizona St.,11,Old Dominion,14
+,Arizona St.,11,Abilene Christian,15
+,Arizona St.,11,Colgate,15
+,Arizona St.,11,Bradley,15
+,Arizona St.,11,Montana,15
+,Arizona St.,11,Fairleigh Dickinson,16
+,Arizona St.,11,N.C. Central,16
+,Arizona St.,11,Gardner-Webb,16
+,Arizona St.,11,Prairie View,16
+,Arizona St.,11,North Dakota St.,16
+,Arizona St.,11,Iona,16
+,St. John's (NY),11,North Carolina,1
+,St. John's (NY),11,Gonzaga,1
+,St. John's (NY),11,Duke,1
+,St. John's (NY),11,Virginia,1
+,St. John's (NY),11,Kentucky,2
+,St. John's (NY),11,Michigan St.,2
+,St. John's (NY),11,Tennessee,2
+,St. John's (NY),11,Michigan,2
+,St. John's (NY),11,Houston,3
+,St. John's (NY),11,LSU,3
+,St. John's (NY),11,Purdue,3
+,St. John's (NY),11,Texas Tech,3
+,St. John's (NY),11,Virginia Tech,4
+,St. John's (NY),11,Kansas,4
+,St. John's (NY),11,Florida St.,4
+,St. John's (NY),11,Kansas St.,4
+,St. John's (NY),11,Auburn,5
+,St. John's (NY),11,Wisconsin,5
+,St. John's (NY),11,Mississippi St.,5
+,St. John's (NY),11,Marquette,5
+,St. John's (NY),11,Iowa St.,6
+,St. John's (NY),11,Buffalo,6
+,St. John's (NY),11,Villanova,6
+,St. John's (NY),11,Maryland,6
+,St. John's (NY),11,Wofford,7
+,St. John's (NY),11,Nevada,7
+,St. John's (NY),11,Cincinnati,7
+,St. John's (NY),11,Louisville,7
+,St. John's (NY),11,Ole Miss,8
+,St. John's (NY),11,Syracuse,8
+,St. John's (NY),11,Utah St.,8
+,St. John's (NY),11,VCU,8
+,St. John's (NY),11,Baylor,9
+,St. John's (NY),11,Oklahoma,9
+,St. John's (NY),11,UCF,9
+,St. John's (NY),11,Washington,9
+,St. John's (NY),11,Iowa,10
+,St. John's (NY),11,Seton Hall,10
+,St. John's (NY),11,Minnesota,10
+,St. John's (NY),11,Florida,10
+,St. John's (NY),11,Arizona St.,11
+,St. John's (NY),11,Ohio St.,11
+,St. John's (NY),11,Belmont,11
+,St. John's (NY),11,Saint Mary's (CA),11
+,St. John's (NY),11,Temple,11
+,St. John's (NY),11,Oregon,12
+,St. John's (NY),11,Murray St.,12
+,St. John's (NY),11,New Mexico St.,12
+,St. John's (NY),11,Liberty,12
+,St. John's (NY),11,Saint Louis,13
+,St. John's (NY),11,UC Irvine,13
+,St. John's (NY),11,Vermont,13
+,St. John's (NY),11,Northeastern,13
+,St. John's (NY),11,Northern Ky.,14
+,St. John's (NY),11,Georgia St.,14
+,St. John's (NY),11,Yale,14
+,St. John's (NY),11,Old Dominion,14
+,St. John's (NY),11,Abilene Christian,15
+,St. John's (NY),11,Colgate,15
+,St. John's (NY),11,Bradley,15
+,St. John's (NY),11,Montana,15
+,St. John's (NY),11,Fairleigh Dickinson,16
+,St. John's (NY),11,N.C. Central,16
+,St. John's (NY),11,Gardner-Webb,16
+,St. John's (NY),11,Prairie View,16
+,St. John's (NY),11,North Dakota St.,16
+,St. John's (NY),11,Iona,16
+,Ohio St.,11,North Carolina,1
+,Ohio St.,11,Gonzaga,1
+,Ohio St.,11,Duke,1
+,Ohio St.,11,Virginia,1
+,Ohio St.,11,Kentucky,2
+,Ohio St.,11,Michigan St.,2
+,Ohio St.,11,Tennessee,2
+,Ohio St.,11,Michigan,2
+,Ohio St.,11,Houston,3
+,Ohio St.,11,LSU,3
+,Ohio St.,11,Purdue,3
+,Ohio St.,11,Texas Tech,3
+,Ohio St.,11,Virginia Tech,4
+,Ohio St.,11,Kansas,4
+,Ohio St.,11,Florida St.,4
+,Ohio St.,11,Kansas St.,4
+,Ohio St.,11,Auburn,5
+,Ohio St.,11,Wisconsin,5
+,Ohio St.,11,Mississippi St.,5
+,Ohio St.,11,Marquette,5
+,Ohio St.,11,Iowa St.,6
+,Ohio St.,11,Buffalo,6
+,Ohio St.,11,Villanova,6
+,Ohio St.,11,Maryland,6
+,Ohio St.,11,Wofford,7
+,Ohio St.,11,Nevada,7
+,Ohio St.,11,Cincinnati,7
+,Ohio St.,11,Louisville,7
+,Ohio St.,11,Ole Miss,8
+,Ohio St.,11,Syracuse,8
+,Ohio St.,11,Utah St.,8
+,Ohio St.,11,VCU,8
+,Ohio St.,11,Baylor,9
+,Ohio St.,11,Oklahoma,9
+,Ohio St.,11,UCF,9
+,Ohio St.,11,Washington,9
+,Ohio St.,11,Iowa,10
+,Ohio St.,11,Seton Hall,10
+,Ohio St.,11,Minnesota,10
+,Ohio St.,11,Florida,10
+,Ohio St.,11,Arizona St.,11
+,Ohio St.,11,St. John's (NY),11
+,Ohio St.,11,Belmont,11
+,Ohio St.,11,Saint Mary's (CA),11
+,Ohio St.,11,Temple,11
+,Ohio St.,11,Oregon,12
+,Ohio St.,11,Murray St.,12
+,Ohio St.,11,New Mexico St.,12
+,Ohio St.,11,Liberty,12
+,Ohio St.,11,Saint Louis,13
+,Ohio St.,11,UC Irvine,13
+,Ohio St.,11,Vermont,13
+,Ohio St.,11,Northeastern,13
+,Ohio St.,11,Northern Ky.,14
+,Ohio St.,11,Georgia St.,14
+,Ohio St.,11,Yale,14
+,Ohio St.,11,Old Dominion,14
+,Ohio St.,11,Abilene Christian,15
+,Ohio St.,11,Colgate,15
+,Ohio St.,11,Bradley,15
+,Ohio St.,11,Montana,15
+,Ohio St.,11,Fairleigh Dickinson,16
+,Ohio St.,11,N.C. Central,16
+,Ohio St.,11,Gardner-Webb,16
+,Ohio St.,11,Prairie View,16
+,Ohio St.,11,North Dakota St.,16
+,Ohio St.,11,Iona,16
+,Belmont,11,North Carolina,1
+,Belmont,11,Gonzaga,1
+,Belmont,11,Duke,1
+,Belmont,11,Virginia,1
+,Belmont,11,Kentucky,2
+,Belmont,11,Michigan St.,2
+,Belmont,11,Tennessee,2
+,Belmont,11,Michigan,2
+,Belmont,11,Houston,3
+,Belmont,11,LSU,3
+,Belmont,11,Purdue,3
+,Belmont,11,Texas Tech,3
+,Belmont,11,Virginia Tech,4
+,Belmont,11,Kansas,4
+,Belmont,11,Florida St.,4
+,Belmont,11,Kansas St.,4
+,Belmont,11,Auburn,5
+,Belmont,11,Wisconsin,5
+,Belmont,11,Mississippi St.,5
+,Belmont,11,Marquette,5
+,Belmont,11,Iowa St.,6
+,Belmont,11,Buffalo,6
+,Belmont,11,Villanova,6
+,Belmont,11,Maryland,6
+,Belmont,11,Wofford,7
+,Belmont,11,Nevada,7
+,Belmont,11,Cincinnati,7
+,Belmont,11,Louisville,7
+,Belmont,11,Ole Miss,8
+,Belmont,11,Syracuse,8
+,Belmont,11,Utah St.,8
+,Belmont,11,VCU,8
+,Belmont,11,Baylor,9
+,Belmont,11,Oklahoma,9
+,Belmont,11,UCF,9
+,Belmont,11,Washington,9
+,Belmont,11,Iowa,10
+,Belmont,11,Seton Hall,10
+,Belmont,11,Minnesota,10
+,Belmont,11,Florida,10
+,Belmont,11,Arizona St.,11
+,Belmont,11,St. John's (NY),11
+,Belmont,11,Ohio St.,11
+,Belmont,11,Saint Mary's (CA),11
+,Belmont,11,Temple,11
+,Belmont,11,Oregon,12
+,Belmont,11,Murray St.,12
+,Belmont,11,New Mexico St.,12
+,Belmont,11,Liberty,12
+,Belmont,11,Saint Louis,13
+,Belmont,11,UC Irvine,13
+,Belmont,11,Vermont,13
+,Belmont,11,Northeastern,13
+,Belmont,11,Northern Ky.,14
+,Belmont,11,Georgia St.,14
+,Belmont,11,Yale,14
+,Belmont,11,Old Dominion,14
+,Belmont,11,Abilene Christian,15
+,Belmont,11,Colgate,15
+,Belmont,11,Bradley,15
+,Belmont,11,Montana,15
+,Belmont,11,Fairleigh Dickinson,16
+,Belmont,11,N.C. Central,16
+,Belmont,11,Gardner-Webb,16
+,Belmont,11,Prairie View,16
+,Belmont,11,North Dakota St.,16
+,Belmont,11,Iona,16
+,Saint Mary's (CA),11,North Carolina,1
+,Saint Mary's (CA),11,Gonzaga,1
+,Saint Mary's (CA),11,Duke,1
+,Saint Mary's (CA),11,Virginia,1
+,Saint Mary's (CA),11,Kentucky,2
+,Saint Mary's (CA),11,Michigan St.,2
+,Saint Mary's (CA),11,Tennessee,2
+,Saint Mary's (CA),11,Michigan,2
+,Saint Mary's (CA),11,Houston,3
+,Saint Mary's (CA),11,LSU,3
+,Saint Mary's (CA),11,Purdue,3
+,Saint Mary's (CA),11,Texas Tech,3
+,Saint Mary's (CA),11,Virginia Tech,4
+,Saint Mary's (CA),11,Kansas,4
+,Saint Mary's (CA),11,Florida St.,4
+,Saint Mary's (CA),11,Kansas St.,4
+,Saint Mary's (CA),11,Auburn,5
+,Saint Mary's (CA),11,Wisconsin,5
+,Saint Mary's (CA),11,Mississippi St.,5
+,Saint Mary's (CA),11,Marquette,5
+,Saint Mary's (CA),11,Iowa St.,6
+,Saint Mary's (CA),11,Buffalo,6
+,Saint Mary's (CA),11,Villanova,6
+,Saint Mary's (CA),11,Maryland,6
+,Saint Mary's (CA),11,Wofford,7
+,Saint Mary's (CA),11,Nevada,7
+,Saint Mary's (CA),11,Cincinnati,7
+,Saint Mary's (CA),11,Louisville,7
+,Saint Mary's (CA),11,Ole Miss,8
+,Saint Mary's (CA),11,Syracuse,8
+,Saint Mary's (CA),11,Utah St.,8
+,Saint Mary's (CA),11,VCU,8
+,Saint Mary's (CA),11,Baylor,9
+,Saint Mary's (CA),11,Oklahoma,9
+,Saint Mary's (CA),11,UCF,9
+,Saint Mary's (CA),11,Washington,9
+,Saint Mary's (CA),11,Iowa,10
+,Saint Mary's (CA),11,Seton Hall,10
+,Saint Mary's (CA),11,Minnesota,10
+,Saint Mary's (CA),11,Florida,10
+,Saint Mary's (CA),11,Arizona St.,11
+,Saint Mary's (CA),11,St. John's (NY),11
+,Saint Mary's (CA),11,Ohio St.,11
+,Saint Mary's (CA),11,Belmont,11
+,Saint Mary's (CA),11,Temple,11
+,Saint Mary's (CA),11,Oregon,12
+,Saint Mary's (CA),11,Murray St.,12
+,Saint Mary's (CA),11,New Mexico St.,12
+,Saint Mary's (CA),11,Liberty,12
+,Saint Mary's (CA),11,Saint Louis,13
+,Saint Mary's (CA),11,UC Irvine,13
+,Saint Mary's (CA),11,Vermont,13
+,Saint Mary's (CA),11,Northeastern,13
+,Saint Mary's (CA),11,Northern Ky.,14
+,Saint Mary's (CA),11,Georgia St.,14
+,Saint Mary's (CA),11,Yale,14
+,Saint Mary's (CA),11,Old Dominion,14
+,Saint Mary's (CA),11,Abilene Christian,15
+,Saint Mary's (CA),11,Colgate,15
+,Saint Mary's (CA),11,Bradley,15
+,Saint Mary's (CA),11,Montana,15
+,Saint Mary's (CA),11,Fairleigh Dickinson,16
+,Saint Mary's (CA),11,N.C. Central,16
+,Saint Mary's (CA),11,Gardner-Webb,16
+,Saint Mary's (CA),11,Prairie View,16
+,Saint Mary's (CA),11,North Dakota St.,16
+,Saint Mary's (CA),11,Iona,16
+,Temple,11,North Carolina,1
+,Temple,11,Gonzaga,1
+,Temple,11,Duke,1
+,Temple,11,Virginia,1
+,Temple,11,Kentucky,2
+,Temple,11,Michigan St.,2
+,Temple,11,Tennessee,2
+,Temple,11,Michigan,2
+,Temple,11,Houston,3
+,Temple,11,LSU,3
+,Temple,11,Purdue,3
+,Temple,11,Texas Tech,3
+,Temple,11,Virginia Tech,4
+,Temple,11,Kansas,4
+,Temple,11,Florida St.,4
+,Temple,11,Kansas St.,4
+,Temple,11,Auburn,5
+,Temple,11,Wisconsin,5
+,Temple,11,Mississippi St.,5
+,Temple,11,Marquette,5
+,Temple,11,Iowa St.,6
+,Temple,11,Buffalo,6
+,Temple,11,Villanova,6
+,Temple,11,Maryland,6
+,Temple,11,Wofford,7
+,Temple,11,Nevada,7
+,Temple,11,Cincinnati,7
+,Temple,11,Louisville,7
+,Temple,11,Ole Miss,8
+,Temple,11,Syracuse,8
+,Temple,11,Utah St.,8
+,Temple,11,VCU,8
+,Temple,11,Baylor,9
+,Temple,11,Oklahoma,9
+,Temple,11,UCF,9
+,Temple,11,Washington,9
+,Temple,11,Iowa,10
+,Temple,11,Seton Hall,10
+,Temple,11,Minnesota,10
+,Temple,11,Florida,10
+,Temple,11,Arizona St.,11
+,Temple,11,St. John's (NY),11
+,Temple,11,Ohio St.,11
+,Temple,11,Belmont,11
+,Temple,11,Saint Mary's (CA),11
+,Temple,11,Oregon,12
+,Temple,11,Murray St.,12
+,Temple,11,New Mexico St.,12
+,Temple,11,Liberty,12
+,Temple,11,Saint Louis,13
+,Temple,11,UC Irvine,13
+,Temple,11,Vermont,13
+,Temple,11,Northeastern,13
+,Temple,11,Northern Ky.,14
+,Temple,11,Georgia St.,14
+,Temple,11,Yale,14
+,Temple,11,Old Dominion,14
+,Temple,11,Abilene Christian,15
+,Temple,11,Colgate,15
+,Temple,11,Bradley,15
+,Temple,11,Montana,15
+,Temple,11,Fairleigh Dickinson,16
+,Temple,11,N.C. Central,16
+,Temple,11,Gardner-Webb,16
+,Temple,11,Prairie View,16
+,Temple,11,North Dakota St.,16
+,Temple,11,Iona,16
+,Oregon,12,North Carolina,1
+,Oregon,12,Gonzaga,1
+,Oregon,12,Duke,1
+,Oregon,12,Virginia,1
+,Oregon,12,Kentucky,2
+,Oregon,12,Michigan St.,2
+,Oregon,12,Tennessee,2
+,Oregon,12,Michigan,2
+,Oregon,12,Houston,3
+,Oregon,12,LSU,3
+,Oregon,12,Purdue,3
+,Oregon,12,Texas Tech,3
+,Oregon,12,Virginia Tech,4
+,Oregon,12,Kansas,4
+,Oregon,12,Florida St.,4
+,Oregon,12,Kansas St.,4
+,Oregon,12,Auburn,5
+,Oregon,12,Wisconsin,5
+,Oregon,12,Mississippi St.,5
+,Oregon,12,Marquette,5
+,Oregon,12,Iowa St.,6
+,Oregon,12,Buffalo,6
+,Oregon,12,Villanova,6
+,Oregon,12,Maryland,6
+,Oregon,12,Wofford,7
+,Oregon,12,Nevada,7
+,Oregon,12,Cincinnati,7
+,Oregon,12,Louisville,7
+,Oregon,12,Ole Miss,8
+,Oregon,12,Syracuse,8
+,Oregon,12,Utah St.,8
+,Oregon,12,VCU,8
+,Oregon,12,Baylor,9
+,Oregon,12,Oklahoma,9
+,Oregon,12,UCF,9
+,Oregon,12,Washington,9
+,Oregon,12,Iowa,10
+,Oregon,12,Seton Hall,10
+,Oregon,12,Minnesota,10
+,Oregon,12,Florida,10
+,Oregon,12,Arizona St.,11
+,Oregon,12,St. John's (NY),11
+,Oregon,12,Ohio St.,11
+,Oregon,12,Belmont,11
+,Oregon,12,Saint Mary's (CA),11
+,Oregon,12,Temple,11
+,Oregon,12,Murray St.,12
+,Oregon,12,New Mexico St.,12
+,Oregon,12,Liberty,12
+,Oregon,12,Saint Louis,13
+,Oregon,12,UC Irvine,13
+,Oregon,12,Vermont,13
+,Oregon,12,Northeastern,13
+,Oregon,12,Northern Ky.,14
+,Oregon,12,Georgia St.,14
+,Oregon,12,Yale,14
+,Oregon,12,Old Dominion,14
+,Oregon,12,Abilene Christian,15
+,Oregon,12,Colgate,15
+,Oregon,12,Bradley,15
+,Oregon,12,Montana,15
+,Oregon,12,Fairleigh Dickinson,16
+,Oregon,12,N.C. Central,16
+,Oregon,12,Gardner-Webb,16
+,Oregon,12,Prairie View,16
+,Oregon,12,North Dakota St.,16
+,Oregon,12,Iona,16
+,Murray St.,12,North Carolina,1
+,Murray St.,12,Gonzaga,1
+,Murray St.,12,Duke,1
+,Murray St.,12,Virginia,1
+,Murray St.,12,Kentucky,2
+,Murray St.,12,Michigan St.,2
+,Murray St.,12,Tennessee,2
+,Murray St.,12,Michigan,2
+,Murray St.,12,Houston,3
+,Murray St.,12,LSU,3
+,Murray St.,12,Purdue,3
+,Murray St.,12,Texas Tech,3
+,Murray St.,12,Virginia Tech,4
+,Murray St.,12,Kansas,4
+,Murray St.,12,Florida St.,4
+,Murray St.,12,Kansas St.,4
+,Murray St.,12,Auburn,5
+,Murray St.,12,Wisconsin,5
+,Murray St.,12,Mississippi St.,5
+,Murray St.,12,Marquette,5
+,Murray St.,12,Iowa St.,6
+,Murray St.,12,Buffalo,6
+,Murray St.,12,Villanova,6
+,Murray St.,12,Maryland,6
+,Murray St.,12,Wofford,7
+,Murray St.,12,Nevada,7
+,Murray St.,12,Cincinnati,7
+,Murray St.,12,Louisville,7
+,Murray St.,12,Ole Miss,8
+,Murray St.,12,Syracuse,8
+,Murray St.,12,Utah St.,8
+,Murray St.,12,VCU,8
+,Murray St.,12,Baylor,9
+,Murray St.,12,Oklahoma,9
+,Murray St.,12,UCF,9
+,Murray St.,12,Washington,9
+,Murray St.,12,Iowa,10
+,Murray St.,12,Seton Hall,10
+,Murray St.,12,Minnesota,10
+,Murray St.,12,Florida,10
+,Murray St.,12,Arizona St.,11
+,Murray St.,12,St. John's (NY),11
+,Murray St.,12,Ohio St.,11
+,Murray St.,12,Belmont,11
+,Murray St.,12,Saint Mary's (CA),11
+,Murray St.,12,Temple,11
+,Murray St.,12,Oregon,12
+,Murray St.,12,New Mexico St.,12
+,Murray St.,12,Liberty,12
+,Murray St.,12,Saint Louis,13
+,Murray St.,12,UC Irvine,13
+,Murray St.,12,Vermont,13
+,Murray St.,12,Northeastern,13
+,Murray St.,12,Northern Ky.,14
+,Murray St.,12,Georgia St.,14
+,Murray St.,12,Yale,14
+,Murray St.,12,Old Dominion,14
+,Murray St.,12,Abilene Christian,15
+,Murray St.,12,Colgate,15
+,Murray St.,12,Bradley,15
+,Murray St.,12,Montana,15
+,Murray St.,12,Fairleigh Dickinson,16
+,Murray St.,12,N.C. Central,16
+,Murray St.,12,Gardner-Webb,16
+,Murray St.,12,Prairie View,16
+,Murray St.,12,North Dakota St.,16
+,Murray St.,12,Iona,16
+,New Mexico St.,12,North Carolina,1
+,New Mexico St.,12,Gonzaga,1
+,New Mexico St.,12,Duke,1
+,New Mexico St.,12,Virginia,1
+,New Mexico St.,12,Kentucky,2
+,New Mexico St.,12,Michigan St.,2
+,New Mexico St.,12,Tennessee,2
+,New Mexico St.,12,Michigan,2
+,New Mexico St.,12,Houston,3
+,New Mexico St.,12,LSU,3
+,New Mexico St.,12,Purdue,3
+,New Mexico St.,12,Texas Tech,3
+,New Mexico St.,12,Virginia Tech,4
+,New Mexico St.,12,Kansas,4
+,New Mexico St.,12,Florida St.,4
+,New Mexico St.,12,Kansas St.,4
+,New Mexico St.,12,Auburn,5
+,New Mexico St.,12,Wisconsin,5
+,New Mexico St.,12,Mississippi St.,5
+,New Mexico St.,12,Marquette,5
+,New Mexico St.,12,Iowa St.,6
+,New Mexico St.,12,Buffalo,6
+,New Mexico St.,12,Villanova,6
+,New Mexico St.,12,Maryland,6
+,New Mexico St.,12,Wofford,7
+,New Mexico St.,12,Nevada,7
+,New Mexico St.,12,Cincinnati,7
+,New Mexico St.,12,Louisville,7
+,New Mexico St.,12,Ole Miss,8
+,New Mexico St.,12,Syracuse,8
+,New Mexico St.,12,Utah St.,8
+,New Mexico St.,12,VCU,8
+,New Mexico St.,12,Baylor,9
+,New Mexico St.,12,Oklahoma,9
+,New Mexico St.,12,UCF,9
+,New Mexico St.,12,Washington,9
+,New Mexico St.,12,Iowa,10
+,New Mexico St.,12,Seton Hall,10
+,New Mexico St.,12,Minnesota,10
+,New Mexico St.,12,Florida,10
+,New Mexico St.,12,Arizona St.,11
+,New Mexico St.,12,St. John's (NY),11
+,New Mexico St.,12,Ohio St.,11
+,New Mexico St.,12,Belmont,11
+,New Mexico St.,12,Saint Mary's (CA),11
+,New Mexico St.,12,Temple,11
+,New Mexico St.,12,Oregon,12
+,New Mexico St.,12,Murray St.,12
+,New Mexico St.,12,Liberty,12
+,New Mexico St.,12,Saint Louis,13
+,New Mexico St.,12,UC Irvine,13
+,New Mexico St.,12,Vermont,13
+,New Mexico St.,12,Northeastern,13
+,New Mexico St.,12,Northern Ky.,14
+,New Mexico St.,12,Georgia St.,14
+,New Mexico St.,12,Yale,14
+,New Mexico St.,12,Old Dominion,14
+,New Mexico St.,12,Abilene Christian,15
+,New Mexico St.,12,Colgate,15
+,New Mexico St.,12,Bradley,15
+,New Mexico St.,12,Montana,15
+,New Mexico St.,12,Fairleigh Dickinson,16
+,New Mexico St.,12,N.C. Central,16
+,New Mexico St.,12,Gardner-Webb,16
+,New Mexico St.,12,Prairie View,16
+,New Mexico St.,12,North Dakota St.,16
+,New Mexico St.,12,Iona,16
+,Liberty,12,North Carolina,1
+,Liberty,12,Gonzaga,1
+,Liberty,12,Duke,1
+,Liberty,12,Virginia,1
+,Liberty,12,Kentucky,2
+,Liberty,12,Michigan St.,2
+,Liberty,12,Tennessee,2
+,Liberty,12,Michigan,2
+,Liberty,12,Houston,3
+,Liberty,12,LSU,3
+,Liberty,12,Purdue,3
+,Liberty,12,Texas Tech,3
+,Liberty,12,Virginia Tech,4
+,Liberty,12,Kansas,4
+,Liberty,12,Florida St.,4
+,Liberty,12,Kansas St.,4
+,Liberty,12,Auburn,5
+,Liberty,12,Wisconsin,5
+,Liberty,12,Mississippi St.,5
+,Liberty,12,Marquette,5
+,Liberty,12,Iowa St.,6
+,Liberty,12,Buffalo,6
+,Liberty,12,Villanova,6
+,Liberty,12,Maryland,6
+,Liberty,12,Wofford,7
+,Liberty,12,Nevada,7
+,Liberty,12,Cincinnati,7
+,Liberty,12,Louisville,7
+,Liberty,12,Ole Miss,8
+,Liberty,12,Syracuse,8
+,Liberty,12,Utah St.,8
+,Liberty,12,VCU,8
+,Liberty,12,Baylor,9
+,Liberty,12,Oklahoma,9
+,Liberty,12,UCF,9
+,Liberty,12,Washington,9
+,Liberty,12,Iowa,10
+,Liberty,12,Seton Hall,10
+,Liberty,12,Minnesota,10
+,Liberty,12,Florida,10
+,Liberty,12,Arizona St.,11
+,Liberty,12,St. John's (NY),11
+,Liberty,12,Ohio St.,11
+,Liberty,12,Belmont,11
+,Liberty,12,Saint Mary's (CA),11
+,Liberty,12,Temple,11
+,Liberty,12,Oregon,12
+,Liberty,12,Murray St.,12
+,Liberty,12,New Mexico St.,12
+,Liberty,12,Saint Louis,13
+,Liberty,12,UC Irvine,13
+,Liberty,12,Vermont,13
+,Liberty,12,Northeastern,13
+,Liberty,12,Northern Ky.,14
+,Liberty,12,Georgia St.,14
+,Liberty,12,Yale,14
+,Liberty,12,Old Dominion,14
+,Liberty,12,Abilene Christian,15
+,Liberty,12,Colgate,15
+,Liberty,12,Bradley,15
+,Liberty,12,Montana,15
+,Liberty,12,Fairleigh Dickinson,16
+,Liberty,12,N.C. Central,16
+,Liberty,12,Gardner-Webb,16
+,Liberty,12,Prairie View,16
+,Liberty,12,North Dakota St.,16
+,Liberty,12,Iona,16
+,Saint Louis,13,North Carolina,1
+,Saint Louis,13,Gonzaga,1
+,Saint Louis,13,Duke,1
+,Saint Louis,13,Virginia,1
+,Saint Louis,13,Kentucky,2
+,Saint Louis,13,Michigan St.,2
+,Saint Louis,13,Tennessee,2
+,Saint Louis,13,Michigan,2
+,Saint Louis,13,Houston,3
+,Saint Louis,13,LSU,3
+,Saint Louis,13,Purdue,3
+,Saint Louis,13,Texas Tech,3
+,Saint Louis,13,Virginia Tech,4
+,Saint Louis,13,Kansas,4
+,Saint Louis,13,Florida St.,4
+,Saint Louis,13,Kansas St.,4
+,Saint Louis,13,Auburn,5
+,Saint Louis,13,Wisconsin,5
+,Saint Louis,13,Mississippi St.,5
+,Saint Louis,13,Marquette,5
+,Saint Louis,13,Iowa St.,6
+,Saint Louis,13,Buffalo,6
+,Saint Louis,13,Villanova,6
+,Saint Louis,13,Maryland,6
+,Saint Louis,13,Wofford,7
+,Saint Louis,13,Nevada,7
+,Saint Louis,13,Cincinnati,7
+,Saint Louis,13,Louisville,7
+,Saint Louis,13,Ole Miss,8
+,Saint Louis,13,Syracuse,8
+,Saint Louis,13,Utah St.,8
+,Saint Louis,13,VCU,8
+,Saint Louis,13,Baylor,9
+,Saint Louis,13,Oklahoma,9
+,Saint Louis,13,UCF,9
+,Saint Louis,13,Washington,9
+,Saint Louis,13,Iowa,10
+,Saint Louis,13,Seton Hall,10
+,Saint Louis,13,Minnesota,10
+,Saint Louis,13,Florida,10
+,Saint Louis,13,Arizona St.,11
+,Saint Louis,13,St. John's (NY),11
+,Saint Louis,13,Ohio St.,11
+,Saint Louis,13,Belmont,11
+,Saint Louis,13,Saint Mary's (CA),11
+,Saint Louis,13,Temple,11
+,Saint Louis,13,Oregon,12
+,Saint Louis,13,Murray St.,12
+,Saint Louis,13,New Mexico St.,12
+,Saint Louis,13,Liberty,12
+,Saint Louis,13,UC Irvine,13
+,Saint Louis,13,Vermont,13
+,Saint Louis,13,Northeastern,13
+,Saint Louis,13,Northern Ky.,14
+,Saint Louis,13,Georgia St.,14
+,Saint Louis,13,Yale,14
+,Saint Louis,13,Old Dominion,14
+,Saint Louis,13,Abilene Christian,15
+,Saint Louis,13,Colgate,15
+,Saint Louis,13,Bradley,15
+,Saint Louis,13,Montana,15
+,Saint Louis,13,Fairleigh Dickinson,16
+,Saint Louis,13,N.C. Central,16
+,Saint Louis,13,Gardner-Webb,16
+,Saint Louis,13,Prairie View,16
+,Saint Louis,13,North Dakota St.,16
+,Saint Louis,13,Iona,16
+,UC Irvine,13,North Carolina,1
+,UC Irvine,13,Gonzaga,1
+,UC Irvine,13,Duke,1
+,UC Irvine,13,Virginia,1
+,UC Irvine,13,Kentucky,2
+,UC Irvine,13,Michigan St.,2
+,UC Irvine,13,Tennessee,2
+,UC Irvine,13,Michigan,2
+,UC Irvine,13,Houston,3
+,UC Irvine,13,LSU,3
+,UC Irvine,13,Purdue,3
+,UC Irvine,13,Texas Tech,3
+,UC Irvine,13,Virginia Tech,4
+,UC Irvine,13,Kansas,4
+,UC Irvine,13,Florida St.,4
+,UC Irvine,13,Kansas St.,4
+,UC Irvine,13,Auburn,5
+,UC Irvine,13,Wisconsin,5
+,UC Irvine,13,Mississippi St.,5
+,UC Irvine,13,Marquette,5
+,UC Irvine,13,Iowa St.,6
+,UC Irvine,13,Buffalo,6
+,UC Irvine,13,Villanova,6
+,UC Irvine,13,Maryland,6
+,UC Irvine,13,Wofford,7
+,UC Irvine,13,Nevada,7
+,UC Irvine,13,Cincinnati,7
+,UC Irvine,13,Louisville,7
+,UC Irvine,13,Ole Miss,8
+,UC Irvine,13,Syracuse,8
+,UC Irvine,13,Utah St.,8
+,UC Irvine,13,VCU,8
+,UC Irvine,13,Baylor,9
+,UC Irvine,13,Oklahoma,9
+,UC Irvine,13,UCF,9
+,UC Irvine,13,Washington,9
+,UC Irvine,13,Iowa,10
+,UC Irvine,13,Seton Hall,10
+,UC Irvine,13,Minnesota,10
+,UC Irvine,13,Florida,10
+,UC Irvine,13,Arizona St.,11
+,UC Irvine,13,St. John's (NY),11
+,UC Irvine,13,Ohio St.,11
+,UC Irvine,13,Belmont,11
+,UC Irvine,13,Saint Mary's (CA),11
+,UC Irvine,13,Temple,11
+,UC Irvine,13,Oregon,12
+,UC Irvine,13,Murray St.,12
+,UC Irvine,13,New Mexico St.,12
+,UC Irvine,13,Liberty,12
+,UC Irvine,13,Saint Louis,13
+,UC Irvine,13,Vermont,13
+,UC Irvine,13,Northeastern,13
+,UC Irvine,13,Northern Ky.,14
+,UC Irvine,13,Georgia St.,14
+,UC Irvine,13,Yale,14
+,UC Irvine,13,Old Dominion,14
+,UC Irvine,13,Abilene Christian,15
+,UC Irvine,13,Colgate,15
+,UC Irvine,13,Bradley,15
+,UC Irvine,13,Montana,15
+,UC Irvine,13,Fairleigh Dickinson,16
+,UC Irvine,13,N.C. Central,16
+,UC Irvine,13,Gardner-Webb,16
+,UC Irvine,13,Prairie View,16
+,UC Irvine,13,North Dakota St.,16
+,UC Irvine,13,Iona,16
+,Vermont,13,North Carolina,1
+,Vermont,13,Gonzaga,1
+,Vermont,13,Duke,1
+,Vermont,13,Virginia,1
+,Vermont,13,Kentucky,2
+,Vermont,13,Michigan St.,2
+,Vermont,13,Tennessee,2
+,Vermont,13,Michigan,2
+,Vermont,13,Houston,3
+,Vermont,13,LSU,3
+,Vermont,13,Purdue,3
+,Vermont,13,Texas Tech,3
+,Vermont,13,Virginia Tech,4
+,Vermont,13,Kansas,4
+,Vermont,13,Florida St.,4
+,Vermont,13,Kansas St.,4
+,Vermont,13,Auburn,5
+,Vermont,13,Wisconsin,5
+,Vermont,13,Mississippi St.,5
+,Vermont,13,Marquette,5
+,Vermont,13,Iowa St.,6
+,Vermont,13,Buffalo,6
+,Vermont,13,Villanova,6
+,Vermont,13,Maryland,6
+,Vermont,13,Wofford,7
+,Vermont,13,Nevada,7
+,Vermont,13,Cincinnati,7
+,Vermont,13,Louisville,7
+,Vermont,13,Ole Miss,8
+,Vermont,13,Syracuse,8
+,Vermont,13,Utah St.,8
+,Vermont,13,VCU,8
+,Vermont,13,Baylor,9
+,Vermont,13,Oklahoma,9
+,Vermont,13,UCF,9
+,Vermont,13,Washington,9
+,Vermont,13,Iowa,10
+,Vermont,13,Seton Hall,10
+,Vermont,13,Minnesota,10
+,Vermont,13,Florida,10
+,Vermont,13,Arizona St.,11
+,Vermont,13,St. John's (NY),11
+,Vermont,13,Ohio St.,11
+,Vermont,13,Belmont,11
+,Vermont,13,Saint Mary's (CA),11
+,Vermont,13,Temple,11
+,Vermont,13,Oregon,12
+,Vermont,13,Murray St.,12
+,Vermont,13,New Mexico St.,12
+,Vermont,13,Liberty,12
+,Vermont,13,Saint Louis,13
+,Vermont,13,UC Irvine,13
+,Vermont,13,Northeastern,13
+,Vermont,13,Northern Ky.,14
+,Vermont,13,Georgia St.,14
+,Vermont,13,Yale,14
+,Vermont,13,Old Dominion,14
+,Vermont,13,Abilene Christian,15
+,Vermont,13,Colgate,15
+,Vermont,13,Bradley,15
+,Vermont,13,Montana,15
+,Vermont,13,Fairleigh Dickinson,16
+,Vermont,13,N.C. Central,16
+,Vermont,13,Gardner-Webb,16
+,Vermont,13,Prairie View,16
+,Vermont,13,North Dakota St.,16
+,Vermont,13,Iona,16
+,Northeastern,13,North Carolina,1
+,Northeastern,13,Gonzaga,1
+,Northeastern,13,Duke,1
+,Northeastern,13,Virginia,1
+,Northeastern,13,Kentucky,2
+,Northeastern,13,Michigan St.,2
+,Northeastern,13,Tennessee,2
+,Northeastern,13,Michigan,2
+,Northeastern,13,Houston,3
+,Northeastern,13,LSU,3
+,Northeastern,13,Purdue,3
+,Northeastern,13,Texas Tech,3
+,Northeastern,13,Virginia Tech,4
+,Northeastern,13,Kansas,4
+,Northeastern,13,Florida St.,4
+,Northeastern,13,Kansas St.,4
+,Northeastern,13,Auburn,5
+,Northeastern,13,Wisconsin,5
+,Northeastern,13,Mississippi St.,5
+,Northeastern,13,Marquette,5
+,Northeastern,13,Iowa St.,6
+,Northeastern,13,Buffalo,6
+,Northeastern,13,Villanova,6
+,Northeastern,13,Maryland,6
+,Northeastern,13,Wofford,7
+,Northeastern,13,Nevada,7
+,Northeastern,13,Cincinnati,7
+,Northeastern,13,Louisville,7
+,Northeastern,13,Ole Miss,8
+,Northeastern,13,Syracuse,8
+,Northeastern,13,Utah St.,8
+,Northeastern,13,VCU,8
+,Northeastern,13,Baylor,9
+,Northeastern,13,Oklahoma,9
+,Northeastern,13,UCF,9
+,Northeastern,13,Washington,9
+,Northeastern,13,Iowa,10
+,Northeastern,13,Seton Hall,10
+,Northeastern,13,Minnesota,10
+,Northeastern,13,Florida,10
+,Northeastern,13,Arizona St.,11
+,Northeastern,13,St. John's (NY),11
+,Northeastern,13,Ohio St.,11
+,Northeastern,13,Belmont,11
+,Northeastern,13,Saint Mary's (CA),11
+,Northeastern,13,Temple,11
+,Northeastern,13,Oregon,12
+,Northeastern,13,Murray St.,12
+,Northeastern,13,New Mexico St.,12
+,Northeastern,13,Liberty,12
+,Northeastern,13,Saint Louis,13
+,Northeastern,13,UC Irvine,13
+,Northeastern,13,Vermont,13
+,Northeastern,13,Northern Ky.,14
+,Northeastern,13,Georgia St.,14
+,Northeastern,13,Yale,14
+,Northeastern,13,Old Dominion,14
+,Northeastern,13,Abilene Christian,15
+,Northeastern,13,Colgate,15
+,Northeastern,13,Bradley,15
+,Northeastern,13,Montana,15
+,Northeastern,13,Fairleigh Dickinson,16
+,Northeastern,13,N.C. Central,16
+,Northeastern,13,Gardner-Webb,16
+,Northeastern,13,Prairie View,16
+,Northeastern,13,North Dakota St.,16
+,Northeastern,13,Iona,16
+,Northern Ky.,14,North Carolina,1
+,Northern Ky.,14,Gonzaga,1
+,Northern Ky.,14,Duke,1
+,Northern Ky.,14,Virginia,1
+,Northern Ky.,14,Kentucky,2
+,Northern Ky.,14,Michigan St.,2
+,Northern Ky.,14,Tennessee,2
+,Northern Ky.,14,Michigan,2
+,Northern Ky.,14,Houston,3
+,Northern Ky.,14,LSU,3
+,Northern Ky.,14,Purdue,3
+,Northern Ky.,14,Texas Tech,3
+,Northern Ky.,14,Virginia Tech,4
+,Northern Ky.,14,Kansas,4
+,Northern Ky.,14,Florida St.,4
+,Northern Ky.,14,Kansas St.,4
+,Northern Ky.,14,Auburn,5
+,Northern Ky.,14,Wisconsin,5
+,Northern Ky.,14,Mississippi St.,5
+,Northern Ky.,14,Marquette,5
+,Northern Ky.,14,Iowa St.,6
+,Northern Ky.,14,Buffalo,6
+,Northern Ky.,14,Villanova,6
+,Northern Ky.,14,Maryland,6
+,Northern Ky.,14,Wofford,7
+,Northern Ky.,14,Nevada,7
+,Northern Ky.,14,Cincinnati,7
+,Northern Ky.,14,Louisville,7
+,Northern Ky.,14,Ole Miss,8
+,Northern Ky.,14,Syracuse,8
+,Northern Ky.,14,Utah St.,8
+,Northern Ky.,14,VCU,8
+,Northern Ky.,14,Baylor,9
+,Northern Ky.,14,Oklahoma,9
+,Northern Ky.,14,UCF,9
+,Northern Ky.,14,Washington,9
+,Northern Ky.,14,Iowa,10
+,Northern Ky.,14,Seton Hall,10
+,Northern Ky.,14,Minnesota,10
+,Northern Ky.,14,Florida,10
+,Northern Ky.,14,Arizona St.,11
+,Northern Ky.,14,St. John's (NY),11
+,Northern Ky.,14,Ohio St.,11
+,Northern Ky.,14,Belmont,11
+,Northern Ky.,14,Saint Mary's (CA),11
+,Northern Ky.,14,Temple,11
+,Northern Ky.,14,Oregon,12
+,Northern Ky.,14,Murray St.,12
+,Northern Ky.,14,New Mexico St.,12
+,Northern Ky.,14,Liberty,12
+,Northern Ky.,14,Saint Louis,13
+,Northern Ky.,14,UC Irvine,13
+,Northern Ky.,14,Vermont,13
+,Northern Ky.,14,Northeastern,13
+,Northern Ky.,14,Georgia St.,14
+,Northern Ky.,14,Yale,14
+,Northern Ky.,14,Old Dominion,14
+,Northern Ky.,14,Abilene Christian,15
+,Northern Ky.,14,Colgate,15
+,Northern Ky.,14,Bradley,15
+,Northern Ky.,14,Montana,15
+,Northern Ky.,14,Fairleigh Dickinson,16
+,Northern Ky.,14,N.C. Central,16
+,Northern Ky.,14,Gardner-Webb,16
+,Northern Ky.,14,Prairie View,16
+,Northern Ky.,14,North Dakota St.,16
+,Northern Ky.,14,Iona,16
+,Georgia St.,14,North Carolina,1
+,Georgia St.,14,Gonzaga,1
+,Georgia St.,14,Duke,1
+,Georgia St.,14,Virginia,1
+,Georgia St.,14,Kentucky,2
+,Georgia St.,14,Michigan St.,2
+,Georgia St.,14,Tennessee,2
+,Georgia St.,14,Michigan,2
+,Georgia St.,14,Houston,3
+,Georgia St.,14,LSU,3
+,Georgia St.,14,Purdue,3
+,Georgia St.,14,Texas Tech,3
+,Georgia St.,14,Virginia Tech,4
+,Georgia St.,14,Kansas,4
+,Georgia St.,14,Florida St.,4
+,Georgia St.,14,Kansas St.,4
+,Georgia St.,14,Auburn,5
+,Georgia St.,14,Wisconsin,5
+,Georgia St.,14,Mississippi St.,5
+,Georgia St.,14,Marquette,5
+,Georgia St.,14,Iowa St.,6
+,Georgia St.,14,Buffalo,6
+,Georgia St.,14,Villanova,6
+,Georgia St.,14,Maryland,6
+,Georgia St.,14,Wofford,7
+,Georgia St.,14,Nevada,7
+,Georgia St.,14,Cincinnati,7
+,Georgia St.,14,Louisville,7
+,Georgia St.,14,Ole Miss,8
+,Georgia St.,14,Syracuse,8
+,Georgia St.,14,Utah St.,8
+,Georgia St.,14,VCU,8
+,Georgia St.,14,Baylor,9
+,Georgia St.,14,Oklahoma,9
+,Georgia St.,14,UCF,9
+,Georgia St.,14,Washington,9
+,Georgia St.,14,Iowa,10
+,Georgia St.,14,Seton Hall,10
+,Georgia St.,14,Minnesota,10
+,Georgia St.,14,Florida,10
+,Georgia St.,14,Arizona St.,11
+,Georgia St.,14,St. John's (NY),11
+,Georgia St.,14,Ohio St.,11
+,Georgia St.,14,Belmont,11
+,Georgia St.,14,Saint Mary's (CA),11
+,Georgia St.,14,Temple,11
+,Georgia St.,14,Oregon,12
+,Georgia St.,14,Murray St.,12
+,Georgia St.,14,New Mexico St.,12
+,Georgia St.,14,Liberty,12
+,Georgia St.,14,Saint Louis,13
+,Georgia St.,14,UC Irvine,13
+,Georgia St.,14,Vermont,13
+,Georgia St.,14,Northeastern,13
+,Georgia St.,14,Northern Ky.,14
+,Georgia St.,14,Yale,14
+,Georgia St.,14,Old Dominion,14
+,Georgia St.,14,Abilene Christian,15
+,Georgia St.,14,Colgate,15
+,Georgia St.,14,Bradley,15
+,Georgia St.,14,Montana,15
+,Georgia St.,14,Fairleigh Dickinson,16
+,Georgia St.,14,N.C. Central,16
+,Georgia St.,14,Gardner-Webb,16
+,Georgia St.,14,Prairie View,16
+,Georgia St.,14,North Dakota St.,16
+,Georgia St.,14,Iona,16
+,Yale,14,North Carolina,1
+,Yale,14,Gonzaga,1
+,Yale,14,Duke,1
+,Yale,14,Virginia,1
+,Yale,14,Kentucky,2
+,Yale,14,Michigan St.,2
+,Yale,14,Tennessee,2
+,Yale,14,Michigan,2
+,Yale,14,Houston,3
+,Yale,14,LSU,3
+,Yale,14,Purdue,3
+,Yale,14,Texas Tech,3
+,Yale,14,Virginia Tech,4
+,Yale,14,Kansas,4
+,Yale,14,Florida St.,4
+,Yale,14,Kansas St.,4
+,Yale,14,Auburn,5
+,Yale,14,Wisconsin,5
+,Yale,14,Mississippi St.,5
+,Yale,14,Marquette,5
+,Yale,14,Iowa St.,6
+,Yale,14,Buffalo,6
+,Yale,14,Villanova,6
+,Yale,14,Maryland,6
+,Yale,14,Wofford,7
+,Yale,14,Nevada,7
+,Yale,14,Cincinnati,7
+,Yale,14,Louisville,7
+,Yale,14,Ole Miss,8
+,Yale,14,Syracuse,8
+,Yale,14,Utah St.,8
+,Yale,14,VCU,8
+,Yale,14,Baylor,9
+,Yale,14,Oklahoma,9
+,Yale,14,UCF,9
+,Yale,14,Washington,9
+,Yale,14,Iowa,10
+,Yale,14,Seton Hall,10
+,Yale,14,Minnesota,10
+,Yale,14,Florida,10
+,Yale,14,Arizona St.,11
+,Yale,14,St. John's (NY),11
+,Yale,14,Ohio St.,11
+,Yale,14,Belmont,11
+,Yale,14,Saint Mary's (CA),11
+,Yale,14,Temple,11
+,Yale,14,Oregon,12
+,Yale,14,Murray St.,12
+,Yale,14,New Mexico St.,12
+,Yale,14,Liberty,12
+,Yale,14,Saint Louis,13
+,Yale,14,UC Irvine,13
+,Yale,14,Vermont,13
+,Yale,14,Northeastern,13
+,Yale,14,Northern Ky.,14
+,Yale,14,Georgia St.,14
+,Yale,14,Old Dominion,14
+,Yale,14,Abilene Christian,15
+,Yale,14,Colgate,15
+,Yale,14,Bradley,15
+,Yale,14,Montana,15
+,Yale,14,Fairleigh Dickinson,16
+,Yale,14,N.C. Central,16
+,Yale,14,Gardner-Webb,16
+,Yale,14,Prairie View,16
+,Yale,14,North Dakota St.,16
+,Yale,14,Iona,16
+,Old Dominion,14,North Carolina,1
+,Old Dominion,14,Gonzaga,1
+,Old Dominion,14,Duke,1
+,Old Dominion,14,Virginia,1
+,Old Dominion,14,Kentucky,2
+,Old Dominion,14,Michigan St.,2
+,Old Dominion,14,Tennessee,2
+,Old Dominion,14,Michigan,2
+,Old Dominion,14,Houston,3
+,Old Dominion,14,LSU,3
+,Old Dominion,14,Purdue,3
+,Old Dominion,14,Texas Tech,3
+,Old Dominion,14,Virginia Tech,4
+,Old Dominion,14,Kansas,4
+,Old Dominion,14,Florida St.,4
+,Old Dominion,14,Kansas St.,4
+,Old Dominion,14,Auburn,5
+,Old Dominion,14,Wisconsin,5
+,Old Dominion,14,Mississippi St.,5
+,Old Dominion,14,Marquette,5
+,Old Dominion,14,Iowa St.,6
+,Old Dominion,14,Buffalo,6
+,Old Dominion,14,Villanova,6
+,Old Dominion,14,Maryland,6
+,Old Dominion,14,Wofford,7
+,Old Dominion,14,Nevada,7
+,Old Dominion,14,Cincinnati,7
+,Old Dominion,14,Louisville,7
+,Old Dominion,14,Ole Miss,8
+,Old Dominion,14,Syracuse,8
+,Old Dominion,14,Utah St.,8
+,Old Dominion,14,VCU,8
+,Old Dominion,14,Baylor,9
+,Old Dominion,14,Oklahoma,9
+,Old Dominion,14,UCF,9
+,Old Dominion,14,Washington,9
+,Old Dominion,14,Iowa,10
+,Old Dominion,14,Seton Hall,10
+,Old Dominion,14,Minnesota,10
+,Old Dominion,14,Florida,10
+,Old Dominion,14,Arizona St.,11
+,Old Dominion,14,St. John's (NY),11
+,Old Dominion,14,Ohio St.,11
+,Old Dominion,14,Belmont,11
+,Old Dominion,14,Saint Mary's (CA),11
+,Old Dominion,14,Temple,11
+,Old Dominion,14,Oregon,12
+,Old Dominion,14,Murray St.,12
+,Old Dominion,14,New Mexico St.,12
+,Old Dominion,14,Liberty,12
+,Old Dominion,14,Saint Louis,13
+,Old Dominion,14,UC Irvine,13
+,Old Dominion,14,Vermont,13
+,Old Dominion,14,Northeastern,13
+,Old Dominion,14,Northern Ky.,14
+,Old Dominion,14,Georgia St.,14
+,Old Dominion,14,Yale,14
+,Old Dominion,14,Abilene Christian,15
+,Old Dominion,14,Colgate,15
+,Old Dominion,14,Bradley,15
+,Old Dominion,14,Montana,15
+,Old Dominion,14,Fairleigh Dickinson,16
+,Old Dominion,14,N.C. Central,16
+,Old Dominion,14,Gardner-Webb,16
+,Old Dominion,14,Prairie View,16
+,Old Dominion,14,North Dakota St.,16
+,Old Dominion,14,Iona,16
+,Abilene Christian,15,North Carolina,1
+,Abilene Christian,15,Gonzaga,1
+,Abilene Christian,15,Duke,1
+,Abilene Christian,15,Virginia,1
+,Abilene Christian,15,Kentucky,2
+,Abilene Christian,15,Michigan St.,2
+,Abilene Christian,15,Tennessee,2
+,Abilene Christian,15,Michigan,2
+,Abilene Christian,15,Houston,3
+,Abilene Christian,15,LSU,3
+,Abilene Christian,15,Purdue,3
+,Abilene Christian,15,Texas Tech,3
+,Abilene Christian,15,Virginia Tech,4
+,Abilene Christian,15,Kansas,4
+,Abilene Christian,15,Florida St.,4
+,Abilene Christian,15,Kansas St.,4
+,Abilene Christian,15,Auburn,5
+,Abilene Christian,15,Wisconsin,5
+,Abilene Christian,15,Mississippi St.,5
+,Abilene Christian,15,Marquette,5
+,Abilene Christian,15,Iowa St.,6
+,Abilene Christian,15,Buffalo,6
+,Abilene Christian,15,Villanova,6
+,Abilene Christian,15,Maryland,6
+,Abilene Christian,15,Wofford,7
+,Abilene Christian,15,Nevada,7
+,Abilene Christian,15,Cincinnati,7
+,Abilene Christian,15,Louisville,7
+,Abilene Christian,15,Ole Miss,8
+,Abilene Christian,15,Syracuse,8
+,Abilene Christian,15,Utah St.,8
+,Abilene Christian,15,VCU,8
+,Abilene Christian,15,Baylor,9
+,Abilene Christian,15,Oklahoma,9
+,Abilene Christian,15,UCF,9
+,Abilene Christian,15,Washington,9
+,Abilene Christian,15,Iowa,10
+,Abilene Christian,15,Seton Hall,10
+,Abilene Christian,15,Minnesota,10
+,Abilene Christian,15,Florida,10
+,Abilene Christian,15,Arizona St.,11
+,Abilene Christian,15,St. John's (NY),11
+,Abilene Christian,15,Ohio St.,11
+,Abilene Christian,15,Belmont,11
+,Abilene Christian,15,Saint Mary's (CA),11
+,Abilene Christian,15,Temple,11
+,Abilene Christian,15,Oregon,12
+,Abilene Christian,15,Murray St.,12
+,Abilene Christian,15,New Mexico St.,12
+,Abilene Christian,15,Liberty,12
+,Abilene Christian,15,Saint Louis,13
+,Abilene Christian,15,UC Irvine,13
+,Abilene Christian,15,Vermont,13
+,Abilene Christian,15,Northeastern,13
+,Abilene Christian,15,Northern Ky.,14
+,Abilene Christian,15,Georgia St.,14
+,Abilene Christian,15,Yale,14
+,Abilene Christian,15,Old Dominion,14
+,Abilene Christian,15,Colgate,15
+,Abilene Christian,15,Bradley,15
+,Abilene Christian,15,Montana,15
+,Abilene Christian,15,Fairleigh Dickinson,16
+,Abilene Christian,15,N.C. Central,16
+,Abilene Christian,15,Gardner-Webb,16
+,Abilene Christian,15,Prairie View,16
+,Abilene Christian,15,North Dakota St.,16
+,Abilene Christian,15,Iona,16
+,Colgate,15,North Carolina,1
+,Colgate,15,Gonzaga,1
+,Colgate,15,Duke,1
+,Colgate,15,Virginia,1
+,Colgate,15,Kentucky,2
+,Colgate,15,Michigan St.,2
+,Colgate,15,Tennessee,2
+,Colgate,15,Michigan,2
+,Colgate,15,Houston,3
+,Colgate,15,LSU,3
+,Colgate,15,Purdue,3
+,Colgate,15,Texas Tech,3
+,Colgate,15,Virginia Tech,4
+,Colgate,15,Kansas,4
+,Colgate,15,Florida St.,4
+,Colgate,15,Kansas St.,4
+,Colgate,15,Auburn,5
+,Colgate,15,Wisconsin,5
+,Colgate,15,Mississippi St.,5
+,Colgate,15,Marquette,5
+,Colgate,15,Iowa St.,6
+,Colgate,15,Buffalo,6
+,Colgate,15,Villanova,6
+,Colgate,15,Maryland,6
+,Colgate,15,Wofford,7
+,Colgate,15,Nevada,7
+,Colgate,15,Cincinnati,7
+,Colgate,15,Louisville,7
+,Colgate,15,Ole Miss,8
+,Colgate,15,Syracuse,8
+,Colgate,15,Utah St.,8
+,Colgate,15,VCU,8
+,Colgate,15,Baylor,9
+,Colgate,15,Oklahoma,9
+,Colgate,15,UCF,9
+,Colgate,15,Washington,9
+,Colgate,15,Iowa,10
+,Colgate,15,Seton Hall,10
+,Colgate,15,Minnesota,10
+,Colgate,15,Florida,10
+,Colgate,15,Arizona St.,11
+,Colgate,15,St. John's (NY),11
+,Colgate,15,Ohio St.,11
+,Colgate,15,Belmont,11
+,Colgate,15,Saint Mary's (CA),11
+,Colgate,15,Temple,11
+,Colgate,15,Oregon,12
+,Colgate,15,Murray St.,12
+,Colgate,15,New Mexico St.,12
+,Colgate,15,Liberty,12
+,Colgate,15,Saint Louis,13
+,Colgate,15,UC Irvine,13
+,Colgate,15,Vermont,13
+,Colgate,15,Northeastern,13
+,Colgate,15,Northern Ky.,14
+,Colgate,15,Georgia St.,14
+,Colgate,15,Yale,14
+,Colgate,15,Old Dominion,14
+,Colgate,15,Abilene Christian,15
+,Colgate,15,Bradley,15
+,Colgate,15,Montana,15
+,Colgate,15,Fairleigh Dickinson,16
+,Colgate,15,N.C. Central,16
+,Colgate,15,Gardner-Webb,16
+,Colgate,15,Prairie View,16
+,Colgate,15,North Dakota St.,16
+,Colgate,15,Iona,16
+,Bradley,15,North Carolina,1
+,Bradley,15,Gonzaga,1
+,Bradley,15,Duke,1
+,Bradley,15,Virginia,1
+,Bradley,15,Kentucky,2
+,Bradley,15,Michigan St.,2
+,Bradley,15,Tennessee,2
+,Bradley,15,Michigan,2
+,Bradley,15,Houston,3
+,Bradley,15,LSU,3
+,Bradley,15,Purdue,3
+,Bradley,15,Texas Tech,3
+,Bradley,15,Virginia Tech,4
+,Bradley,15,Kansas,4
+,Bradley,15,Florida St.,4
+,Bradley,15,Kansas St.,4
+,Bradley,15,Auburn,5
+,Bradley,15,Wisconsin,5
+,Bradley,15,Mississippi St.,5
+,Bradley,15,Marquette,5
+,Bradley,15,Iowa St.,6
+,Bradley,15,Buffalo,6
+,Bradley,15,Villanova,6
+,Bradley,15,Maryland,6
+,Bradley,15,Wofford,7
+,Bradley,15,Nevada,7
+,Bradley,15,Cincinnati,7
+,Bradley,15,Louisville,7
+,Bradley,15,Ole Miss,8
+,Bradley,15,Syracuse,8
+,Bradley,15,Utah St.,8
+,Bradley,15,VCU,8
+,Bradley,15,Baylor,9
+,Bradley,15,Oklahoma,9
+,Bradley,15,UCF,9
+,Bradley,15,Washington,9
+,Bradley,15,Iowa,10
+,Bradley,15,Seton Hall,10
+,Bradley,15,Minnesota,10
+,Bradley,15,Florida,10
+,Bradley,15,Arizona St.,11
+,Bradley,15,St. John's (NY),11
+,Bradley,15,Ohio St.,11
+,Bradley,15,Belmont,11
+,Bradley,15,Saint Mary's (CA),11
+,Bradley,15,Temple,11
+,Bradley,15,Oregon,12
+,Bradley,15,Murray St.,12
+,Bradley,15,New Mexico St.,12
+,Bradley,15,Liberty,12
+,Bradley,15,Saint Louis,13
+,Bradley,15,UC Irvine,13
+,Bradley,15,Vermont,13
+,Bradley,15,Northeastern,13
+,Bradley,15,Northern Ky.,14
+,Bradley,15,Georgia St.,14
+,Bradley,15,Yale,14
+,Bradley,15,Old Dominion,14
+,Bradley,15,Abilene Christian,15
+,Bradley,15,Colgate,15
+,Bradley,15,Montana,15
+,Bradley,15,Fairleigh Dickinson,16
+,Bradley,15,N.C. Central,16
+,Bradley,15,Gardner-Webb,16
+,Bradley,15,Prairie View,16
+,Bradley,15,North Dakota St.,16
+,Bradley,15,Iona,16
+,Montana,15,North Carolina,1
+,Montana,15,Gonzaga,1
+,Montana,15,Duke,1
+,Montana,15,Virginia,1
+,Montana,15,Kentucky,2
+,Montana,15,Michigan St.,2
+,Montana,15,Tennessee,2
+,Montana,15,Michigan,2
+,Montana,15,Houston,3
+,Montana,15,LSU,3
+,Montana,15,Purdue,3
+,Montana,15,Texas Tech,3
+,Montana,15,Virginia Tech,4
+,Montana,15,Kansas,4
+,Montana,15,Florida St.,4
+,Montana,15,Kansas St.,4
+,Montana,15,Auburn,5
+,Montana,15,Wisconsin,5
+,Montana,15,Mississippi St.,5
+,Montana,15,Marquette,5
+,Montana,15,Iowa St.,6
+,Montana,15,Buffalo,6
+,Montana,15,Villanova,6
+,Montana,15,Maryland,6
+,Montana,15,Wofford,7
+,Montana,15,Nevada,7
+,Montana,15,Cincinnati,7
+,Montana,15,Louisville,7
+,Montana,15,Ole Miss,8
+,Montana,15,Syracuse,8
+,Montana,15,Utah St.,8
+,Montana,15,VCU,8
+,Montana,15,Baylor,9
+,Montana,15,Oklahoma,9
+,Montana,15,UCF,9
+,Montana,15,Washington,9
+,Montana,15,Iowa,10
+,Montana,15,Seton Hall,10
+,Montana,15,Minnesota,10
+,Montana,15,Florida,10
+,Montana,15,Arizona St.,11
+,Montana,15,St. John's (NY),11
+,Montana,15,Ohio St.,11
+,Montana,15,Belmont,11
+,Montana,15,Saint Mary's (CA),11
+,Montana,15,Temple,11
+,Montana,15,Oregon,12
+,Montana,15,Murray St.,12
+,Montana,15,New Mexico St.,12
+,Montana,15,Liberty,12
+,Montana,15,Saint Louis,13
+,Montana,15,UC Irvine,13
+,Montana,15,Vermont,13
+,Montana,15,Northeastern,13
+,Montana,15,Northern Ky.,14
+,Montana,15,Georgia St.,14
+,Montana,15,Yale,14
+,Montana,15,Old Dominion,14
+,Montana,15,Abilene Christian,15
+,Montana,15,Colgate,15
+,Montana,15,Bradley,15
+,Montana,15,Fairleigh Dickinson,16
+,Montana,15,N.C. Central,16
+,Montana,15,Gardner-Webb,16
+,Montana,15,Prairie View,16
+,Montana,15,North Dakota St.,16
+,Montana,15,Iona,16
+,Fairleigh Dickinson,16,North Carolina,1
+,Fairleigh Dickinson,16,Gonzaga,1
+,Fairleigh Dickinson,16,Duke,1
+,Fairleigh Dickinson,16,Virginia,1
+,Fairleigh Dickinson,16,Kentucky,2
+,Fairleigh Dickinson,16,Michigan St.,2
+,Fairleigh Dickinson,16,Tennessee,2
+,Fairleigh Dickinson,16,Michigan,2
+,Fairleigh Dickinson,16,Houston,3
+,Fairleigh Dickinson,16,LSU,3
+,Fairleigh Dickinson,16,Purdue,3
+,Fairleigh Dickinson,16,Texas Tech,3
+,Fairleigh Dickinson,16,Virginia Tech,4
+,Fairleigh Dickinson,16,Kansas,4
+,Fairleigh Dickinson,16,Florida St.,4
+,Fairleigh Dickinson,16,Kansas St.,4
+,Fairleigh Dickinson,16,Auburn,5
+,Fairleigh Dickinson,16,Wisconsin,5
+,Fairleigh Dickinson,16,Mississippi St.,5
+,Fairleigh Dickinson,16,Marquette,5
+,Fairleigh Dickinson,16,Iowa St.,6
+,Fairleigh Dickinson,16,Buffalo,6
+,Fairleigh Dickinson,16,Villanova,6
+,Fairleigh Dickinson,16,Maryland,6
+,Fairleigh Dickinson,16,Wofford,7
+,Fairleigh Dickinson,16,Nevada,7
+,Fairleigh Dickinson,16,Cincinnati,7
+,Fairleigh Dickinson,16,Louisville,7
+,Fairleigh Dickinson,16,Ole Miss,8
+,Fairleigh Dickinson,16,Syracuse,8
+,Fairleigh Dickinson,16,Utah St.,8
+,Fairleigh Dickinson,16,VCU,8
+,Fairleigh Dickinson,16,Baylor,9
+,Fairleigh Dickinson,16,Oklahoma,9
+,Fairleigh Dickinson,16,UCF,9
+,Fairleigh Dickinson,16,Washington,9
+,Fairleigh Dickinson,16,Iowa,10
+,Fairleigh Dickinson,16,Seton Hall,10
+,Fairleigh Dickinson,16,Minnesota,10
+,Fairleigh Dickinson,16,Florida,10
+,Fairleigh Dickinson,16,Arizona St.,11
+,Fairleigh Dickinson,16,St. John's (NY),11
+,Fairleigh Dickinson,16,Ohio St.,11
+,Fairleigh Dickinson,16,Belmont,11
+,Fairleigh Dickinson,16,Saint Mary's (CA),11
+,Fairleigh Dickinson,16,Temple,11
+,Fairleigh Dickinson,16,Oregon,12
+,Fairleigh Dickinson,16,Murray St.,12
+,Fairleigh Dickinson,16,New Mexico St.,12
+,Fairleigh Dickinson,16,Liberty,12
+,Fairleigh Dickinson,16,Saint Louis,13
+,Fairleigh Dickinson,16,UC Irvine,13
+,Fairleigh Dickinson,16,Vermont,13
+,Fairleigh Dickinson,16,Northeastern,13
+,Fairleigh Dickinson,16,Northern Ky.,14
+,Fairleigh Dickinson,16,Georgia St.,14
+,Fairleigh Dickinson,16,Yale,14
+,Fairleigh Dickinson,16,Old Dominion,14
+,Fairleigh Dickinson,16,Abilene Christian,15
+,Fairleigh Dickinson,16,Colgate,15
+,Fairleigh Dickinson,16,Bradley,15
+,Fairleigh Dickinson,16,Montana,15
+,Fairleigh Dickinson,16,N.C. Central,16
+,Fairleigh Dickinson,16,Gardner-Webb,16
+,Fairleigh Dickinson,16,Prairie View,16
+,Fairleigh Dickinson,16,North Dakota St.,16
+,Fairleigh Dickinson,16,Iona,16
+,N.C. Central,16,North Carolina,1
+,N.C. Central,16,Gonzaga,1
+,N.C. Central,16,Duke,1
+,N.C. Central,16,Virginia,1
+,N.C. Central,16,Kentucky,2
+,N.C. Central,16,Michigan St.,2
+,N.C. Central,16,Tennessee,2
+,N.C. Central,16,Michigan,2
+,N.C. Central,16,Houston,3
+,N.C. Central,16,LSU,3
+,N.C. Central,16,Purdue,3
+,N.C. Central,16,Texas Tech,3
+,N.C. Central,16,Virginia Tech,4
+,N.C. Central,16,Kansas,4
+,N.C. Central,16,Florida St.,4
+,N.C. Central,16,Kansas St.,4
+,N.C. Central,16,Auburn,5
+,N.C. Central,16,Wisconsin,5
+,N.C. Central,16,Mississippi St.,5
+,N.C. Central,16,Marquette,5
+,N.C. Central,16,Iowa St.,6
+,N.C. Central,16,Buffalo,6
+,N.C. Central,16,Villanova,6
+,N.C. Central,16,Maryland,6
+,N.C. Central,16,Wofford,7
+,N.C. Central,16,Nevada,7
+,N.C. Central,16,Cincinnati,7
+,N.C. Central,16,Louisville,7
+,N.C. Central,16,Ole Miss,8
+,N.C. Central,16,Syracuse,8
+,N.C. Central,16,Utah St.,8
+,N.C. Central,16,VCU,8
+,N.C. Central,16,Baylor,9
+,N.C. Central,16,Oklahoma,9
+,N.C. Central,16,UCF,9
+,N.C. Central,16,Washington,9
+,N.C. Central,16,Iowa,10
+,N.C. Central,16,Seton Hall,10
+,N.C. Central,16,Minnesota,10
+,N.C. Central,16,Florida,10
+,N.C. Central,16,Arizona St.,11
+,N.C. Central,16,St. John's (NY),11
+,N.C. Central,16,Ohio St.,11
+,N.C. Central,16,Belmont,11
+,N.C. Central,16,Saint Mary's (CA),11
+,N.C. Central,16,Temple,11
+,N.C. Central,16,Oregon,12
+,N.C. Central,16,Murray St.,12
+,N.C. Central,16,New Mexico St.,12
+,N.C. Central,16,Liberty,12
+,N.C. Central,16,Saint Louis,13
+,N.C. Central,16,UC Irvine,13
+,N.C. Central,16,Vermont,13
+,N.C. Central,16,Northeastern,13
+,N.C. Central,16,Northern Ky.,14
+,N.C. Central,16,Georgia St.,14
+,N.C. Central,16,Yale,14
+,N.C. Central,16,Old Dominion,14
+,N.C. Central,16,Abilene Christian,15
+,N.C. Central,16,Colgate,15
+,N.C. Central,16,Bradley,15
+,N.C. Central,16,Montana,15
+,N.C. Central,16,Fairleigh Dickinson,16
+,N.C. Central,16,Gardner-Webb,16
+,N.C. Central,16,Prairie View,16
+,N.C. Central,16,North Dakota St.,16
+,N.C. Central,16,Iona,16
+,Gardner-Webb,16,North Carolina,1
+,Gardner-Webb,16,Gonzaga,1
+,Gardner-Webb,16,Duke,1
+,Gardner-Webb,16,Virginia,1
+,Gardner-Webb,16,Kentucky,2
+,Gardner-Webb,16,Michigan St.,2
+,Gardner-Webb,16,Tennessee,2
+,Gardner-Webb,16,Michigan,2
+,Gardner-Webb,16,Houston,3
+,Gardner-Webb,16,LSU,3
+,Gardner-Webb,16,Purdue,3
+,Gardner-Webb,16,Texas Tech,3
+,Gardner-Webb,16,Virginia Tech,4
+,Gardner-Webb,16,Kansas,4
+,Gardner-Webb,16,Florida St.,4
+,Gardner-Webb,16,Kansas St.,4
+,Gardner-Webb,16,Auburn,5
+,Gardner-Webb,16,Wisconsin,5
+,Gardner-Webb,16,Mississippi St.,5
+,Gardner-Webb,16,Marquette,5
+,Gardner-Webb,16,Iowa St.,6
+,Gardner-Webb,16,Buffalo,6
+,Gardner-Webb,16,Villanova,6
+,Gardner-Webb,16,Maryland,6
+,Gardner-Webb,16,Wofford,7
+,Gardner-Webb,16,Nevada,7
+,Gardner-Webb,16,Cincinnati,7
+,Gardner-Webb,16,Louisville,7
+,Gardner-Webb,16,Ole Miss,8
+,Gardner-Webb,16,Syracuse,8
+,Gardner-Webb,16,Utah St.,8
+,Gardner-Webb,16,VCU,8
+,Gardner-Webb,16,Baylor,9
+,Gardner-Webb,16,Oklahoma,9
+,Gardner-Webb,16,UCF,9
+,Gardner-Webb,16,Washington,9
+,Gardner-Webb,16,Iowa,10
+,Gardner-Webb,16,Seton Hall,10
+,Gardner-Webb,16,Minnesota,10
+,Gardner-Webb,16,Florida,10
+,Gardner-Webb,16,Arizona St.,11
+,Gardner-Webb,16,St. John's (NY),11
+,Gardner-Webb,16,Ohio St.,11
+,Gardner-Webb,16,Belmont,11
+,Gardner-Webb,16,Saint Mary's (CA),11
+,Gardner-Webb,16,Temple,11
+,Gardner-Webb,16,Oregon,12
+,Gardner-Webb,16,Murray St.,12
+,Gardner-Webb,16,New Mexico St.,12
+,Gardner-Webb,16,Liberty,12
+,Gardner-Webb,16,Saint Louis,13
+,Gardner-Webb,16,UC Irvine,13
+,Gardner-Webb,16,Vermont,13
+,Gardner-Webb,16,Northeastern,13
+,Gardner-Webb,16,Northern Ky.,14
+,Gardner-Webb,16,Georgia St.,14
+,Gardner-Webb,16,Yale,14
+,Gardner-Webb,16,Old Dominion,14
+,Gardner-Webb,16,Abilene Christian,15
+,Gardner-Webb,16,Colgate,15
+,Gardner-Webb,16,Bradley,15
+,Gardner-Webb,16,Montana,15
+,Gardner-Webb,16,Fairleigh Dickinson,16
+,Gardner-Webb,16,N.C. Central,16
+,Gardner-Webb,16,Prairie View,16
+,Gardner-Webb,16,North Dakota St.,16
+,Gardner-Webb,16,Iona,16
+,Prairie View,16,North Carolina,1
+,Prairie View,16,Gonzaga,1
+,Prairie View,16,Duke,1
+,Prairie View,16,Virginia,1
+,Prairie View,16,Kentucky,2
+,Prairie View,16,Michigan St.,2
+,Prairie View,16,Tennessee,2
+,Prairie View,16,Michigan,2
+,Prairie View,16,Houston,3
+,Prairie View,16,LSU,3
+,Prairie View,16,Purdue,3
+,Prairie View,16,Texas Tech,3
+,Prairie View,16,Virginia Tech,4
+,Prairie View,16,Kansas,4
+,Prairie View,16,Florida St.,4
+,Prairie View,16,Kansas St.,4
+,Prairie View,16,Auburn,5
+,Prairie View,16,Wisconsin,5
+,Prairie View,16,Mississippi St.,5
+,Prairie View,16,Marquette,5
+,Prairie View,16,Iowa St.,6
+,Prairie View,16,Buffalo,6
+,Prairie View,16,Villanova,6
+,Prairie View,16,Maryland,6
+,Prairie View,16,Wofford,7
+,Prairie View,16,Nevada,7
+,Prairie View,16,Cincinnati,7
+,Prairie View,16,Louisville,7
+,Prairie View,16,Ole Miss,8
+,Prairie View,16,Syracuse,8
+,Prairie View,16,Utah St.,8
+,Prairie View,16,VCU,8
+,Prairie View,16,Baylor,9
+,Prairie View,16,Oklahoma,9
+,Prairie View,16,UCF,9
+,Prairie View,16,Washington,9
+,Prairie View,16,Iowa,10
+,Prairie View,16,Seton Hall,10
+,Prairie View,16,Minnesota,10
+,Prairie View,16,Florida,10
+,Prairie View,16,Arizona St.,11
+,Prairie View,16,St. John's (NY),11
+,Prairie View,16,Ohio St.,11
+,Prairie View,16,Belmont,11
+,Prairie View,16,Saint Mary's (CA),11
+,Prairie View,16,Temple,11
+,Prairie View,16,Oregon,12
+,Prairie View,16,Murray St.,12
+,Prairie View,16,New Mexico St.,12
+,Prairie View,16,Liberty,12
+,Prairie View,16,Saint Louis,13
+,Prairie View,16,UC Irvine,13
+,Prairie View,16,Vermont,13
+,Prairie View,16,Northeastern,13
+,Prairie View,16,Northern Ky.,14
+,Prairie View,16,Georgia St.,14
+,Prairie View,16,Yale,14
+,Prairie View,16,Old Dominion,14
+,Prairie View,16,Abilene Christian,15
+,Prairie View,16,Colgate,15
+,Prairie View,16,Bradley,15
+,Prairie View,16,Montana,15
+,Prairie View,16,Fairleigh Dickinson,16
+,Prairie View,16,N.C. Central,16
+,Prairie View,16,Gardner-Webb,16
+,Prairie View,16,North Dakota St.,16
+,Prairie View,16,Iona,16
+,North Dakota St.,16,North Carolina,1
+,North Dakota St.,16,Gonzaga,1
+,North Dakota St.,16,Duke,1
+,North Dakota St.,16,Virginia,1
+,North Dakota St.,16,Kentucky,2
+,North Dakota St.,16,Michigan St.,2
+,North Dakota St.,16,Tennessee,2
+,North Dakota St.,16,Michigan,2
+,North Dakota St.,16,Houston,3
+,North Dakota St.,16,LSU,3
+,North Dakota St.,16,Purdue,3
+,North Dakota St.,16,Texas Tech,3
+,North Dakota St.,16,Virginia Tech,4
+,North Dakota St.,16,Kansas,4
+,North Dakota St.,16,Florida St.,4
+,North Dakota St.,16,Kansas St.,4
+,North Dakota St.,16,Auburn,5
+,North Dakota St.,16,Wisconsin,5
+,North Dakota St.,16,Mississippi St.,5
+,North Dakota St.,16,Marquette,5
+,North Dakota St.,16,Iowa St.,6
+,North Dakota St.,16,Buffalo,6
+,North Dakota St.,16,Villanova,6
+,North Dakota St.,16,Maryland,6
+,North Dakota St.,16,Wofford,7
+,North Dakota St.,16,Nevada,7
+,North Dakota St.,16,Cincinnati,7
+,North Dakota St.,16,Louisville,7
+,North Dakota St.,16,Ole Miss,8
+,North Dakota St.,16,Syracuse,8
+,North Dakota St.,16,Utah St.,8
+,North Dakota St.,16,VCU,8
+,North Dakota St.,16,Baylor,9
+,North Dakota St.,16,Oklahoma,9
+,North Dakota St.,16,UCF,9
+,North Dakota St.,16,Washington,9
+,North Dakota St.,16,Iowa,10
+,North Dakota St.,16,Seton Hall,10
+,North Dakota St.,16,Minnesota,10
+,North Dakota St.,16,Florida,10
+,North Dakota St.,16,Arizona St.,11
+,North Dakota St.,16,St. John's (NY),11
+,North Dakota St.,16,Ohio St.,11
+,North Dakota St.,16,Belmont,11
+,North Dakota St.,16,Saint Mary's (CA),11
+,North Dakota St.,16,Temple,11
+,North Dakota St.,16,Oregon,12
+,North Dakota St.,16,Murray St.,12
+,North Dakota St.,16,New Mexico St.,12
+,North Dakota St.,16,Liberty,12
+,North Dakota St.,16,Saint Louis,13
+,North Dakota St.,16,UC Irvine,13
+,North Dakota St.,16,Vermont,13
+,North Dakota St.,16,Northeastern,13
+,North Dakota St.,16,Northern Ky.,14
+,North Dakota St.,16,Georgia St.,14
+,North Dakota St.,16,Yale,14
+,North Dakota St.,16,Old Dominion,14
+,North Dakota St.,16,Abilene Christian,15
+,North Dakota St.,16,Colgate,15
+,North Dakota St.,16,Bradley,15
+,North Dakota St.,16,Montana,15
+,North Dakota St.,16,Fairleigh Dickinson,16
+,North Dakota St.,16,N.C. Central,16
+,North Dakota St.,16,Gardner-Webb,16
+,North Dakota St.,16,Prairie View,16
+,North Dakota St.,16,Iona,16
+,Iona,16,North Carolina,1
+,Iona,16,Gonzaga,1
+,Iona,16,Duke,1
+,Iona,16,Virginia,1
+,Iona,16,Kentucky,2
+,Iona,16,Michigan St.,2
+,Iona,16,Tennessee,2
+,Iona,16,Michigan,2
+,Iona,16,Houston,3
+,Iona,16,LSU,3
+,Iona,16,Purdue,3
+,Iona,16,Texas Tech,3
+,Iona,16,Virginia Tech,4
+,Iona,16,Kansas,4
+,Iona,16,Florida St.,4
+,Iona,16,Kansas St.,4
+,Iona,16,Auburn,5
+,Iona,16,Wisconsin,5
+,Iona,16,Mississippi St.,5
+,Iona,16,Marquette,5
+,Iona,16,Iowa St.,6
+,Iona,16,Buffalo,6
+,Iona,16,Villanova,6
+,Iona,16,Maryland,6
+,Iona,16,Wofford,7
+,Iona,16,Nevada,7
+,Iona,16,Cincinnati,7
+,Iona,16,Louisville,7
+,Iona,16,Ole Miss,8
+,Iona,16,Syracuse,8
+,Iona,16,Utah St.,8
+,Iona,16,VCU,8
+,Iona,16,Baylor,9
+,Iona,16,Oklahoma,9
+,Iona,16,UCF,9
+,Iona,16,Washington,9
+,Iona,16,Iowa,10
+,Iona,16,Seton Hall,10
+,Iona,16,Minnesota,10
+,Iona,16,Florida,10
+,Iona,16,Arizona St.,11
+,Iona,16,St. John's (NY),11
+,Iona,16,Ohio St.,11
+,Iona,16,Belmont,11
+,Iona,16,Saint Mary's (CA),11
+,Iona,16,Temple,11
+,Iona,16,Oregon,12
+,Iona,16,Murray St.,12
+,Iona,16,New Mexico St.,12
+,Iona,16,Liberty,12
+,Iona,16,Saint Louis,13
+,Iona,16,UC Irvine,13
+,Iona,16,Vermont,13
+,Iona,16,Northeastern,13
+,Iona,16,Northern Ky.,14
+,Iona,16,Georgia St.,14
+,Iona,16,Yale,14
+,Iona,16,Old Dominion,14
+,Iona,16,Abilene Christian,15
+,Iona,16,Colgate,15
+,Iona,16,Bradley,15
+,Iona,16,Montana,15
+,Iona,16,Fairleigh Dickinson,16
+,Iona,16,N.C. Central,16
+,Iona,16,Gardner-Webb,16
+,Iona,16,Prairie View,16
+,Iona,16,North Dakota St.,16

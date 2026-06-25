@@ -1,0 +1,8 @@
+narrative,predicted_label,label,probability,season,seed,school_ncaa,pace_rank,efficiency_rank,opponent_seed,opponent_school_ncaa,opp_pace_rank,opp_efficiency_rank
+Virginia was predicted to win 94% but lost,win,loss,0.94,2018,01,Virginia,353.0,1.0,16,UMBC,315.0,201.0
+UMBC was predicted to lose 94% but won,loss,win,0.94,2018,16,UMBC,315.0,201.0,01,Virginia,353.0,1.0
+Virginia Tech was predicted to win 77% but lost,win,loss,0.77,2018,08,Virginia Tech,308.0,6.0,09,Alabama,99.0,56.0
+Tennessee was predicted to win 77% but lost,win,loss,0.77,2018,03,Tennessee,175.0,5.0,11,Loyola Chicago,342.0,127.0
+North Carolina was predicted to win 76% but lost,win,loss,0.76,2018,02,North Carolina,5.0,8.0,07,Texas A&M,144.0,138.0
+Texas A&M was predicted to lose 76% but won,loss,win,0.76,2018,07,Texas A&M,144.0,138.0,02,North Carolina,5.0,8.0
+Loyola Chicago was predicted to lose 75% but won,loss,win,0.75,2018,11,Loyola Chicago,342.0,127.0,03,Tennessee,175.0,5.0

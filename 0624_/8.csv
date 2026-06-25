@@ -1,0 +1,61 @@
+processed_input,weight,category_weights
+__INTERCEPT__,-10.973140286774079,"{
+  ""category_weights"": []
+}"
+pace_stat_diff,0.014969759913783709,"{
+  ""category_weights"": []
+}"
+pts_100poss,0.013785724051538124,"{
+  ""category_weights"": []
+}"
+opp_pts_100poss,-0.013092088355899712,"{
+  ""category_weights"": []
+}"
+eff_stat_diff,-0.012076124900066064,"{
+  ""category_weights"": []
+}"
+opp_poss_40min,0.01054933369969464,"{
+  ""category_weights"": []
+}"
+poss_40min,-0.0088289412487944242,"{
+  ""category_weights"": []
+}"
+efficiency_rating,0.0076381923842803977,"{
+  ""category_weights"": []
+}"
+eff_rating_diff,-0.0064428704146661259,"{
+  ""category_weights"": []
+}"
+opp_efficiency_rating,-0.0061229393055222637,"{
+  ""category_weights"": []
+}"
+season,0.0053473060908411545,"{
+  ""category_weights"": []
+}"
+efficiency_rank,-0.0021759381708546339,"{
+  ""category_weights"": []
+}"
+eff_rank_diff,0.001837094451120446,"{
+  ""category_weights"": []
+}"
+opp_efficiency_rank,0.0017624544958374352,"{
+  ""category_weights"": []
+}"
+pace_rating,-0.0016677796642053122,"{
+  ""category_weights"": []
+}"
+pace_rating_diff,0.001519756700603435,"{
+  ""category_weights"": []
+}"
+opp_pace_rating,0.0012595851680260589,"{
+  ""category_weights"": []
+}"
+pace_rank,0.00045057931050470219,"{
+  ""category_weights"": []
+}"
+pace_rank_diff,-0.00041853158247261559,"{
+  ""category_weights"": []
+}"
+opp_pace_rank,-0.00035313537751238634,"{
+  ""category_weights"": []
+}"

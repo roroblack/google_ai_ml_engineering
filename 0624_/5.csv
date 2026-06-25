@@ -1,0 +1,352 @@
+predicted_label,predicted_label_probs,season,round,days_from_epoch,game_date,day,label,seed,market,name,alias,school_ncaa,points,opponent_seed,opponent_market,opponent_name,opponent_alias,opponent_school_ncaa,opponent_points
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.20190342986875928""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.79809657013124069""
+  }]
+}",2018,68,17603,2018-03-13,Tuesday,win,11,St. Bonaventure,Bonnies,SBON,St. Bonaventure,65,11,UCLA,Bruins,UCLA,UCLA,58
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.33513412957985539""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.66486587042014467""
+  }]
+}",2018,64,17605,2018-03-15,Thursday,win,06,Houston,Cougars,HOU,Houston,67,11,San Diego State,Aztecs,SDSU,San Diego St.,65
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.4865286994912304""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.51347130050876966""
+  }]
+}",2018,64,17605,2018-03-15,Thursday,win,08,Seton Hall,Pirates,HALL,Seton Hall,94,09,North Carolina State,Wolfpack,NCST,NC State,83
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.11047043264035647""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.8895295673596435""
+  }]
+}",2018,64,17605,2018-03-15,Thursday,win,13,Buffalo,Bulls,BUFF,Buffalo,89,04,Arizona,Wildcats,ARIZ,Arizona,68
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.12548913020034203""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.874510869799658""
+  }]
+}",2018,64,17606,2018-03-16,Friday,win,16,UMBC,Retrievers,UMBC,UMBC,74,01,Virginia,Cavaliers,UVA,Virginia,54
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.44610332055029117""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.55389667944970888""
+  }]
+}",2018,64,17606,2018-03-16,Friday,win,09,Florida State,Seminoles,FSU,Florida St.,67,08,Missouri,Tigers,MIZZ,Missouri,54
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.49072047864747592""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.50927952135252408""
+  }]
+}",2018,64,17606,2018-03-16,Friday,win,10,Butler,Bulldogs,BUT,Butler,79,07,Arkansas,Razorbacks,ARK,Arkansas,62
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.12973098086815071""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.87026901913184929""
+  }]
+}",2018,64,17606,2018-03-16,Friday,win,13,Marshall,Thundering Herd,MRSH,Marshall,81,04,Wichita State,Shockers,WICH,Wichita St.,75
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.46233730558412378""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.53766269441587622""
+  }]
+}",2018,64,17606,2018-03-16,Friday,win,07,Nevada,Wolf Pack,NEV,Nevada,87,10,Texas,Longhorns,TEX,Texas,83
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.46668444547188981""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.53331555452811019""
+  }]
+}",2018,32,17607,2018-03-17,Saturday,win,04,Gonzaga,Bulldogs,GONZ,Gonzaga,90,05,Ohio State,Buckeyes,OSU,Ohio St.,84
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.41579078515328238""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.58420921484671762""
+  }]
+}",2018,32,17607,2018-03-17,Saturday,win,03,Texas Tech,Red Raiders,TTU,Texas Tech,69,06,Florida,Gators,FLA,Florida,66
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.40388643920361""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.59611356079639""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,win,11,Syracuse,Orange,SYR,Syracuse,55,03,Michigan State,Spartans,MSU,Michigan St.,53
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.24731700934049253""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.7526829906595075""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,win,09,Florida State,Seminoles,FSU,Florida St.,75,01,Xavier,Musketeers,XAV,Xavier,70
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.28057481561121161""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.71942518438878844""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,win,07,Texas A&M,Aggies,TXAM,Texas A&M,86,02,North Carolina,Tar Heels,UNC,North Carolina,65
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.34710559745201941""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.65289440254798059""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,win,07,Nevada,Wolf Pack,NEV,Nevada,75,02,Cincinnati,Bearcats,CIN,Cincinnati,73
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.19336571419705206""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.80663428580294794""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,win,05,Clemson,Tigers,CLEM,Clemson,84,04,Auburn,Tigers,AUB,Auburn,53
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.28782880965894092""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.712171190341059""
+  }]
+}",2018,16,17612,2018-03-22,Thursday,win,09,Kansas State,Wildcats,KSU,Kansas St.,61,05,Kentucky,Wildcats,UK,Kentucky,58
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.32143935311460042""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.67856064688539952""
+  }]
+}",2018,16,17612,2018-03-22,Thursday,win,09,Florida State,Seminoles,FSU,Florida St.,75,04,Gonzaga,Bulldogs,GONZ,Gonzaga,60
+loss,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.40773728443723911""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.59226271556276089""
+  }]
+}",2018,16,17613,2018-03-23,Friday,win,03,Texas Tech,Red Raiders,TTU,Texas Tech,78,02,Purdue,Boilermakers,PUR,Purdue,65
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.79017652888185941""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.20982347111814059""
+  }]
+}",2018,68,17603,2018-03-13,Tuesday,loss,11,UCLA,Bruins,UCLA,UCLA,58,11,St. Bonaventure,Bonnies,SBON,St. Bonaventure,65
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.52340169291292449""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.47659830708707551""
+  }]
+}",2018,68,17604,2018-03-14,Wednesday,loss,11,Arizona State,Sun Devils,ASU,Arizona St.,56,11,Syracuse,Orange,SYR,Syracuse,60
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.65778313847202252""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.34221686152797748""
+  }]
+}",2018,64,17605,2018-03-15,Thursday,loss,11,San Diego State,Aztecs,SDSU,San Diego St.,65,06,Houston,Cougars,HOU,Houston,67
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.865089337675875""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.13491066232412496""
+  }]
+}",2018,64,17605,2018-03-15,Thursday,loss,04,Arizona,Wildcats,ARIZ,Arizona,68,13,Buffalo,Bulls,BUFF,Buffalo,89
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.51561574915449249""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.48438425084550751""
+  }]
+}",2018,64,17606,2018-03-16,Friday,loss,07,Arkansas,Razorbacks,ARK,Arkansas,62,10,Butler,Bulldogs,BUT,Butler,79
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.54318406717616319""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.45681593282383681""
+  }]
+}",2018,64,17606,2018-03-16,Friday,loss,10,Texas,Longhorns,TEX,Texas,83,07,Nevada,Wolf Pack,NEV,Nevada,87
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.52828562360516373""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.47171437639483627""
+  }]
+}",2018,64,17606,2018-03-16,Friday,loss,10,Providence,Friars,PROV,Providence,69,07,Texas A&M,Aggies,TXAM,Texas A&M,73
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.89810230698722826""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.10189769301277174""
+  }]
+}",2018,64,17606,2018-03-16,Friday,loss,01,Virginia,Cavaliers,UVA,Virginia,54,16,UMBC,Retrievers,UMBC,UMBC,74
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.57182823888122958""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.42817176111877042""
+  }]
+}",2018,64,17606,2018-03-16,Friday,loss,08,Missouri,Tigers,MIZZ,Missouri,54,09,Florida State,Seminoles,FSU,Florida St.,67
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.85298132069654364""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.14701867930345636""
+  }]
+}",2018,64,17606,2018-03-16,Friday,loss,04,Wichita State,Shockers,WICH,Wichita St.,75,13,Marshall,Thundering Herd,MRSH,Marshall,81
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.60547370537259715""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.39452629462740285""
+  }]
+}",2018,32,17607,2018-03-17,Saturday,loss,06,Florida,Gators,FLA,Florida,66,03,Texas Tech,Red Raiders,TTU,Texas Tech,69
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.6520340937722644""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.3479659062277356""
+  }]
+}",2018,32,17607,2018-03-17,Saturday,loss,03,Tennessee,Volunteers,TENN,Tennessee,62,11,Loyola (IL),Ramblers,L-IL,Loyola Chicago,63
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.642156074166215""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.357843925833785""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,loss,03,Michigan State,Spartans,MSU,Michigan St.,53,11,Syracuse,Orange,SYR,Syracuse,55
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.743178553139802""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.25682144686019803""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,loss,01,Xavier,Musketeers,XAV,Xavier,70,09,Florida State,Seminoles,FSU,Florida St.,75
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.66239578716607961""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.33760421283392039""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,loss,04,Auburn,Tigers,AUB,Auburn,53,05,Clemson,Tigers,CLEM,Clemson,84
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.70164351878092057""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.29835648121907943""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,loss,02,Cincinnati,Bearcats,CIN,Cincinnati,73,07,Nevada,Wolf Pack,NEV,Nevada,75
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.784499641574208""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.21550035842579196""
+  }]
+}",2018,32,17608,2018-03-18,Sunday,loss,02,North Carolina,Tar Heels,UNC,North Carolina,65,07,Texas A&M,Aggies,TXAM,Texas A&M,86
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.7215017842142738""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.2784982157857262""
+  }]
+}",2018,16,17612,2018-03-22,Thursday,loss,05,Kentucky,Wildcats,UK,Kentucky,58,09,Kansas State,Wildcats,KSU,Kansas St.,61
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.63186505546219507""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.36813494453780493""
+  }]
+}",2018,16,17612,2018-03-22,Thursday,loss,04,Gonzaga,Bulldogs,GONZ,Gonzaga,60,09,Florida State,Seminoles,FSU,Florida St.,75
+win,"{
+  ""predicted_label_probs"": [{
+    ""label"": ""win"",
+    ""prob"": ""0.59236007260302437""
+  }, {
+    ""label"": ""loss"",
+    ""prob"": ""0.40763992739697563""
+  }]
+}",2018,16,17613,2018-03-23,Friday,loss,02,Purdue,Boilermakers,PUR,Purdue,65,03,Texas Tech,Red Raiders,TTU,Texas Tech,78

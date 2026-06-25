@@ -1,0 +1,3 @@
+narrative,predicted_label,label,probability,season,seed,school_ncaa,pace_rank,efficiency_rank,opponent_seed,opponent_school_ncaa,opp_pace_rank,opp_efficiency_rank,seed_diff
+Florida St. (09) was 56% predicted to upset Xavier (01) and did!,loss,loss,0.56,2018,01,Xavier,291.0,91.0,09,Florida St.,97.0,37.0,8
+Butler (10) was 69% predicted to upset Arkansas (07) and did!,loss,loss,0.69,2018,07,Arkansas,31.0,66.0,10,Butler,292.0,45.0,3

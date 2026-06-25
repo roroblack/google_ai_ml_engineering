@@ -1,0 +1,68 @@
+prediction,confidence,school_ncaa,seed,opponent_school_ncaa,opponent_seed
+win,0.605,Duke,1,North Carolina,1
+win,0.515,Duke,1,Gonzaga,1
+loss,0.694,Duke,1,Virginia,1
+loss,0.508,Duke,1,Kentucky,2
+loss,0.585,Duke,1,Michigan,2
+loss,0.53,Duke,1,Tennessee,2
+loss,0.542,Duke,1,Michigan St.,2
+win,0.619,Duke,1,LSU,3
+loss,0.517,Duke,1,Houston,3
+loss,0.522,Duke,1,Texas Tech,3
+loss,0.554,Duke,1,Purdue,3
+win,0.537,Duke,1,Kansas St.,4
+win,0.626,Duke,1,Florida St.,4
+win,0.585,Duke,1,Kansas,4
+loss,0.588,Duke,1,Virginia Tech,4
+win,0.585,Duke,1,Mississippi St.,5
+win,0.632,Duke,1,Marquette,5
+win,0.556,Duke,1,Auburn,5
+loss,0.572,Duke,1,Wisconsin,5
+loss,0.506,Duke,1,Villanova,6
+win,0.643,Duke,1,Buffalo,6
+win,0.51,Duke,1,Maryland,6
+win,0.504,Duke,1,Iowa St.,6
+win,0.523,Duke,1,Wofford,7
+loss,0.545,Duke,1,Cincinnati,7
+win,0.558,Duke,1,Nevada,7
+loss,0.51,Duke,1,Louisville,7
+win,0.654,Duke,1,VCU,8
+win,0.651,Duke,1,Utah St.,8
+win,0.605,Duke,1,Ole Miss,8
+win,0.563,Duke,1,Syracuse,8
+win,0.588,Duke,1,Baylor,9
+win,0.594,Duke,1,Washington,9
+win,0.558,Duke,1,UCF,9
+win,0.617,Duke,1,Oklahoma,9
+win,0.712,Duke,1,Seton Hall,10
+win,0.687,Duke,1,Minnesota,10
+win,0.606,Duke,1,Iowa,10
+loss,0.521,Duke,1,Florida,10
+win,0.782,Duke,1,Belmont,11
+win,0.731,Duke,1,Temple,11
+win,0.715,Duke,1,Arizona St.,11
+win,0.706,Duke,1,St. John's (NY),11
+win,0.541,Duke,1,Ohio St.,11
+loss,0.502,Duke,1,Saint Mary's (CA),11
+win,0.638,Duke,1,New Mexico St.,12
+win,0.57,Duke,1,Oregon,12
+win,0.523,Duke,1,Liberty,12
+win,0.619,Duke,1,Murray St.,12
+win,0.753,Duke,1,UC Irvine,13
+win,0.746,Duke,1,Northeastern,13
+win,0.743,Duke,1,Saint Louis,13
+win,0.643,Duke,1,Vermont,13
+win,0.795,Duke,1,Georgia St.,14
+win,0.698,Duke,1,Old Dominion,14
+win,0.783,Duke,1,Yale,14
+win,0.699,Duke,1,Northern Ky.,14
+win,0.894,Duke,1,Bradley,15
+win,0.803,Duke,1,Abilene Christian,15
+win,0.823,Duke,1,Colgate,15
+win,0.75,Duke,1,Montana,15
+win,0.947,Duke,1,Prairie View,16
+win,0.914,Duke,1,N.C. Central,16
+win,0.912,Duke,1,Fairleigh Dickinson,16
+win,0.937,Duke,1,Iona,16
+win,0.885,Duke,1,North Dakota St.,16
+win,0.718,Duke,1,Gardner-Webb,16

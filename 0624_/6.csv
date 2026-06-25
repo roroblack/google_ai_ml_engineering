@@ -1,0 +1,8 @@
+predicted_label,confidence,correct_label,game_date,round,seed,school_ncaa,points,opponent_seed,opponent_school_ncaa,opponent_points
+loss,0.8895295673596435,win,2018-03-15,64,13,Buffalo,89,04,Arizona,68
+loss,0.874510869799658,win,2018-03-16,64,16,UMBC,74,01,Virginia,54
+loss,0.87026901913184929,win,2018-03-16,64,13,Marshall,81,04,Wichita St.,75
+loss,0.80663428580294794,win,2018-03-18,32,05,Clemson,84,04,Auburn,53
+win,0.865089337675875,loss,2018-03-15,64,04,Arizona,68,13,Buffalo,89
+win,0.89810230698722826,loss,2018-03-16,64,01,Virginia,54,16,UMBC,74
+win,0.85298132069654364,loss,2018-03-16,64,04,Wichita St.,75,13,Marshall,81

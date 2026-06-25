@@ -1,0 +1,771 @@
+https://console.cloud.google.com/bigquery?p=data-to-insights&d=ecommerce&t=web_analytics&page=table
+
+======================================================================================================
+
+model 1 
+
+Model type
+Logistic regression
+
+Model ID
+qwiklabs-gcp-02-c123f80fc2ae.ecommerce.classification_model
+
+Date created
+Jun 16, 2026, 7:27:06 PM UTC+9
+
+Model location
+US
+
+Model Details 
+Date modified
+Jun 16, 2026, 7:27:06 PM UTC+9
+Model expiration
+Aug 15, 2026, 7:27:06 PM UTC+9
+Description
+-
+Training data
+Evaluation data
+Training Options
+Training options are the parameters that were added in the script to create this model.
+
+Max allowed iterations
+20
+Actual iterations
+10
+L1 regularization
+0.00
+L2 regularization
+0.00
+Early stop
+true
+Min relative progress
+0.01
+Learn rate strategy
+Line search
+Line search initial learn rate
+0.10
+Calculate P Values
+false
+Data split method
+Auto
+Label Column
+Filter
+Field name
+Type
+Mode
+Description
+predicted_will_buy_on_return_visit
+INT64	NULLABLE	-	
+Feature Columns
+Filter
+Field name
+Type
+Mode
+Description
+bounces
+INT64	NULLABLE	-	
+time_on_site
+INT64	NULLABLE	-
+
+
+
+Iteration
+Training Data Loss
+Evaluation Data Loss
+Learn Rate
+Duration (seconds)
+9	0.0727	0.0693	25.6	5.74	
+8	0.0730	0.0698	51.2	7.27	
+7	0.0755	0.0727	25.6	7.38	
+6	0.0838	0.0816	12.8	8.13	
+5	0.1083	0.1066	6.4	5.95	
+4	0.1709	0.1697	3.2	9.00	
+3	0.2919	0.2912	1.6	7.49	
+2	0.4419	0.4415	0.8	6.77	
+1	0.5665	0.5663	0.4	7.92	
+0	0.6473	0.6472	0.2	4.24	
+
+
+Aggregate metrics
+Threshold 
+0.5000
+Precision 
+0.0000
+Recall 
+0.0000
+Accuracy 
+0.9847
+F1 score 
+0.0000
+Log loss 
+0.0693
+ROC AUC 
+0.7856
+Score threshold
+Positive class threshold
+
+0.0070
+Positive class
+1
+Negative class
+0
+Precision 
+0.0148
+Recall 
+1.0000
+Accuracy 
+0.0148
+F1 score 
+0.0292
+Precision-recall by threshold
+Recall@1
+Precision@1
+0.0
+1.0
+0%
+100%
+Confidence threshold
+Confidence threshold	Recall@1	Precision@1
+0.007	1	0.015
+0.022	0.946	0.029
+0.022	0.939	0.029
+0.022	0.919	0.028
+0.022	0.912	0.029
+0.022	0.912	0.03
+0.022	0.899	0.03
+0.022	0.878	0.03
+0.022	0.858	0.03
+0.022	0.858	0.031
+0.022	0.838	0.031
+0.022	0.831	0.031
+0.022	0.824	0.032
+0.022	0.818	0.033
+0.022	0.811	0.033
+0.022	0.784	0.033
+0.022	0.75	0.033
+0.023	0.743	0.033
+0.023	0.736	0.034
+0.023	0.736	0.035
+0.023	0.73	0.036
+0.023	0.709	0.036
+0.023	0.703	0.037
+0.023	0.689	0.038
+0.023	0.689	0.039
+0.023	0.676	0.04
+0.023	0.662	0.041
+0.023	0.655	0.042
+0.024	0.635	0.043
+0.024	0.622	0.044
+0.024	0.601	0.044
+0.024	0.595	0.046
+0.024	0.568	0.047
+0.025	0.547	0.048
+0.025	0.507	0.047
+0.025	0.493	0.049
+0.026	0.466	0.049
+0.026	0.453	0.052
+0.027	0.439	0.054
+0.027	0.399	0.054
+0.028	0.385	0.057
+0.029	0.372	0.061
+0.03	0.351	0.065
+0.032	0.311	0.066
+0.034	0.304	0.075
+0.036	0.277	0.082
+0.041	0.236	0.087
+0.048	0.203	0.1
+0.059	0.155	0.115
+0.085	0.088	0.13
+0.896	0	0
+Precision-recall curve
+0%
+100%
+0%
+100%
+Recall
+Precision
+x	y
+0	0
+0.088	0.13
+0.155	0.115
+0.203	0.1
+0.236	0.087
+0.277	0.082
+0.304	0.075
+0.311	0.066
+0.351	0.065
+0.372	0.061
+0.385	0.057
+0.399	0.054
+0.439	0.054
+0.453	0.052
+0.466	0.049
+0.493	0.049
+0.507	0.047
+0.547	0.048
+0.568	0.047
+0.595	0.046
+0.601	0.044
+0.622	0.044
+0.635	0.043
+0.655	0.042
+0.662	0.041
+0.676	0.04
+0.689	0.039
+0.689	0.038
+0.703	0.037
+0.709	0.036
+0.73	0.036
+0.736	0.035
+0.736	0.034
+0.743	0.033
+0.75	0.033
+0.784	0.033
+0.811	0.033
+0.818	0.033
+0.824	0.032
+0.831	0.031
+0.838	0.031
+0.858	0.031
+0.858	0.03
+0.878	0.03
+0.899	0.03
+0.912	0.03
+0.912	0.029
+0.919	0.028
+0.939	0.029
+0.946	0.029
+1	0.015
+Area under curve: 0.057
+ROC curve
+0%
+100%
+0%
+100%
+False positive rate
+True positive rate
+x	y
+0	0
+0.009	0.088
+0.018	0.155
+0.027	0.203
+0.037	0.236
+0.047	0.277
+0.056	0.304
+0.066	0.311
+0.076	0.351
+0.086	0.372
+0.096	0.385
+0.106	0.399
+0.116	0.439
+0.125	0.453
+0.135	0.466
+0.145	0.493
+0.155	0.507
+0.164	0.547
+0.175	0.568
+0.185	0.595
+0.195	0.601
+0.205	0.622
+0.214	0.635
+0.225	0.655
+0.234	0.662
+0.245	0.676
+0.254	0.689
+0.265	0.689
+0.277	0.703
+0.287	0.709
+0.296	0.73
+0.307	0.736
+0.315	0.736
+0.327	0.743
+0.336	0.75
+0.344	0.784
+0.356	0.811
+0.363	0.818
+0.375	0.824
+0.386	0.831
+0.395	0.838
+0.406	0.858
+0.414	0.858
+0.425	0.878
+0.434	0.899
+0.447	0.912
+0.456	0.912
+0.472	0.919
+0.479	0.939
+0.484	0.946
+1	1
+Area under curve: 0.786
+Confusion matrix
+A confusion matrix shows how the model classified each label in the evaluation dataset. The blue, bold cells indicate a correct prediction. A data item is moved to the dropped column if it does not meet the confidence threshold for any label.
+True label
+Predicted label
+1
+0
+1
+100%
+0%
+0
+100%
+0%
+
+
+SELECT *
+FROM ML.PREDICT(MODEL `qwiklabs-gcp-02-c123f80fc2ae.ecommerce.classification_model`, (
+  SELECT
+     bounces, time_on_site
+  FROM `ecommerce.<your_table>`
+))
+
+
+SELECT *
+FROM ML.PREDICT(MODEL `qwiklabs-gcp-02-c123f80fc2ae.ecommerce.classification_model`, (
+  SELECT
+     bounces, time_on_site
+  FROM `ecommerce.<your_table>`
+))
+
+
+
+
+
+
+
+=====================================================================================================
+
+model 2
+
+
+Training Options
+Training options are the parameters that were added in the script to create this model.
+
+Max allowed iterations
+20
+Actual iterations
+8
+L1 regularization
+0.00
+L2 regularization
+0.00
+Early stop
+true
+Min relative progress
+0.01
+Learn rate strategy
+Line search
+Line search initial learn rate
+0.10
+Calculate P Values
+false
+Data split method
+Auto
+Label Column
+Filter
+Field name
+Type
+Mode
+Description
+predicted_will_buy_on_return_visit
+INT64	NULLABLE	-	
+Feature Columns
+Filter
+Field name
+Type
+Mode
+Description
+latest_ecommerce_progress
+INT64	NULLABLE	-	
+bounces
+INT64	NULLABLE	-	
+time_on_site
+INT64	NULLABLE	-	
+pageviews
+INT64	NULLABLE	-	
+source
+STRING	NULLABLE	-	
+medium
+STRING	NULLABLE	-	
+channelGrouping
+STRING	NULLABLE	-	
+deviceCategory
+STRING	NULLABLE	-	
+country
+STRING	NULLABLE	-
+
+
+
+
+
+
+Aggregate metrics
+Threshold 
+0.5000
+Precision 
+0.2000
+Recall 
+0.0263
+Accuracy 
+0.9834
+F1 score 
+0.0465
+Log loss 
+0.0582
+ROC AUC 
+0.9221
+Score threshold
+Positive class threshold
+
+0.0021
+Positive class
+1
+Negative class
+0
+Precision 
+0.0154
+Recall 
+1.0000
+Accuracy 
+0.0154
+F1 score 
+0.0302
+
+
+
+
+Precision-recall by threshold
+Recall@1
+Precision@1
+0.0
+1.0
+0%
+100%
+Confidence threshold
+Confidence threshold	Recall@1	Precision@1
+0.002	1	0.015
+0.003	1	0.015
+0.003	1	0.016
+0.003	1	0.016
+0.003	1	0.016
+0.003	1	0.016
+0.003	1	0.016
+0.004	1	0.017
+0.004	1	0.017
+0.004	1	0.017
+0.004	1	0.017
+0.004	1	0.017
+0.004	1	0.017
+0.004	1	0.018
+0.004	1	0.018
+0.004	1	0.018
+0.004	1	0.018
+0.004	1	0.018
+0.004	1	0.019
+0.004	1	0.019
+0.004	1	0.019
+0.004	0.993	0.019
+0.004	0.993	0.019
+0.004	0.993	0.02
+0.004	0.993	0.02
+0.004	0.993	0.021
+0.004	0.993	0.021
+0.004	0.993	0.022
+0.004	0.993	0.022
+0.004	0.993	0.022
+0.004	0.993	0.023
+0.004	0.993	0.023
+0.004	0.993	0.023
+0.004	0.993	0.024
+0.004	0.993	0.024
+0.004	0.993	0.025
+0.005	0.993	0.025
+0.005	0.993	0.025
+0.005	0.993	0.026
+0.005	0.993	0.026
+0.005	0.993	0.027
+0.005	0.993	0.027
+0.005	0.993	0.028
+0.005	0.993	0.028
+0.005	0.993	0.029
+0.006	0.993	0.029
+0.006	0.993	0.03
+0.006	0.98	0.03
+0.006	0.98	0.031
+0.006	0.98	0.031
+0.006	0.98	0.032
+0.006	0.98	0.033
+0.007	0.98	0.033
+0.007	0.98	0.034
+0.007	0.98	0.034
+0.007	0.98	0.036
+0.008	0.974	0.036
+0.008	0.974	0.037
+0.008	0.954	0.04
+0.009	0.954	0.041
+0.01	0.954	0.042
+0.01	0.947	0.043
+0.01	0.941	0.044
+0.011	0.941	0.045
+0.011	0.921	0.046
+0.011	0.921	0.047
+0.011	0.921	0.049
+0.012	0.921	0.05
+0.012	0.914	0.052
+0.014	0.914	0.054
+0.014	0.908	0.056
+0.015	0.908	0.058
+0.015	0.908	0.06
+0.016	0.908	0.063
+0.018	0.908	0.066
+0.019	0.908	0.07
+0.02	0.895	0.071
+0.02	0.895	0.076
+0.021	0.895	0.081
+0.024	0.882	0.084
+0.027	0.868	0.089
+0.028	0.849	0.091
+0.029	0.816	0.104
+0.037	0.789	0.11
+0.039	0.77	0.118
+0.042	0.717	0.122
+0.052	0.704	0.129
+0.069	0.638	0.139
+0.071	0.592	0.151
+0.076	0.566	0.173
+0.09	0.487	0.186
+0.125	0.382	0.195
+0.167	0.263	0.201
+0.244	0.138	0.212
+0.793	0	0
+Precision-recall curve
+0%
+100%
+0%
+100%
+Recall
+Precision
+x	y
+0	0
+0.138	0.212
+0.263	0.201
+0.382	0.195
+0.487	0.186
+0.566	0.173
+0.592	0.151
+0.638	0.139
+0.704	0.129
+0.717	0.122
+0.77	0.118
+0.789	0.11
+0.816	0.104
+0.849	0.091
+0.868	0.089
+0.882	0.084
+0.895	0.081
+0.895	0.076
+0.895	0.071
+0.908	0.07
+0.908	0.066
+0.908	0.063
+0.908	0.06
+0.908	0.058
+0.908	0.056
+0.914	0.054
+0.914	0.052
+0.921	0.05
+0.921	0.049
+0.921	0.047
+0.921	0.046
+0.941	0.045
+0.941	0.044
+0.947	0.043
+0.954	0.042
+0.954	0.041
+0.954	0.04
+0.974	0.037
+0.974	0.036
+0.98	0.036
+0.98	0.034
+0.98	0.034
+0.98	0.033
+0.98	0.033
+0.98	0.032
+0.98	0.031
+0.98	0.031
+0.98	0.03
+0.993	0.03
+0.993	0.029
+0.993	0.029
+0.993	0.028
+0.993	0.028
+0.993	0.027
+0.993	0.027
+0.993	0.026
+0.993	0.026
+0.993	0.025
+0.993	0.025
+0.993	0.025
+0.993	0.024
+0.993	0.024
+0.993	0.023
+0.993	0.023
+0.993	0.023
+0.993	0.022
+0.993	0.022
+0.993	0.022
+0.993	0.021
+0.993	0.021
+0.993	0.02
+0.993	0.02
+0.993	0.019
+0.993	0.019
+1	0.019
+1	0.019
+1	0.019
+1	0.018
+1	0.018
+1	0.018
+1	0.018
+1	0.018
+1	0.017
+1	0.017
+1	0.017
+1	0.017
+1	0.017
+1	0.017
+1	0.016
+1	0.016
+1	0.016
+1	0.016
+1	0.016
+1	0.015
+1	0.015
+Area under curve: 0.143
+ROC curve
+0%
+100%
+0%
+100%
+False positive rate
+True positive rate
+x	y
+0	0
+0.008	0.138
+0.016	0.263
+0.025	0.382
+0.033	0.487
+0.042	0.566
+0.052	0.592
+0.061	0.638
+0.074	0.704
+0.081	0.717
+0.09	0.77
+0.1	0.789
+0.109	0.816
+0.132	0.849
+0.139	0.868
+0.149	0.882
+0.159	0.895
+0.169	0.895
+0.183	0.895
+0.189	0.908
+0.199	0.908
+0.21	0.908
+0.221	0.908
+0.23	0.908
+0.24	0.908
+0.25	0.914
+0.261	0.914
+0.27	0.921
+0.28	0.921
+0.291	0.921
+0.301	0.921
+0.31	0.941
+0.321	0.941
+0.331	0.947
+0.341	0.954
+0.351	0.954
+0.361	0.954
+0.395	0.974
+0.401	0.974
+0.411	0.98
+0.431	0.98
+0.432	0.98
+0.442	0.98
+0.452	0.98
+0.462	0.98
+0.472	0.98
+0.483	0.98
+0.493	0.98
+0.505	0.993
+0.513	0.993
+0.523	0.993
+0.533	0.993
+0.543	0.993
+0.553	0.993
+0.564	0.993
+0.574	0.993
+0.584	0.993
+0.594	0.993
+0.604	0.993
+0.614	0.993
+0.625	0.993
+0.634	0.993
+0.645	0.993
+0.66	0.993
+0.665	0.993
+0.677	0.993
+0.688	0.993
+0.696	0.993
+0.706	0.993
+0.717	0.993
+0.741	0.993
+0.762	0.993
+0.781	0.993
+0.787	0.993
+0.797	1
+0.807	1
+0.824	1
+0.827	1
+0.839	1
+0.848	1
+0.859	1
+0.868	1
+0.88	1
+0.897	1
+0.901	1
+0.911	1
+0.923	1
+0.929	1
+0.939	1
+0.95	1
+0.962	1
+0.97	1
+0.98	1
+0.991	1
+1	1
+Area under curve: 0.922
+
+
+
+SELECT *
+FROM ML.PREDICT(MODEL `qwiklabs-gcp-02-c123f80fc2ae.ecommerce.classification_model_2`, (
+  SELECT
+     latest_ecommerce_progress, bounces, time_on_site, pageviews, source, medium, channelGrouping, deviceCategory, country
+  FROM `ecommerce.<your_table>`
+))
+
+
+
+CREATE OR REPLACE MODEL `qwiklabs-gcp-02-c123f80fc2ae.ecommerce.classification_model_2`
+OPTIONS(
+  warm_start=true,
+  model_type='LOGISTIC_REG',
+LS_INIT_LEARN_RATE = 0.1,
+L1_REG = '0',
+L2_REG = 0,
+MAX_ITERATIONS = 20,
+EARLY_STOP = TRUE,
+MIN_REL_PROGRESS = 0.01,
+DATA_SPLIT_METHOD = 'AUTO_SPLIT'
+) AS SELECT * FROM `qwiklabs-gcp-02-c123f80fc2ae.ecommerce.<your_table>`

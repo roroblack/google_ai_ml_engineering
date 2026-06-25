@@ -1,0 +1,1471 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BigQuery ML 방문자 구매 예측 실습 리포트</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #607086;
+      --line: #d9e1ea;
+      --paper: #ffffff;
+      --soft: #f5f8fb;
+      --accent: #0b72b9;
+      --accent-2: #11845b;
+      --warn: #b15c00;
+      --chip: #e8f2fb;
+      --shadow: 0 14px 34px rgba(22, 35, 56, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #eef3f7;
+      font-family: "Segoe UI", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.62;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      background: var(--paper);
+      min-height: 100vh;
+      box-shadow: var(--shadow);
+    }
+
+    header {
+      padding: 42px 46px 34px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.14;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 900px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    main {
+      padding: 34px 46px 56px;
+    }
+
+    section {
+      margin: 0 0 42px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 25px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 26px 0 10px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 13px;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 5px;
+      background: #edf2f7;
+      color: #24364b;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.94em;
+    }
+
+    pre {
+      margin: 12px 0 0;
+      padding: 16px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #101820;
+      color: #edf6ff;
+      line-height: 1.48;
+      font-size: 13px;
+    }
+
+    pre code {
+      padding: 0;
+      background: transparent;
+      color: inherit;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .kpi {
+      min-height: 132px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .kpi strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .kpi span {
+      display: block;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .kpi small {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--ink);
+      background: #fbfdff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .summary-box {
+      padding: 20px;
+      border: 1px solid #c7dce9;
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+      background: #f6fbff;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0 0;
+    }
+
+    .pill {
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: #17476a;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .part {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .part-title {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+
+    .part-title .num {
+      flex: 0 0 auto;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: inline-grid;
+      place-items: center;
+      color: #fff;
+      background: var(--accent);
+      font-weight: 800;
+    }
+
+    .part-title h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .twocol {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-radius: 8px;
+      background: var(--soft);
+      color: #2c4057;
+      font-size: 14px;
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 620px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f0f5f9;
+      color: #2b3f55;
+      font-weight: 800;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .model-compare {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .model {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .model h3 {
+      margin-top: 0;
+    }
+
+    .metric {
+      margin: 13px 0;
+    }
+
+    .metric-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .bar {
+      height: 11px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #e7eef5;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--accent);
+    }
+
+    .bar.good > span {
+      background: var(--accent-2);
+    }
+
+    .decision {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .decision div {
+      padding: 16px;
+      border-radius: 8px;
+      background: var(--soft);
+    }
+
+    .decision strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+      font-size: 22px;
+    }
+
+    details {
+      margin-top: 14px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .file-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .file {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      font-size: 14px;
+    }
+
+    .file strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+    }
+
+    figcaption {
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer {
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      header,
+      main {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .kpi-grid,
+      .toc,
+      .twocol,
+      .model-compare,
+      .decision,
+      .file-list,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        min-width: 540px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Google Cloud BigQuery ML 실습 정리</p>
+      <h1>방문자 재방문 구매 예측 분류 모델 리포트</h1>
+      <p class="lead">
+        이 리포트는 폴더 내의 실습 안내문, 실제 실행 결과 CSV, BigQuery 콘솔 저장본, Google Analytics BigQuery Export 스키마 자료,
+        그리고 22장의 스크린샷을 기준으로 작성했다. 핵심 흐름은 전자상거래 로그 탐색, 학습 데이터 구성, BigQuery ML 로지스틱 회귀 모델 생성,
+        성능 평가, 피처 엔지니어링을 통한 개선, 최종 예측 결과 분석이다.
+      </p>
+      <div class="kpi-grid">
+        <div class="kpi">
+          <strong>전체 방문자</strong>
+          <span>741,721</span>
+          <small>Google Analytics ecommerce 로그 기준</small>
+        </div>
+        <div class="kpi">
+          <strong>전체 구매 전환율</strong>
+          <span>2.70%</span>
+          <small>20,015 / 741,721</small>
+        </div>
+        <div class="kpi">
+          <strong>개선 모델 ROC AUC</strong>
+          <span>0.9095</span>
+          <small>classification_model_2 holdout 평가</small>
+        </div>
+        <div class="kpi">
+          <strong>상위 6% 타깃 리프트</strong>
+          <span>9.14x</span>
+          <small>예측 확률 상위군 vs 전체 평균</small>
+        </div>
+      </div>
+      <nav class="toc" aria-label="목차">
+        <a href="#overview">개요</a>
+        <a href="#parts">파트별 실습</a>
+        <a href="#models">모델 비교</a>
+        <a href="#prediction">예측 분석</a>
+        <a href="#evidence">참고 파일</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="overview">
+        <h2>실습 개요</h2>
+        <div class="summary-box">
+          <p>
+            목표는 Google Merchandise Store의 Google Analytics 세션 데이터를 이용해
+            첫 방문자가 이후 재방문하여 구매할 가능성을 예측하는 이진 분류 모델을 만드는 것이다.
+            데이터 분석가는 BigQuery SQL만으로 데이터를 탐색하고, BigQuery ML의
+            <code>LOGISTIC_REG</code> 모델로 학습, 평가, 예측까지 수행했다.
+          </p>
+          <div class="pill-row">
+            <span class="pill">BigQuery</span>
+            <span class="pill">BigQuery ML</span>
+            <span class="pill">Google Analytics UA Export</span>
+            <span class="pill">Logistic Regression</span>
+            <span class="pill">ML.EVALUATE</span>
+            <span class="pill">ML.PREDICT</span>
+            <span class="pill">ROC AUC</span>
+            <span class="pill">Feature Engineering</span>
+          </div>
+        </div>
+
+        <h3>사용한 데이터와 프로젝트</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>항목</th>
+                <th>내용</th>
+                <th>리포트 근거</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>공개 데이터 프로젝트</td>
+                <td><code>data-to-insights</code></td>
+                <td>실습 원문, BigQuery 콘솔 캡처, MHTML 저장본</td>
+              </tr>
+              <tr>
+                <td>데이터셋/테이블</td>
+                <td><code>ecommerce.web_analytics</code></td>
+                <td>Google Analytics 세션/상품/트래픽/기기/지역 로그</td>
+              </tr>
+              <tr>
+                <td>개인 실습 프로젝트</td>
+                <td><code>qwiklabs-gcp-02-c123f80fc2ae</code></td>
+                <td>모델 ID 및 콘솔 캡처</td>
+              </tr>
+              <tr>
+                <td>모델 저장 데이터셋</td>
+                <td><code>ecommerce</code></td>
+                <td>실습 중 직접 생성한 BigQuery dataset</td>
+              </tr>
+              <tr>
+                <td>최종 모델</td>
+                <td><code>ecommerce.classification_model_2</code></td>
+                <td>피처 엔지니어링 후 ROC AUC 0.9095 기록</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="parts">
+        <h2>파트별 실습 내용</h2>
+        <div class="timeline">
+          <article class="part">
+            <div class="part-title">
+              <span class="num">1</span>
+              <h3>BigQuery 콘솔 접속과 공개 데이터셋 연결</h3>
+            </div>
+            <p>
+              Qwiklabs 임시 계정으로 Google Cloud Console에 접속한 뒤 BigQuery에서
+              <code>data-to-insights</code> 프로젝트를 Star 처리했다. 이후
+              <code>data-to-insights.ecommerce.web_analytics</code> 테이블을 열어 Google Analytics Export 형태의 중첩 데이터를 확인했다.
+            </p>
+            <p class="note">
+              이 단계에서 사용한 도구는 Google Cloud Console, BigQuery Explorer, public dataset star 기능이다.
+              <code>[UA] BigQuery Export schema [Legacy]</code> 자료는 필드 의미를 확인하는 레퍼런스로 사용했다.
+            </p>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">2</span>
+              <h3>전자상거래 데이터 탐색</h3>
+            </div>
+            <p>
+              먼저 전체 방문자 수, 구매자 수, 구매 전환율을 계산했다. 이어 상품 배열을
+              <code>UNNEST</code>로 펼쳐 매출 기준 상위 상품을 집계했고, 재방문 구매 여부를 방문자 단위로 산출했다.
+            </p>
+            <div class="twocol">
+              <div>
+                <h3>기본 전환율</h3>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>total_visitors</th>
+                        <th>total_purchasers</th>
+                        <th>conversion_rate</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>741,721</td>
+                        <td>20,015</td>
+                        <td>0.02698, 약 2.70%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h3>재방문 구매 라벨 분포</h3>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>will_buy_on_return_visit</th>
+                        <th>visitors</th>
+                        <th>비중</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>11,873</td>
+                        <td>1.60%</td>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>729,848</td>
+                        <td>98.40%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <h3>매출 상위 5개 상품</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>상품명</th>
+                    <th>카테고리</th>
+                    <th>판매 수량</th>
+                    <th>매출</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nest Learning Thermostat 3rd Gen-USA - Stainless Steel</td>
+                    <td>Nest-USA</td>
+                    <td>17,651</td>
+                    <td>870,976.95</td>
+                  </tr>
+                  <tr>
+                    <td>Nest Cam Outdoor Security Camera - USA</td>
+                    <td>Nest-USA</td>
+                    <td>16,930</td>
+                    <td>684,034.55</td>
+                  </tr>
+                  <tr>
+                    <td>Nest Cam Indoor Security Camera - USA</td>
+                    <td>Nest-USA</td>
+                    <td>14,155</td>
+                    <td>548,104.47</td>
+                  </tr>
+                  <tr>
+                    <td>Nest Protect Smoke + CO White Wired Alarm-USA</td>
+                    <td>Nest-USA</td>
+                    <td>6,394</td>
+                    <td>178,937.60</td>
+                  </tr>
+                  <tr>
+                    <td>Nest Protect Smoke + CO White Battery Alarm-USA</td>
+                    <td>Nest-USA</td>
+                    <td>6,340</td>
+                    <td>178,572.40</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <details>
+              <summary>이 파트에서 사용한 핵심 SQL 패턴</summary>
+              <pre><code>COUNT(DISTINCT fullVisitorId)
+COUNTIF(totals.transactions &gt; 0 AND totals.newVisits IS NULL)
+UNNEST(hits) AS h
+UNNEST(h.product) AS p
+ROUND(SUM(p.localProductRevenue / 1000000), 2)</code></pre>
+            </details>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">3</span>
+              <h3>예측 목표와 초기 학습 데이터셋 정의</h3>
+            </div>
+            <p>
+              비즈니스 목표는 첫 방문 시점의 행동만 보고 향후 재방문 구매 가능성이 높은 사용자를 찾는 것이다.
+              초기 모델은 의도적으로 단순하게 <code>bounces</code>와 <code>time_on_site</code>만 사용했다.
+              라벨은 미래에 확인되는 <code>will_buy_on_return_visit</code>이다.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th>필드</th>
+                    <th>의미</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>입력 피처</td>
+                    <td><code>bounces</code></td>
+                    <td>첫 방문에서 바로 이탈했는지 여부</td>
+                  </tr>
+                  <tr>
+                    <td>입력 피처</td>
+                    <td><code>time_on_site</code></td>
+                    <td>첫 방문 세션 체류 시간</td>
+                  </tr>
+                  <tr>
+                    <td>라벨</td>
+                    <td><code>will_buy_on_return_visit</code></td>
+                    <td>이후 재방문하여 구매했는지 여부</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="note">
+              초기 샘플 결과에서 체류 시간이 가장 긴 10명 중 재방문 구매자는 1명뿐이었다.
+              따라서 단순 체류/이탈 정보만으로는 구매 의도를 충분히 설명하기 어렵다는 가설을 세웠다.
+            </p>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">4</span>
+              <h3>모델 저장용 데이터셋 생성</h3>
+            </div>
+            <p>
+              Qwiklabs 프로젝트 아래에 <code>ecommerce</code> 데이터셋을 새로 만들었다.
+              이 데이터셋은 BigQuery ML 모델을 저장하는 공간으로 사용되었고,
+              이후 <code>classification_model</code>과 <code>classification_model_2</code>가 생성되었다.
+            </p>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">5</span>
+              <h3>첫 번째 BigQuery ML 분류 모델 생성</h3>
+            </div>
+            <p>
+              <code>CREATE OR REPLACE MODEL</code> 구문으로 <code>ecommerce.classification_model</code>을 만들었다.
+              모델 타입은 이진 분류에 맞는 <code>logistic_reg</code>를 선택했고,
+              라벨 컬럼은 <code>will_buy_on_return_visit</code>로 지정했다.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>항목</th>
+                    <th>설정/값</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>모델 ID</td>
+                    <td><code>qwiklabs-gcp-02-c123f80fc2ae.ecommerce.classification_model</code></td>
+                  </tr>
+                  <tr>
+                    <td>모델 타입</td>
+                    <td>Logistic regression</td>
+                  </tr>
+                  <tr>
+                    <td>학습 기간</td>
+                    <td>2016-08-01 ~ 2017-04-30</td>
+                  </tr>
+                  <tr>
+                    <td>피처</td>
+                    <td><code>bounces</code>, <code>time_on_site</code></td>
+                  </tr>
+                  <tr>
+                    <td>최대/실제 반복</td>
+                    <td>20 / 10</td>
+                  </tr>
+                  <tr>
+                    <td>조기 종료</td>
+                    <td>true, min relative progress 0.01</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <details>
+              <summary>첫 번째 모델 생성 SQL 요약</summary>
+              <pre><code>CREATE OR REPLACE MODEL `ecommerce.classification_model`
+OPTIONS (
+  model_type = 'logistic_reg',
+  input_label_cols = ['will_buy_on_return_visit']
+) AS
+SELECT * EXCEPT(fullVisitorId)
+FROM first_visit_features
+JOIN visitor_return_purchase_label
+USING (fullVisitorId);</code></pre>
+            </details>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">6</span>
+              <h3>첫 번째 모델 평가</h3>
+            </div>
+            <p>
+              <code>ML.EVALUATE</code>로 2017-05-01 ~ 2017-06-30 구간의 평가 데이터를 사용했다.
+              결과는 ROC AUC 0.7238로 <code>decent</code> 수준이었다. 정확도는 높게 보였지만,
+              양성 클래스가 매우 적은 불균형 데이터라서 accuracy만으로 모델을 판단하기 어렵다.
+            </p>
+            <div class="decision">
+              <div>
+                <strong>0.7238</strong>
+                <span>holdout ROC AUC</span>
+              </div>
+              <div>
+                <strong>0.7856</strong>
+                <span>BigQuery UI 자동 평가 ROC AUC</span>
+              </div>
+              <div>
+                <strong>0.0000</strong>
+                <span>기본 threshold 0.5 기준 F1 score</span>
+              </div>
+            </div>
+            <p class="note">
+              기본 임계값 0.5에서는 positive 예측을 거의 하지 못해 precision/recall/F1이 0에 가까웠다.
+              이 결과가 피처 엔지니어링으로 모델을 개선해야 하는 근거가 되었다.
+            </p>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">7</span>
+              <h3>피처 엔지니어링과 두 번째 모델 생성</h3>
+            </div>
+            <p>
+              두 번째 모델은 첫 방문자의 구매 가능성을 더 잘 설명하기 위해 행동, 유입, 기기, 지역 정보를 추가했다.
+              특히 <code>hits</code> 배열을 <code>UNNEST</code>한 뒤
+              <code>MAX(CAST(h.eCommerceAction.action_type AS INT64))</code>로 세션 내 checkout 진행 단계를 요약했다.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>피처 그룹</th>
+                    <th>사용 필드</th>
+                    <th>의도</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>구매 퍼널 진행도</td>
+                    <td><code>latest_ecommerce_progress</code></td>
+                    <td>상품 조회, 장바구니, 결제 등 구매 의도 신호 반영</td>
+                  </tr>
+                  <tr>
+                    <td>사이트 행동</td>
+                    <td><code>bounces</code>, <code>time_on_site</code>, <code>pageviews</code></td>
+                    <td>방문 몰입도와 탐색량 반영</td>
+                  </tr>
+                  <tr>
+                    <td>유입 경로</td>
+                    <td><code>source</code>, <code>medium</code>, <code>channelGrouping</code></td>
+                    <td>검색, 직접 방문, 추천, 광고 등 채널 특성 반영</td>
+                  </tr>
+                  <tr>
+                    <td>기기</td>
+                    <td><code>deviceCategory</code></td>
+                    <td>desktop/mobile/tablet 행동 차이 반영</td>
+                  </tr>
+                  <tr>
+                    <td>지역</td>
+                    <td><code>country</code></td>
+                    <td>국가별 구매 패턴 반영</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="note">
+              학습 기간은 첫 모델과 동일하게 2016-08-01 ~ 2017-04-30로 유지했다.
+              이렇게 해야 성능 개선이 데이터 기간 변경 때문이 아니라 피처 추가 때문이라고 해석할 수 있다.
+            </p>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">8</span>
+              <h3>두 번째 모델 평가와 성능 개선 확인</h3>
+            </div>
+            <p>
+              두 번째 모델 <code>classification_model_2</code>는 같은 평가 구간에서 ROC AUC 0.9095를 기록했다.
+              첫 모델 대비 AUC가 약 0.1856p 상승했으며, 실습 기준으로 <code>good</code> 품질에 도달했다.
+            </p>
+            <div class="decision">
+              <div>
+                <strong>0.9095</strong>
+                <span>holdout ROC AUC</span>
+              </div>
+              <div>
+                <strong>0.9221</strong>
+                <span>BigQuery UI 자동 평가 ROC AUC</span>
+              </div>
+              <div>
+                <strong>8</strong>
+                <span>실제 학습 반복 횟수</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="part">
+            <div class="part-title">
+              <span class="num">9</span>
+              <h3>신규 방문자 재방문 구매 예측</h3>
+            </div>
+            <p>
+              최종 모델로 2017-07-01 ~ 2017-08-01 구간의 첫 방문 세션을 예측했다.
+              <code>ML.PREDICT</code> 결과에는 예측 라벨, 라벨별 확률, 세션 ID, 실제 라벨, 피처 값이 함께 출력되었다.
+              저장된 <code>7.csv</code>에는 32,721개 세션의 예측 결과가 들어 있다.
+            </p>
+            <details>
+              <summary>예측 SQL 요약</summary>
+              <pre><code>SELECT *
+FROM ML.PREDICT(
+  MODEL `ecommerce.classification_model_2`,
+  (
+    SELECT first_visit_features_with_channel_device_geo
+    FROM `data-to-insights.ecommerce.web_analytics`, UNNEST(hits) AS h
+    WHERE totals.newVisits = 1
+      AND date BETWEEN '20170701' AND '20170801'
+  )
+)
+ORDER BY predicted_will_buy_on_return_visit DESC;</code></pre>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section id="models">
+        <h2>모델 비교</h2>
+        <div class="model-compare">
+          <article class="model">
+            <h3>Model 1: classification_model</h3>
+            <p>
+              첫 모델은 bounce와 체류 시간만 사용했다. 기본적인 사용자 행동은 반영했지만,
+              구매 퍼널 진행도나 유입/기기/지역 정보가 없어 구매 의도를 세밀하게 분리하지 못했다.
+            </p>
+            <div class="metric">
+              <div class="metric-line">
+                <span>Holdout ROC AUC</span>
+                <span>0.7238</span>
+              </div>
+              <div class="bar"><span style="width:72.38%"></span></div>
+            </div>
+            <div class="metric">
+              <div class="metric-line">
+                <span>UI ROC AUC</span>
+                <span>0.7856</span>
+              </div>
+              <div class="bar"><span style="width:78.56%"></span></div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>지표</th>
+                    <th>값</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Precision</td>
+                    <td>0.0000</td>
+                  </tr>
+                  <tr>
+                    <td>Recall</td>
+                    <td>0.0000</td>
+                  </tr>
+                  <tr>
+                    <td>Accuracy</td>
+                    <td>0.9847</td>
+                  </tr>
+                  <tr>
+                    <td>Log loss</td>
+                    <td>0.0693</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="model">
+            <h3>Model 2: classification_model_2</h3>
+            <p>
+              개선 모델은 checkout 진행도, pageviews, 유입 source/medium/channel, 기기, 국가를 추가했다.
+              구매 퍼널 단계가 포함되면서 재방문 구매 가능성 순위화 성능이 크게 좋아졌다.
+            </p>
+            <div class="metric">
+              <div class="metric-line">
+                <span>Holdout ROC AUC</span>
+                <span>0.9095</span>
+              </div>
+              <div class="bar good"><span style="width:90.95%"></span></div>
+            </div>
+            <div class="metric">
+              <div class="metric-line">
+                <span>UI ROC AUC</span>
+                <span>0.9221</span>
+              </div>
+              <div class="bar good"><span style="width:92.21%"></span></div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>지표</th>
+                    <th>값</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Precision</td>
+                    <td>0.2000</td>
+                  </tr>
+                  <tr>
+                    <td>Recall</td>
+                    <td>0.0263</td>
+                  </tr>
+                  <tr>
+                    <td>Accuracy</td>
+                    <td>0.9834</td>
+                  </tr>
+                  <tr>
+                    <td>Log loss</td>
+                    <td>0.0582</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+        <p class="note">
+          해석 포인트: 데이터가 극도로 불균형하므로 accuracy는 두 모델 모두 높게 보인다.
+          실제 의사결정에는 ROC AUC, precision/recall, threshold별 성능, 그리고 예측 확률 상위군의 실제 구매율을 함께 봐야 한다.
+        </p>
+      </section>
+
+      <section id="prediction">
+        <h2>최종 예측 결과 분석</h2>
+        <p>
+          <code>7.csv</code>의 확률 JSON을 파싱해 label 1, 즉 재방문 구매 확률을 기준으로 다시 정렬했다.
+          전체 32,721개 첫 방문 세션 중 실제 재방문 구매자는 503명이며, 전체 기준 재방문 구매율은 1.54%였다.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>분석 항목</th>
+                <th>값</th>
+                <th>의미</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>예측 대상 세션</td>
+                <td>32,721</td>
+                <td>2017-07-01 ~ 2017-08-01 첫 방문 세션</td>
+              </tr>
+              <tr>
+                <td>실제 재방문 구매자</td>
+                <td>503</td>
+                <td>전체 평균 1.54%</td>
+              </tr>
+              <tr>
+                <td>모델 positive 예측 수</td>
+                <td>368</td>
+                <td>기본 threshold 기준</td>
+              </tr>
+              <tr>
+                <td>예측 확률 범위</td>
+                <td>0.0021 ~ 0.8018</td>
+                <td>label 1 확률 기준</td>
+              </tr>
+              <tr>
+                <td>상위 6% 세션 수</td>
+                <td>1,964</td>
+                <td>마케팅 타깃 후보군</td>
+              </tr>
+              <tr>
+                <td>상위 6% 내 실제 구매자</td>
+                <td>276</td>
+                <td>전체 구매자의 54.87%를 포착</td>
+              </tr>
+              <tr>
+                <td>상위 6% 구매율</td>
+                <td>14.05%</td>
+                <td>전체 평균 대비 9.14배</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>예측 확률 상위 10개 세션</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>unique_session_id</th>
+                <th>prob(label=1)</th>
+                <th>actual</th>
+                <th>progress</th>
+                <th>time_on_site</th>
+                <th>pageviews</th>
+                <th>source</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9312060400852998001-1501180133</td>
+                <td>0.8018</td>
+                <td>0</td>
+                <td>4</td>
+                <td>5,823</td>
+                <td>71</td>
+                <td>sites.google.com</td>
+              </tr>
+              <tr>
+                <td>7191616337275261610-1499234733</td>
+                <td>0.7657</td>
+                <td>0</td>
+                <td>6</td>
+                <td>2,680</td>
+                <td>65</td>
+                <td>gdeals.googleplex.com</td>
+              </tr>
+              <tr>
+                <td>1227424429842487205-1499805217</td>
+                <td>0.7298</td>
+                <td>0</td>
+                <td>6</td>
+                <td>231</td>
+                <td>15</td>
+                <td>moma.corp.google.com</td>
+              </tr>
+              <tr>
+                <td>176281205849690411-1501564768</td>
+                <td>0.7296</td>
+                <td>0</td>
+                <td>6</td>
+                <td>1,922</td>
+                <td>61</td>
+                <td>gdeals.googleplex.com</td>
+              </tr>
+              <tr>
+                <td>2359426274688479595-1499446468</td>
+                <td>0.7219</td>
+                <td>0</td>
+                <td>6</td>
+                <td>2,001</td>
+                <td>57</td>
+                <td>gdeals.googleplex.com</td>
+              </tr>
+              <tr>
+                <td>5466098845207318804-1499551669</td>
+                <td>0.7215</td>
+                <td>0</td>
+                <td>6</td>
+                <td>220</td>
+                <td>12</td>
+                <td>moma.corp.google.com</td>
+              </tr>
+              <tr>
+                <td>0236160742740831906-1500177417</td>
+                <td>0.7163</td>
+                <td>0</td>
+                <td>6</td>
+                <td>4,322</td>
+                <td>83</td>
+                <td>mall.googleplex.com</td>
+              </tr>
+              <tr>
+                <td>3011746388352571107-1499436570</td>
+                <td>0.7160</td>
+                <td>0</td>
+                <td>6</td>
+                <td>3,094</td>
+                <td>100</td>
+                <td>mall.googleplex.com</td>
+              </tr>
+              <tr>
+                <td>6423338283851490251-1500356571</td>
+                <td>0.7149</td>
+                <td>0</td>
+                <td>6</td>
+                <td>3,639</td>
+                <td>92</td>
+                <td>mall.googleplex.com</td>
+              </tr>
+              <tr>
+                <td>0389413525404733314-1500754279</td>
+                <td>0.7133</td>
+                <td>0</td>
+                <td>6</td>
+                <td>2,557</td>
+                <td>46</td>
+                <td>gdeals.googleplex.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="twocol">
+          <div>
+            <h3>예측/실제 혼동 카운트</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>predicted</th>
+                    <th>actual</th>
+                    <th>count</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>31,877</td>
+                  </tr>
+                  <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>476</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>341</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>27</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3>예측 대상 분포</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th>상위 항목</th>
+                    <th>count</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Device</td>
+                    <td>desktop</td>
+                    <td>20,690</td>
+                  </tr>
+                  <tr>
+                    <td>Device</td>
+                    <td>mobile</td>
+                    <td>10,607</td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>Organic Search</td>
+                    <td>17,406</td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>Direct</td>
+                    <td>5,848</td>
+                  </tr>
+                  <tr>
+                    <td>Channel</td>
+                    <td>Referral</td>
+                    <td>3,896</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <p class="note">
+          기본 threshold 기준의 positive 예측은 보수적이지만, 확률 순위로 상위군을 고르면 실제 구매자를 효율적으로 포착한다.
+          따라서 이 모델은 “구매 여부를 단정”하기보다 “마케팅 우선순위를 정렬”하는 용도로 쓰는 것이 가장 적합하다.
+        </p>
+      </section>
+
+      <section id="takeaways">
+        <h2>핵심 정리</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>배운 점</th>
+                <th>정리</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BigQuery ML의 장점</td>
+                <td>데이터 이동 없이 SQL만으로 모델 생성, 평가, 예측을 수행할 수 있다.</td>
+              </tr>
+              <tr>
+                <td>라벨 설계</td>
+                <td>미래에 확인되는 재방문 구매 여부를 라벨로 만들고, 예측 시점에 알 수 있는 첫 방문 정보만 피처로 사용했다.</td>
+              </tr>
+              <tr>
+                <td>피처 엔지니어링 효과</td>
+                <td>단순 행동 피처보다 checkout 진행도, pageviews, 유입/기기/지역 정보를 추가했을 때 ROC AUC가 크게 개선되었다.</td>
+              </tr>
+              <tr>
+                <td>평가 지표 선택</td>
+                <td>양성 클래스가 희소하므로 accuracy보다 ROC AUC, precision/recall, 확률 상위군의 실제 구매율이 중요하다.</td>
+              </tr>
+              <tr>
+                <td>비즈니스 활용</td>
+                <td>상위 6% 방문자만 타깃팅해도 전체 구매자의 54.87%를 포착해 마케팅 효율을 높일 수 있다.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="evidence">
+        <h2>참고 파일과 산출물</h2>
+        <div class="file-list">
+          <div class="file">
+            <strong>ori-text.txt</strong>
+            Google Skills 실습 원문. Task 1~10, SQL, 목표, 모델 평가 기준을 확인했다.
+          </div>
+          <div class="file">
+            <strong>guide.txt</strong>
+            실제 실습 중 기록한 모델 상세 정보, 학습 옵션, BigQuery UI 평가 지표를 확인했다.
+          </div>
+          <div class="file">
+            <strong>1.csv ~ 6.csv</strong>
+            탐색 쿼리 결과, 모델별 holdout ROC AUC 결과를 정리하는 데 사용했다.
+          </div>
+          <div class="file">
+            <strong>7.csv</strong>
+            최종 <code>ML.PREDICT</code> 결과. 32,721개 세션의 확률과 실제 라벨을 분석했다.
+          </div>
+          <div class="file">
+            <strong>confusion_matrix.csv</strong>
+            첫 번째 모델의 BigQuery UI confusion matrix 저장 결과를 확인했다.
+          </div>
+          <div class="file">
+            <strong>confusion_matrix (1).csv</strong>
+            두 번째 모델의 BigQuery UI confusion matrix 저장 결과를 확인했다.
+          </div>
+          <div class="file">
+            <strong>Google Skills.mhtml</strong>
+            실습 페이지 저장본. Task 제목, SQL, 업데이트/테스트 날짜 확인에 사용했다.
+          </div>
+          <div class="file">
+            <strong>BigQuery console.mhtml</strong>
+            BigQuery 콘솔 상태, 프로젝트/데이터셋/모델 탭 저장본을 확인했다.
+          </div>
+          <div class="file">
+            <strong>Analytics Help.mhtml</strong>
+            UA BigQuery Export schema 레퍼런스. 중첩 필드와 ecommerce action 필드 이해에 사용했다.
+          </div>
+        </div>
+
+        <h3>스크린샷 타임라인</h3>
+        <p>
+          아래 이미지는 폴더에 저장된 원본 스크린샷을 시간순으로 연결한 것이다.
+          BigQuery 콘솔에서 쿼리 실행, 결과 확인, 모델 상세/평가 화면을 단계별 증거로 확인할 수 있다.
+        </p>
+        <div class="gallery">
+          <figure>
+            <img src="./화면 캡처 2026-06-16 190730.png" alt="전환율 쿼리 결과 화면" loading="lazy">
+            <figcaption>19:07 전환율 쿼리 및 결과</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 190846.png" alt="BigQuery 탐색 결과 화면" loading="lazy">
+            <figcaption>19:08 ecommerce 데이터 탐색</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 191117.png" alt="상위 상품 쿼리 결과 화면" loading="lazy">
+            <figcaption>19:11 매출 상위 상품 집계</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 191231.png" alt="재방문 구매 라벨 집계 화면" loading="lazy">
+            <figcaption>19:12 재방문 구매 여부 산출</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 191250.png" alt="재방문 구매 결과 화면" loading="lazy">
+            <figcaption>19:12 재방문 구매 분포 확인</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 192006.png" alt="초기 피처 쿼리 화면" loading="lazy">
+            <figcaption>19:20 초기 피처 데이터셋 생성</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 192019.png" alt="초기 피처 결과 화면" loading="lazy">
+            <figcaption>19:20 체류 시간 기준 샘플 확인</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 192909.png" alt="모델 생성 결과 화면" loading="lazy">
+            <figcaption>19:29 첫 번째 모델 생성</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193100.png" alt="첫 번째 모델 상세 화면" loading="lazy">
+            <figcaption>19:31 classification_model 상세</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193111.png" alt="첫 번째 모델 학습 지표 화면" loading="lazy">
+            <figcaption>19:31 첫 번째 모델 학습 지표</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193121.png" alt="첫 번째 모델 평가 화면" loading="lazy">
+            <figcaption>19:31 첫 번째 모델 평가 지표</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193133.png" alt="첫 번째 모델 ROC 화면" loading="lazy">
+            <figcaption>19:31 첫 번째 모델 곡선/혼동행렬</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193200.png" alt="첫 번째 모델 추가 평가 화면" loading="lazy">
+            <figcaption>19:32 첫 번째 모델 평가 확인</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193213.png" alt="첫 번째 모델 평가 결과 화면" loading="lazy">
+            <figcaption>19:32 평가 결과 CSV 저장 전후</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193221.png" alt="첫 번째 모델 결과 화면" loading="lazy">
+            <figcaption>19:32 첫 번째 모델 결과 보강</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193336.png" alt="두 번째 모델 생성 화면" loading="lazy">
+            <figcaption>19:33 피처 엔지니어링 모델 생성</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193413.png" alt="두 번째 모델 상세 화면" loading="lazy">
+            <figcaption>19:34 classification_model_2 상세</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193814.png" alt="두 번째 모델 평가 쿼리 화면" loading="lazy">
+            <figcaption>19:38 개선 모델 평가 실행</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 193953.png" alt="예측 결과 화면" loading="lazy">
+            <figcaption>19:39 최종 예측 결과 확인</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 194035.png" alt="두 번째 모델 추가 화면" loading="lazy">
+            <figcaption>19:40 개선 모델 결과 저장</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 194044.png" alt="두 번째 모델 평가 지표 화면" loading="lazy">
+            <figcaption>19:40 개선 모델 평가 지표</figcaption>
+          </figure>
+          <figure>
+            <img src="./화면 캡처 2026-06-16 194139.png" alt="두 번째 모델 ROC 곡선 화면" loading="lazy">
+            <figcaption>19:41 classification_model_2 ROC 곡선</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="footer">
+        <p>
+          작성일: 2026-06-16. 이 HTML 리포트는 현재 폴더의 로컬 파일만 참고해 생성했다.
+          수치 중 holdout 평가는 CSV 결과 기준이며, UI 평가는 <code>guide.txt</code>와 스크린샷에 기록된 BigQuery 모델 화면 기준이다.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

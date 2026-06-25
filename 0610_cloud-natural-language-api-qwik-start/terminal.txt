@@ -1,0 +1,14 @@
+Welcome to Cloud Shell! Type "help" to get started, or type "gemini" to try prompting with Gemini CLI.
+Your Cloud Platform project in this session is set to qwiklabs-gcp-03-849155e6d5e6.
+Use `gcloud config set project [PROJECT_ID]` to change to a different project.
+student_00_406082f0bb45@cloudshell:~ (qwiklabs-gcp-03-849155e6d5e6)$ export GOOGLE_CLOUD_PROJECT=$(gcloud config get-value core/project)
+Your active configuration is: [cloudshell-26535]
+student_00_406082f0bb45@cloudshell:~ (qwiklabs-gcp-03-849155e6d5e6)$ gcloud iam service-accounts create my-natlang-sa \
+  --display-name "my natural language service account"
+Created service account [my-natlang-sa].
+student_00_406082f0bb45@cloudshell:~ (qwiklabs-gcp-03-849155e6d5e6)$ gcloud iam service-accounts keys create ~/key.json \
+  --iam-account my-natlang-sa@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
+created key [b066684b1a1505d82530d2e0df0e19ac31d33ed7] of type [json] as [/home/student_00_406082f0bb45/key.json] for [my-natlang-sa@qwiklabs-gcp-03-849155e6d5e6.iam.gserviceaccount.com]
+student_00_406082f0bb45@cloudshell:~ (qwiklabs-gcp-03-849155e6d5e6)$ export GOOGLE_APPLICATION_CREDENTIALS="/home/USER/key.json"
+student_00_406082f0bb45@cloudshell:~ (qwiklabs-gcp-03-849155e6d5e6)$ gcloud ml language analyze-entities --content="Michelangelo Caravaggio, Italian painter, is known for 'The Calling of Saint Matthew'." > result.json
+student_00_406082f0bb45@cloudshell:~ (qwiklabs-gcp-03-849155e6d5e6)$ 

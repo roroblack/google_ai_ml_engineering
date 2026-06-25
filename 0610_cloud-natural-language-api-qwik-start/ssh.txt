@@ -1,0 +1,73 @@
+Linux linux-instance 5.10.0-43-cloud-amd64 #1 SMP Debian 5.10.251-5 (2026-05-15) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-00-406082f0bb45@linux-instance:~$ gcloud ml language analyze-entities --content="Michelangelo Caravaggio, Italian painter, is known for 'The Calling of Saint Matthew'." > result.json
+student-00-406082f0bb45@linux-instance:~$ cat result.json
+{
+  "entities": [
+    {
+      "mentions": [
+        {
+          "text": {
+            "beginOffset": 0,
+            "content": "Michelangelo Caravaggio"
+          },
+          "type": "PROPER"
+        },
+        {
+          "text": {
+            "beginOffset": 33,
+            "content": "painter"
+          },
+          "type": "COMMON"
+        }
+      ],
+      "metadata": {
+        "mid": "/m/020bg",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Caravaggio"
+      },
+      "name": "Michelangelo Caravaggio",
+      "salience": 0.82904786,
+      "type": "PERSON"
+    },
+    {
+      "mentions": [
+        {
+          "text": {
+            "beginOffset": 25,
+            "content": "Italian"
+          },
+          "type": "PROPER"
+        }
+      ],
+      "metadata": {},
+      "name": "Italian",
+      "salience": 0.13981608,
+      "type": "LOCATION"
+    },
+    {
+      "mentions": [
+        {
+          "text": {
+            "beginOffset": 56,
+            "content": "The Calling of Saint Matthew"
+          },
+          "type": "PROPER"
+        }
+      ],
+      "metadata": {
+        "mid": "/m/085_p7",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/The_Calling_of_Saint_Matthew"
+      },
+      "name": "The Calling of Saint Matthew",
+      "salience": 0.031136045,
+      "type": "EVENT"
+    }
+  ],
+  "language": "en"
+}
