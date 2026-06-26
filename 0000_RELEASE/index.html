@@ -819,8 +819,7 @@ function weekDateRange(studyWk) {
 function weekDoneCount2(wkDataIdx) {
   var done = 0;
   [1,2,3,4].forEach(function(d){
-    var k = wkDataIdx + '-' + d;
-    if (state[k]) done++;
+    if (state[keyOf(wkDataIdx, d)]) done++;
   });
   return done;
 }
@@ -878,7 +877,7 @@ function buildCalGrid() {
     var statText  = isDone ? '완료'           : (isActive ? '진행중'       : '예정');
 
     var dots = [1,2,3,4].map(function(d){
-      var filled = isPast || !!state[wkNum + '-' + d];
+      var filled = isPast || !!state[keyOf(wkNum, d)];
       return '<span class="cal-dot' + (filled ? ' filled' : '') + '"></span>';
     }).join('');
 
