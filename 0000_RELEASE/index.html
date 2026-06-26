@@ -285,6 +285,7 @@ blockquote { background:#E1F5FE; border-left:4px solid #322A26; margin:8px 0; pa
 .cal-sum-n { font-family:var(--mono); font-weight:700; font-size:22px; color:var(--c,var(--ink)); }
 .cal-sum-l { font-size:11px; color:var(--muted); margin-top:2px; }
 .cal-section-label { font-family:var(--mono); font-size:9.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:14px 0 6px; padding:0; }
+.cal-phase-header{grid-column:1/-1;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:14px 0 5px;border-bottom:2px solid var(--ink);margin-bottom:2px;font-weight:700;}
 @media(max-width:600px){ .cal-grid{grid-template-columns:repeat(2,1fr);} }
 
 .done-date{display:none;font-family:var(--mono);font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:3px;align-self:flex-start;margin-top:2px;border:1.5px solid var(--c,#5BAD7E);color:var(--c,#1E6B45);background:color-mix(in srgb,var(--c,#5BAD7E) 12%,#FAF6EF);}.day.is-done .done-date{display:inline-block;}
@@ -836,87 +837,122 @@ function buildCalGrid() {
 
   var totalStudy = 0, doneStudy = 0, inProgressStudy = 0;
 
-  tabs.forEach(function(tab, idx) {
-    var tid = tab.dataset.target;
-    var panel = document.getElementById(tid);
-    if (!panel) return;
-    var wkNum = idx + 1;
-    var isPast = wkNum <= PAST_WEEKS;
-    var studyWk = wkNum - PAST_WEEKS;
+  // Rail DOM에서 phase -> tab 매핑
+  var phaseGroups = [];
+  var curGroup = null;
+  var railEl = document.querySelector('.rail');
+  if (railEl) {
+    Array.from(railEl.children).forEach(function(el) {
+      if (el.classList.contains('rail-phase')) {
+        curGroup = { label: el.textContent.trim(), tabEls: [] };
+        phaseGroups.push(curGroup);
+      } else if (el.classList.contains('tab') && el.dataset.target !== 'ov') {
+        if (!curGroup) { curGroup = { label: '', tabEls: [] }; phaseGroups.push(curGroup); }
+        curGroup.tabEls.push(el);
+      }
+    });
+  } else {
+    phaseGroups = [{ label: '', tabEls: tabs }];
+  }
 
-    var colorVal = tab.style.getPropertyValue('--c') || '#98A2B3';
-    var wnoEl = tab.querySelector('.rail-wno');
-    var wno = wnoEl ? wnoEl.textContent.trim() : ('W' + wkNum);
-    var themeEl = panel.querySelector('.wk-theme');
-    var theme = themeEl ? themeEl.textContent.replace(/\s+/g,' ').trim() : '';
-    var chipEl = panel.querySelector('.sec-chip');
-    var domain = chipEl ? chipEl.textContent.trim() : '';
-    var chipBg = chipEl ? chipEl.style.background : colorVal;
+  phaseGroups.forEach(function(group) {
+    if (!group.tabEls.length) return;
+    var firstIdx = tabs.indexOf(group.tabEls[0]) + 1;
+    var isPastGroup = firstIdx <= PAST_WEEKS;
+    var targetGrid = isPastGroup ? pastGrid : mainGrid;
 
-    var done = weekDoneCount2(wkNum);
-    var isDone = isPast || done >= 4;
-    var isActive = !isPast && !isDone && done > 0;
-    var dateStr = isPast ? '완료' : weekDateRange(studyWk);
-
-    if (!isPast) {
-      totalStudy++;
-      if (isDone) doneStudy++;
-      else if (isActive) inProgressStudy++;
+    if (!isPastGroup && group.label) {
+      var hdr = document.createElement('div');
+      hdr.className = 'cal-phase-header';
+      hdr.textContent = group.label;
+      targetGrid.appendChild(hdr);
     }
 
-    var card = document.createElement('div');
-    var cls = ['cal-wk'];
-    if (isDone) cls.push('cal-done');
-    if (isActive) cls.push('cal-active');
-    if (isPast) cls.push('cal-past');
-    card.className = cls.join(' ');
-    card.style.setProperty('--c', colorVal);
-    if (!isPast) { card.setAttribute('role','button'); card.setAttribute('tabindex','0'); }
+    group.tabEls.forEach(function(tab) {
+      var wkNum = tabs.indexOf(tab) + 1;
+      var isPast = wkNum <= PAST_WEEKS;
+      var studyWk = wkNum - PAST_WEEKS;
+      var panel = document.getElementById(tab.dataset.target);
+      if (!panel) return;
 
-    var statClass = isDone ? 'cal-stat-done' : (isActive ? 'cal-stat-prog' : 'cal-stat-todo');
-    var statText  = isDone ? '완료'           : (isActive ? '진행중'       : '예정');
+      var colorVal = tab.style.getPropertyValue('--c') || '#98A2B3';
+      var wnoEl = tab.querySelector('.rail-wno');
+      var wno = wnoEl ? wnoEl.textContent.trim() : ('W' + wkNum);
+      var themeEl = panel.querySelector('.wk-theme');
+      var theme = themeEl ? themeEl.textContent.replace(/\s+/g,' ').trim() : '';
+      var chipEl = panel.querySelector('.sec-chip');
+      var domain = chipEl ? chipEl.textContent.trim() : '';
+      var chipBg = chipEl ? chipEl.style.background : colorVal;
 
-    var dots = [1,2,3,4].map(function(d){
-      var filled = isPast || !!state[keyOf(wkNum, d)];
-      return '<span class="cal-dot' + (filled ? ' filled' : '') + '"></span>';
-    }).join('');
+      // 실제 체크박스 기반 day 목록
+      var dayCbs = Array.from(panel.querySelectorAll('.day-cb[data-wk="' + wkNum + '"]'));
+      var dayNums = dayCbs.map(function(cb){ return parseInt(cb.dataset.day,10); })
+                          .sort(function(a,b){ return a-b; });
+      if (!dayNums.length) dayNums = [1,2,3,4];
 
-    var themeShort = theme.length > 38 ? theme.substring(0,38) + '\u2026' : theme;
-    card.innerHTML =
-      '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4px">' +
-        '<span class="cal-wno">' + wno + '</span>' +
-        '<span class="cal-stat ' + statClass + '">' + statText + '</span>' +
-      '</div>' +
-      '<div class="cal-theme">' + themeShort + '</div>' +
-      (domain ? '<span class="cal-domain" style="background:' + chipBg + '">' + domain + '</span>' : '') +
-      '<div class="cal-date">' + dateStr + '</div>' +
-      '<div class="cal-dots">' + dots + '</div>';
+      var done = dayNums.filter(function(d){ return !!state[keyOf(wkNum,d)]; }).length;
+      var total = dayNums.length;
+      var isDone = isPast || done >= total;
+      var isActive = !isPast && !isDone && done > 0;
+      var dateStr = isPast ? '완료' : weekDateRange(studyWk);
 
-    if (!isPast) {
-      card.addEventListener('click', function(){ tab.click(); window.scrollTo({top:0,behavior:'smooth'}); });
-      card.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); tab.click(); } });
-    }
+      if (!isPast) {
+        totalStudy++;
+        if (isDone) doneStudy++;
+        else if (isActive) inProgressStudy++;
+      }
 
-    if (isPast) pastGrid.appendChild(card);
-    else mainGrid.appendChild(card);
+      var card = document.createElement('div');
+      var cls = ['cal-wk'];
+      if (isDone) cls.push('cal-done');
+      if (isActive) cls.push('cal-active');
+      if (isPast) cls.push('cal-past');
+      card.className = cls.join(' ');
+      card.style.setProperty('--c', colorVal);
+      if (!isPast) { card.setAttribute('role','button'); card.setAttribute('tabindex','0'); }
+
+      var statClass = isDone ? 'cal-stat-done' : (isActive ? 'cal-stat-prog' : 'cal-stat-todo');
+      var statText  = isDone ? '완료'           : (isActive ? '진행중'       : '예정');
+
+      var dots = dayNums.map(function(d){
+        var filled = isPast || !!state[keyOf(wkNum,d)];
+        return '<span class="cal-dot' + (filled ? ' filled' : '') + '"></span>';
+      }).join('');
+
+      var themeShort = theme.length > 38 ? theme.substring(0,38) + '\u2026' : theme;
+      card.innerHTML =
+        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4px">' +
+          '<span class="cal-wno">' + wno + '</span>' +
+          '<span class="cal-stat ' + statClass + '">' + statText + '</span>' +
+        '</div>' +
+        '<div class="cal-theme">' + themeShort + '</div>' +
+        (domain ? '<span class="cal-domain" style="background:' + chipBg + '">' + domain + '</span>' : '') +
+        '<div class="cal-date">' + dateStr + '</div>' +
+        '<div class="cal-dots">' + dots + '</div>';
+
+      if (!isPast) {
+        card.addEventListener('click', function(){ tab.click(); window.scrollTo({top:0,behavior:'smooth'}); });
+        card.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); tab.click(); } });
+      }
+      targetGrid.appendChild(card);
+    });
   });
 
-  var pct = totalStudy > 0 ? Math.round(doneStudy / totalStudy * 100) : 0;
+  var pct = totalStudy > 0 ? Math.round(doneStudy/totalStudy*100) : 0;
   var weeksLeft = totalStudy - doneStudy;
   var estEnd = new Date(STUDY_START.getTime());
   estEnd.setDate(estEnd.getDate() + totalStudy * 7);
   var estEndStr = (estEnd.getMonth()+1) + '/' + estEnd.getDate();
-  var stats = [
-    {n: pct + '%',                   l: '전체 진행률', c: '#16A34A'},
-    {n: doneStudy + '/' + totalStudy, l: '주차 완료',  c: '#2563EB'},
-    {n: inProgressStudy,              l: '진행 중',    c: '#DC6803'},
-    {n: weeksLeft,                    l: '남은 주차',  c: '#667085'},
-    {n: estEndStr,                    l: '예상 완료일', c: '#7A5AF8'},
-  ];
-  summaryEl.innerHTML = stats.map(function(s){
-    return '<div class="cal-sum-item" style="--c:' + s.c + '">' +
-      '<div class="cal-sum-n">' + s.n + '</div>' +
-      '<div class="cal-sum-l">' + s.l + '</div>' +
+  summaryEl.innerHTML = [
+    {n: pct+'%',                    l: '\uc804\uccb4 \uc9c4\ud589\ub960', c:'#16A34A'},
+    {n: doneStudy+'/'+totalStudy,   l: '\uc8fc\ucc28 \uc644\ub8cc',   c:'#2563EB'},
+    {n: inProgressStudy,            l: '\uc9c4\ud589 \uc911',     c:'#DC6803'},
+    {n: weeksLeft,                  l: '\ub0a8\uc740 \uc8fc\ucc28',   c:'#667085'},
+    {n: estEndStr,                  l: '\uc608\uc0c1 \uc644\ub8cc\uc77c', c:'#7A5AF8'},
+  ].map(function(s){
+    return '<div class="cal-sum-item" style="--c:'+s.c+'">' +
+      '<div class="cal-sum-n">'+s.n+'</div>' +
+      '<div class="cal-sum-l">'+s.l+'</div>' +
     '</div>';
   }).join('');
 }
