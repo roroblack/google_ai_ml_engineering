@@ -1,0 +1,8 @@
+{
+  "name": "pmle-study-plan",
+  "version": "1.0.0",
+  "engines": { "node": "20.x" },
+  "dependencies": {
+    "@vercel/blob": "^0.27.0"
+  }
+}

@@ -5,6 +5,45 @@
 
 ---
 
+## 2026-06-26 — Claude (AI 작업자) — v28: 실시간 공유 기능 (Vercel API + Upstash Redis)
+
+**요약:** 진행상황 실시간 공유 기능 추가. 뷰어(읽기 전용)/수정자(체크박스 수정 가능) 역할 구분.
+
+**① Vercel Serverless API 추가**
+- `api/save.js` — POST `/api/save` : writeKey 검증 후 Redis에 상태 저장 (180일 TTL)
+- `api/load.js` — GET `/api/load?room=UUID` : 인증 없이 상태 조회
+- `package.json` — `@upstash/redis ^1.34.0` 의존성
+- `vercel.json` — `"outputDirectory": "0000_RELEASE"` 설정
+
+**② 공유 UI (HTML/CSS/JS)**
+- `🔗 공유하기` 버튼 prog-tools 영역에 추가
+- 공유 모달: 뷰어 링크 (`?room=UUID`) + 수정자 링크 (`?room=UUID&key=WRITE_KEY`) 각각 복사 버튼
+- 역할별 뱃지: 뷰어 `👁 보기 전용`, 수정자 `✏️ 수정자 모드`
+- URL 파라미터로 역할 자동 감지: key 없으면 뷰어, key 있으면 수정자
+- writeKey는 localStorage에 저장 → 재방문 시 URL에서 key 제거 가능
+
+**③ 동기화 방식**
+- 수정자: saveState() 래핑 → 체크박스 변경 즉시 `/api/save` POST
+- 뷰어/수정자 모두: 30초 폴링으로 최신 상태 수신 후 체크박스·진행률·캘린더 갱신
+- 뷰어는 체크박스 disabled 처리 (클릭 불가)
+
+**스토리지:** Vercel Blob (Vercel 자체 제품 — 대시보드 Storage 탭에서 활성화, 외부 서비스 없음)
+
+**파일 크기:** 463KB(↑9KB)
+
+**영향 파일:**
+- `0000_PLAN/PMLE_18week_study_plan.html` (v28)
+- `0000_RELEASE/index.html` (PLAN과 동기화)
+- `api/save.js` (신규 — @vercel/blob 사용)
+- `api/load.js` (신규 — @vercel/blob 사용)
+- `package.json` (신규 — @vercel/blob ^0.27.0)
+- `vercel.json` (신규)
+- `HISTORY.md` (이 항목)
+
+**배포 전 필요 작업:** Vercel 대시보드 → Marketplace → Upstash Redis 연결 → 환경변수 자동 주입
+
+---
+
 ## 2026-06-25 — Claude (AI 작업자) — v26: 네오 브루탈리즘 디자인 + 캘린더 개요 + 일별 날짜 표시
 
 **요약:** 3가지 대규모 UI 개선. 콘텐츠(퀴즈·실습 링크·핵심 포인트) 전혀 변경 없음.
