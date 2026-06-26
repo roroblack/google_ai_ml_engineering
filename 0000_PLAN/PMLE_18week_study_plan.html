@@ -276,9 +276,14 @@ blockquote { background:#E1F5FE; border-left:4px solid #322A26; margin:8px 0; pa
 .cal-dots { display:flex; gap:4px; margin-top:2px; align-items:center; flex-wrap:wrap; }
 .cal-dot { width:10px; height:10px; border-radius:50%; border:2px solid var(--ink); background:transparent; flex:0 0 auto; }
 .cal-dot.filled { background:var(--c,var(--ink)); border-color:var(--c,var(--ink)); }
-.cal-dot.opt { width:8px; height:8px; border:1.5px dashed var(--muted); }
-.cal-dot.opt.filled { background:color-mix(in srgb,var(--c,var(--muted)) 38%,#EFE6D5); border-color:color-mix(in srgb,var(--c,var(--muted)) 38%,#B0A090); border-style:solid; }
-.cal-dots-sep { width:5px; height:10px; flex:0 0 auto; border-left:1.5px solid var(--line); margin:0 1px; }
+.cal-dot.opt-quiz,.cal-dot.opt-adv,.cal-dot.opt-rev{width:8px;height:8px;}
+.cal-dot.opt-quiz{border:1.5px dashed #9FA8B0;}
+.cal-dot.opt-quiz.filled{background:#D4DDE5;border-color:#9FA8B0;border-style:solid;}
+.cal-dot.opt-adv{border:1.5px dashed #A67DC5;}
+.cal-dot.opt-adv.filled{background:#D8C5EC;border-color:#A67DC5;border-style:solid;}
+.cal-dot.opt-rev{border:1.5px dashed #C87A7A;}
+.cal-dot.opt-rev.filled{background:#EDBBBB;border-color:#C87A7A;border-style:solid;}
+.cal-dots-sep{width:5px;height:10px;flex:0 0 auto;border-left:1.5px solid var(--line);margin:0 1px;}
 .cal-stat { font-size:10px; font-weight:700; padding:2px 7px; border:2px solid; border-radius:0; align-self:flex-start; white-space:nowrap; }
 .cal-stat-done { color:#1E6B45; border-color:#5BAD7E; background:#E0F5EA; }
 .cal-stat-prog { color:#8B5020; border-color:#E8963A; background:#FFF0CC; }
@@ -919,8 +924,11 @@ function buildCalGrid() {
       if (optCbs.length) {
         optDots = '<span class="cal-dots-sep"></span>' +
           optCbs.map(function(cb){
+            var dayEl = cb.closest('[data-kind]');
+            var kind = dayEl ? dayEl.dataset.kind : 'rev';
+            var cls = kind === 'fifth' ? 'opt-adv' : (kind === 'review' ? 'opt-rev' : 'opt-quiz');
             var filled = isPast || !!state[keyOf(wkNum, cb.dataset.day)];
-            return '<span class="cal-dot opt' + (filled ? ' filled' : '') + '"></span>';
+            return '<span class="cal-dot ' + cls + (filled ? ' filled' : '') + '"></span>';
           }).join('');
       }
 
@@ -1006,6 +1014,65 @@ document.addEventListener('change', function(e){
     if (timeEl) head.insertBefore(span, timeEl);
     else head.appendChild(span);
   });
+})();
+
+// ===== 완료일 클릭 수정 =====
+(function(){
+  var _pk = null;
+  function rmPk(){ if(_pk&&_pk.parentNode) _pk.parentNode.removeChild(_pk); _pk=null; }
+  function showPk(badge, k){
+    rmPk();
+    var cur = state['D'+k]||'';
+    var rect = badge.getBoundingClientRect();
+    var today = new Date();
+    var yr = today.getFullYear();
+    var dv = '';
+    if(cur){
+      var p=cur.split('/');
+      if(p.length===2){ var m=parseInt(p[0],10),d=parseInt(p[1],10); dv=yr+'-'+(m<10?'0':'')+m+'-'+(d<10?'0':'')+d; }
+    }
+    var w=document.createElement('div');
+    w.style.cssText='position:fixed;z-index:600;background:#FAF6EF;border:2px solid var(--ink,#322A26);box-shadow:4px 4px 0 var(--ink,#322A26);padding:10px 12px;display:flex;flex-direction:column;gap:7px;';
+    w.style.top=(rect.bottom+4)+'px'; w.style.left=Math.max(4,rect.left-20)+'px';
+    var lbl=document.createElement('div');
+    lbl.style.cssText='font-family:monospace;font-size:10px;color:#6B5B53;text-transform:uppercase;letter-spacing:.08em;';
+    lbl.textContent='완료일 수정';
+    var inp=document.createElement('input');
+    inp.type='date'; inp.value=dv;
+    inp.style.cssText='border:2px solid #322A26;padding:5px 8px;font-size:13px;font-family:monospace;background:#EFE6D5;color:#322A26;outline:none;border-radius:0;width:140px;';
+    var bRow=document.createElement('div'); bRow.style.cssText='display:flex;gap:6px;';
+    var sv=document.createElement('button');
+    sv.textContent='저장'; sv.style.cssText='flex:1;border:2px solid #322A26;background:#F5EFE5;padding:4px 8px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;';
+    var dl=document.createElement('button');
+    dl.textContent='완료 취소'; dl.style.cssText='flex:1;border:2px solid #C07070;background:#FFEAEA;padding:4px 8px;font-size:11px;font-weight:700;cursor:pointer;color:#B42318;font-family:inherit;';
+    function apply(){
+      var v=inp.value; if(!v) return;
+      var pt=v.split('-'); var m=parseInt(pt[1],10),d=parseInt(pt[2],10);
+      state['D'+k]=m+'/'+d; saveState(state);
+      badge.textContent='완료 '+state['D'+k]; rmPk();
+    }
+    function clear(){
+      delete state[k]; delete state['D'+k]; saveState(state);
+      var dc=badge.closest('.day');
+      if(dc){ dc.classList.remove('is-done'); var cb=dc.querySelector('.day-cb'); if(cb) cb.checked=false; }
+      badge.textContent='';
+      rmPk(); typeof refreshProgress==='function'&&refreshProgress(); typeof buildCalGrid==='function'&&buildCalGrid();
+    }
+    sv.addEventListener('click',apply);
+    dl.addEventListener('click',clear);
+    inp.addEventListener('keydown',function(e){ if(e.key==='Enter')apply(); if(e.key==='Escape')rmPk(); });
+    bRow.appendChild(sv); bRow.appendChild(dl);
+    w.appendChild(lbl); w.appendChild(inp); w.appendChild(bRow);
+    document.body.appendChild(w); _pk=w; inp.focus();
+  }
+  document.addEventListener('click',function(e){
+    if(_pk&&!_pk.contains(e.target)){rmPk();return;}
+    var b=e.target.closest('.done-date'); if(!b) return;
+    e.stopPropagation();
+    var dc=b.closest('.day[data-wk][data-day]'); if(!dc) return;
+    showPk(b,keyOf(dc.dataset.wk,dc.dataset.day));
+  });
+  document.querySelectorAll('.done-date').forEach(function(b){ b.title='클릭하여 날짜 수정'; b.style.cursor='pointer'; });
 })();
 </script>
 
