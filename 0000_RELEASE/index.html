@@ -273,9 +273,12 @@ blockquote { background:#E1F5FE; border-left:4px solid #322A26; margin:8px 0; pa
 .cal-theme { font-size:11.5px; font-weight:600; line-height:1.3; flex:1; color:var(--ink); }
 .cal-domain { font-size:10px; font-weight:700; color:#fff; padding:2px 7px; border-radius:0; align-self:flex-start; white-space:nowrap; border:1.5px solid rgba(0,0,0,.2); }
 .cal-date { font-family:var(--mono); font-size:10.5px; color:var(--muted); }
-.cal-dots { display:flex; gap:4px; margin-top:2px; }
-.cal-dot { width:10px; height:10px; border-radius:50%; border:2px solid var(--ink); background:transparent; }
+.cal-dots { display:flex; gap:4px; margin-top:2px; align-items:center; flex-wrap:wrap; }
+.cal-dot { width:10px; height:10px; border-radius:50%; border:2px solid var(--ink); background:transparent; flex:0 0 auto; }
 .cal-dot.filled { background:var(--c,var(--ink)); border-color:var(--c,var(--ink)); }
+.cal-dot.opt { width:8px; height:8px; border:1.5px dashed var(--muted); }
+.cal-dot.opt.filled { background:color-mix(in srgb,var(--c,var(--muted)) 38%,#EFE6D5); border-color:color-mix(in srgb,var(--c,var(--muted)) 38%,#B0A090); border-style:solid; }
+.cal-dots-sep { width:5px; height:10px; flex:0 0 auto; border-left:1.5px solid var(--line); margin:0 1px; }
 .cal-stat { font-size:10px; font-weight:700; padding:2px 7px; border:2px solid; border-radius:0; align-self:flex-start; white-space:nowrap; }
 .cal-stat-done { color:#1E6B45; border-color:#5BAD7E; background:#E0F5EA; }
 .cal-stat-prog { color:#8B5020; border-color:#E8963A; background:#FFF0CC; }
@@ -837,7 +840,7 @@ function buildCalGrid() {
 
   var totalStudy = 0, doneStudy = 0, inProgressStudy = 0;
 
-  // Rail DOM에서 phase -> tab 매핑
+  // Rail DOM -> phase group mapping
   var phaseGroups = [];
   var curGroup = null;
   var railEl = document.querySelector('.rail');
@@ -884,22 +887,41 @@ function buildCalGrid() {
       var domain = chipEl ? chipEl.textContent.trim() : '';
       var chipBg = chipEl ? chipEl.style.background : colorVal;
 
-      // 실제 체크박스 기반 day 목록
-      var dayCbs = Array.from(panel.querySelectorAll('.day-cb[data-wk="' + wkNum + '"]'));
-      var dayNums = dayCbs.map(function(cb){ return parseInt(cb.dataset.day,10); })
-                          .sort(function(a,b){ return a-b; });
-      if (!dayNums.length) dayNums = [1,2,3,4];
+      // 필수(숫자) vs 선택(비숫자) 체크박스 분리
+      var allCbs = Array.from(panel.querySelectorAll('.day-cb[data-wk="' + wkNum + '"]'));
+      var mandCbs = allCbs.filter(function(cb){ return !isNaN(parseInt(cb.dataset.day,10)); });
+      var optCbs  = allCbs.filter(function(cb){ return  isNaN(parseInt(cb.dataset.day,10)); });
 
-      var done = dayNums.filter(function(d){ return !!state[keyOf(wkNum,d)]; }).length;
-      var total = dayNums.length;
+      var mandDays = mandCbs.map(function(cb){ return parseInt(cb.dataset.day,10); })
+                            .sort(function(a,b){ return a-b; });
+      if (!mandDays.length) mandDays = [1,2,3,4];
+
+      var done = mandDays.filter(function(d){ return !!state[keyOf(wkNum,d)]; }).length;
+      var total = mandDays.length;
       var isDone = isPast || done >= total;
       var isActive = !isPast && !isDone && done > 0;
-      var dateStr = isPast ? '완료' : weekDateRange(studyWk);
+      var dateStr = isPast ? '\uc644\ub8cc' : weekDateRange(studyWk);
 
       if (!isPast) {
         totalStudy++;
         if (isDone) doneStudy++;
         else if (isActive) inProgressStudy++;
+      }
+
+      // 필수 dot
+      var mandDots = mandDays.map(function(d){
+        var filled = isPast || !!state[keyOf(wkNum,d)];
+        return '<span class="cal-dot' + (filled ? ' filled' : '') + '"></span>';
+      }).join('');
+
+      // 선택 dot (있을 때만 구분선 + 소형 점선 원)
+      var optDots = '';
+      if (optCbs.length) {
+        optDots = '<span class="cal-dots-sep"></span>' +
+          optCbs.map(function(cb){
+            var filled = isPast || !!state[keyOf(wkNum, cb.dataset.day)];
+            return '<span class="cal-dot opt' + (filled ? ' filled' : '') + '"></span>';
+          }).join('');
       }
 
       var card = document.createElement('div');
@@ -912,12 +934,7 @@ function buildCalGrid() {
       if (!isPast) { card.setAttribute('role','button'); card.setAttribute('tabindex','0'); }
 
       var statClass = isDone ? 'cal-stat-done' : (isActive ? 'cal-stat-prog' : 'cal-stat-todo');
-      var statText  = isDone ? '완료'           : (isActive ? '진행중'       : '예정');
-
-      var dots = dayNums.map(function(d){
-        var filled = isPast || !!state[keyOf(wkNum,d)];
-        return '<span class="cal-dot' + (filled ? ' filled' : '') + '"></span>';
-      }).join('');
+      var statText  = isDone ? '\uc644\ub8cc' : (isActive ? '\uc9c4\ud589\uc911' : '\uc608\uc815');
 
       var themeShort = theme.length > 38 ? theme.substring(0,38) + '\u2026' : theme;
       card.innerHTML =
@@ -928,7 +945,7 @@ function buildCalGrid() {
         '<div class="cal-theme">' + themeShort + '</div>' +
         (domain ? '<span class="cal-domain" style="background:' + chipBg + '">' + domain + '</span>' : '') +
         '<div class="cal-date">' + dateStr + '</div>' +
-        '<div class="cal-dots">' + dots + '</div>';
+        '<div class="cal-dots">' + mandDots + optDots + '</div>';
 
       if (!isPast) {
         card.addEventListener('click', function(){ tab.click(); window.scrollTo({top:0,behavior:'smooth'}); });
