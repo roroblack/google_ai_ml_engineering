@@ -1185,7 +1185,7 @@ document.addEventListener('change', function(e){
   // 공유 중이면 30초 폴링 시작
   if (IS_SHARING) {
     loadFromServer();
-    setInterval(loadFromServer, 10000);
+    setInterval(loadFromServer, 30000);
   }
 
   // 방 생성
