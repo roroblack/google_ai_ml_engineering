@@ -1135,23 +1135,27 @@ document.addEventListener('change', function(e){
     if (eb) eb.style.display = 'block';
   }
 
+  var lastSaveTime = 0;
+
   // 서버에 상태 저장
   function syncToServer() {
     if (!IS_SHARING || !CAN_WRITE || !WRITE_KEY || !ROOM_ID) return;
+    lastSaveTime = Date.now();
     fetch('/api/save', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ room: ROOM_ID, key: WRITE_KEY, state: state })
     }).then(function(r){
       var eb = document.getElementById('shareBadgeEdit');
-      if (eb) eb.title = 'last save: ' + new Date().toLocaleTimeString() + ' status:' + r.status;
-      if (!r.ok) r.text().then(function(t){ console.error('[share] save failed', r.status, t); });
-    }).catch(function(e){ console.error('[share] save error', e); });
+      if (eb) eb.title = 'last save: ' + new Date().toLocaleTimeString();
+    }).catch(function(){});
   }
 
   // 서버에서 상태 불러오기
   function loadFromServer() {
     if (!IS_SHARING || !ROOM_ID) return;
+    // 저장 직후 15초는 폴링 스킵 (로컬 체크가 서버에 반영되기 전에 덮어쓰는 문제 방지)
+    if (CAN_WRITE && Date.now() - lastSaveTime < 15000) return;
     fetch('/api/load?room=' + ROOM_ID)
       .then(function(r){ return r.json(); })
       .then(function(d){
