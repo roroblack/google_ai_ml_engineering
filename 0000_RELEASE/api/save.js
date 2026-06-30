@@ -25,6 +25,7 @@ export default async function handler(req, response) {
     }
 
     await put(`rooms/${room}.json`, JSON.stringify({ writeKey: key, state }), {
+      access: 'public',
       allowOverwrite: true,
       addRandomSuffix: false,
       contentType: 'application/json',
