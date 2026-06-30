@@ -1155,8 +1155,10 @@ document.addEventListener('change', function(e){
         var s = d.state;
         var changed = false;
         Object.keys(s).forEach(function(k){ if (state[k] !== s[k]) { state[k] = s[k]; changed = true; } });
+        // 서버에서 삭제된 키도 반영 (다른 유저가 체크 해제)
+        Object.keys(state).forEach(function(k){ if (k[0]!=='D' && !(k in s) && state[k]===true) { delete state[k]; changed = true; } });
         if (!changed) return;
-        saveState(state);
+        try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch(e){}
         document.querySelectorAll('.day-cb').forEach(function(cb){
           var k = keyOf(cb.dataset.wk, cb.dataset.day);
           cb.checked = !!state[k];
