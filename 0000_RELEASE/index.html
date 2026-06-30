@@ -1142,7 +1142,11 @@ document.addEventListener('change', function(e){
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ room: ROOM_ID, key: WRITE_KEY, state: state })
-    }).catch(function(){});
+    }).then(function(r){
+      var eb = document.getElementById('shareBadgeEdit');
+      if (eb) eb.title = 'last save: ' + new Date().toLocaleTimeString() + ' status:' + r.status;
+      if (!r.ok) r.text().then(function(t){ console.error('[share] save failed', r.status, t); });
+    }).catch(function(e){ console.error('[share] save error', e); });
   }
 
   // 서버에서 상태 불러오기
@@ -1181,7 +1185,7 @@ document.addEventListener('change', function(e){
   // 공유 중이면 30초 폴링 시작
   if (IS_SHARING) {
     loadFromServer();
-    setInterval(loadFromServer, 30000);
+    setInterval(loadFromServer, 10000);
   }
 
   // 방 생성
