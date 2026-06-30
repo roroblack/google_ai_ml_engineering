@@ -11,9 +11,7 @@ export default async function handler(req, response) {
 
   try {
     const info = await head(`rooms/${room}.json`);
-    const fetched = await fetch(info.url, {
-      headers: { 'Authorization': `Bearer ${process.env.BLOB_READ_WRITE_TOKEN}` }
-    });
+    const fetched = await fetch(info.url + '?nc=' + Date.now());
     const data = await fetched.json();
     return response.json({ state: data.state || null });
   } catch (e) {
