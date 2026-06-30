@@ -18,7 +18,9 @@ export default async function handler(req, response) {
       const existing = await fetched.json();
       if (existing.writeKey !== key) return response.status(403).json({ error: 'invalid key' });
     } catch (e) {
-      if (e.name !== 'BlobNotFoundError' && !e.message?.includes('not found')) throw e;
+      // 신규 방이면 통과 (blob 없음), 그 외 에러는 재throw
+      const msg = e.message?.toLowerCase() || '';
+      if (!msg.includes('not found') && !msg.includes('does not exist') && e.name !== 'BlobNotFoundError') throw e;
     }
 
     await put(`rooms/${room}.json`, JSON.stringify({ writeKey: key, state }), {
