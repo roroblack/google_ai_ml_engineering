@@ -14,17 +14,17 @@ export default async function handler(req, response) {
   try {
     try {
       const info = await head(`rooms/${room}.json`);
-      const fetched = await fetch(info.url + '?nc=' + Date.now());
+      const fetched = await fetch(info.url, {
+        headers: { 'Authorization': `Bearer ${process.env.BLOB_READ_WRITE_TOKEN}` }
+      });
       const existing = await fetched.json();
       if (existing.writeKey !== key) return response.status(403).json({ error: 'invalid key' });
     } catch (e) {
-      // 신규 방이면 통과 (blob 없음), 그 외 에러는 재throw
-      const msg = e.message?.toLowerCase() || '';
+      const msg = (e.message || '').toLowerCase();
       if (!msg.includes('not found') && !msg.includes('does not exist') && e.name !== 'BlobNotFoundError') throw e;
     }
 
     await put(`rooms/${room}.json`, JSON.stringify({ writeKey: key, state }), {
-      access: 'public',
       allowOverwrite: true,
       addRandomSuffix: false,
       contentType: 'application/json',
@@ -33,7 +33,6 @@ export default async function handler(req, response) {
 
     response.json({ ok: true });
   } catch (e) {
-    console.error('[save] error:', e);
-    response.status(500).json({ error: e.message, name: e.name, env: !!process.env.BLOB_READ_WRITE_TOKEN + '/' + !!process.env.BLOB_STORE_ID });
+    response.status(500).json({ error: e.message, name: e.name });
   }
 }
