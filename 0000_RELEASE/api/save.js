@@ -11,24 +11,27 @@ export default async function handler(req, response) {
   if (!room || !key || !state) return response.status(400).json({ error: 'missing fields' });
   if (!UUID_RE.test(room) || !UUID_RE.test(key)) return response.status(400).json({ error: 'invalid id' });
 
-  // 기존 방이면 writeKey 검증
   try {
-    const info = await head(`rooms/${room}.json`);
-    const fetched = await fetch(info.url + '?nc=' + Date.now());
-    const existing = await fetched.json();
-    if (existing.writeKey !== key) return response.status(403).json({ error: 'invalid key' });
+    try {
+      const info = await head(`rooms/${room}.json`);
+      const fetched = await fetch(info.url + '?nc=' + Date.now());
+      const existing = await fetched.json();
+      if (existing.writeKey !== key) return response.status(403).json({ error: 'invalid key' });
+    } catch (e) {
+      if (e.name !== 'BlobNotFoundError' && !e.message?.includes('not found')) throw e;
+    }
+
+    await put(`rooms/${room}.json`, JSON.stringify({ writeKey: key, state }), {
+      access: 'public',
+      allowOverwrite: true,
+      addRandomSuffix: false,
+      contentType: 'application/json',
+      cacheControlMaxAge: 0,
+    });
+
+    response.json({ ok: true });
   } catch (e) {
-    // BlobNotFoundError = 신규 방, 생성 허용
-    if (e.name !== 'BlobNotFoundError' && !e.message?.includes('not found')) throw e;
+    console.error('[save] error:', e);
+    response.status(500).json({ error: e.message, name: e.name, env: !!process.env.BLOB_READ_WRITE_TOKEN + '/' + !!process.env.BLOB_STORE_ID });
   }
-
-  await put(`rooms/${room}.json`, JSON.stringify({ writeKey: key, state }), {
-    access: 'public',
-    allowOverwrite: true,
-    addRandomSuffix: false,
-    contentType: 'application/json',
-    cacheControlMaxAge: 0,
-  });
-
-  response.json({ ok: true });
 }
