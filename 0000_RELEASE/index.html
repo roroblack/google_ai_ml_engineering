@@ -1174,7 +1174,8 @@ document.addEventListener('change', function(e){
   if (CAN_WRITE) {
     var _origSave = saveState;
     saveState = function(s){ _origSave(s); syncToServer(); };
-    syncToServer(); // 현재 로컬 상태 즉시 반영
+    // 기존 방 접속 시 즉시 업로드 금지 (race condition 방지)
+    // 서버 상태를 loadFromServer()로 먼저 받고, 이후 변경시에만 syncToServer 호출
   }
 
   // 공유 중이면 30초 폴링 시작
