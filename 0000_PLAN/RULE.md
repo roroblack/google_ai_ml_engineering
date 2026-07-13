@@ -156,3 +156,35 @@ GCP / PMLE 시험 / 제품·랩 이름은 사실 정확성이 생명이다. 다�
 - 배포본 = `0000_RELEASE/index.html`(Vercel 대상, 단일 파일). 빌드/수정 후 `0000_PLAN/PMLE_18week_study_plan.html`를 이 경로로 복사해 갱신한다.
 - 개인 export `0000_PLAN/LINK.html`(≈124MB, 인라인 style 토큰 중복이 99%)은 **.gitignore로 제외**(GitHub 100MB 한도 초과 + 개인 데이터). 푸시·배포 대상 아님.
 - 레포를 Vercel에 연결할 때 Root Directory = `0000_RELEASE`. 또는 폴더 드래그앤드롭.
+
+### 10.1 ⚠️ 복사 전 반드시 diff (2026-07-13 사고 방지)
+
+> **실제로 있었던 일:** `0000_RELEASE/index.html`에만 공유 버그수정(`lastSaveTime`, 15초 폴링 스킵, 30초 간격 — 커밋 `f0fc763`)이 들어가 있었고 플랜 파일에는 없었다. §10대로 **단순 복사했으면 그 수정이 소실**될 뻔했다.
+
+1. **플랜 → 릴리즈 복사 전에 반드시 `diff`** 로 릴리즈 전용 변경이 있는지 확인한다.
+2. 릴리즈 전용 변경이 있으면 **복사하지 말고**, 같은 패치를 **릴리즈 파일에도 적용**한 뒤 두 파일을 재수렴시킨다.
+3. 배포 전 필수 검증: `node --check`(script 문법) · `/labs/` 개수 무감소 · `course_sessions/` 0건 · **두 파일 md5 동일**.
+
+---
+
+## 11. 학습 자료 링크 규칙 (2026-07-13 추가)
+
+1. **공식 문서 canonical 도메인 = `docs.cloud.google.com`.** `cloud.google.com/...`은 301 리다이렉트되므로 신규 링크는 canonical 주소로 적는다.
+2. **문서 제목은 이미 "Agent Platform"인데 URL slug는 아직 `/vertex-ai/`** 인 과도기다. 같은 대상이므로 URL은 그대로 두고 표기만 Agent Platform으로 한다.
+3. **YouTube는 공식 채널(`Google Cloud Tech`)만 링크한다.** 채널 확인은 oEmbed(`https://www.youtube.com/oembed?url=...&format=json`)의 `author_name`으로 검증한다. 비공식 채널 링크 금지.
+4. **모든 신규 링크는 넣기 전에 fetch로 200 + 제목 일치 확인**(§1). 검증 실패 시 넣지 않는다.
+5. **알려진 죽은 링크(사용 금지):** TFDV training-serving skew 아키텍처 문서 2건(404/퇴역) · `GoogleCloudPlatform/mlops-with-vertex-ai`(2026-04-19 아카이브 — 구조 참고용만) · `llm-finetuning-supervised` codelab(구형 `text-bison@002`).
+6. **알려진 deprecation:** **Vertex Explainable AI**(2026-03-16 deprecated · 2027-03-16 접근 종료) → 실습은 **BigQuery ML XAI**(`ML.EXPLAIN_PREDICT`/`ML.GLOBAL_EXPLAIN`)로 대체. Sampled Shapley·IG·XRAI는 개념만.
+7. 데이터 위치: 대체 자료 = `ALT_RES`(주차별 링크), 주차 경고 = `WEEK_NOTE`, 렌더러 = `altSection()`. 드로어(`openMat`/`openExtra`)에서 호출된다.
+
+---
+
+## 12. 커리큘럼 변동 대응 (2026-07-13 추가)
+
+1. **기준은 강의 카탈로그가 아니라 공식 Exam Guide다.** Skills Boost path 17이 개편돼도 **시험 가이드가 그대로면 학습 내용은 그대로**다 — 강의만 갈아끼운다.
+   - 현행 가이드: **"as of June 1, 2026"** (Section 1~6 = 13/16/21/20/18/13%). 시험 = **2시간 / 50~60문항 / $200**.
+   - 가이드 원문: *"The exam does not directly assess coding skills."* → 단, **코드 스니펫 해석은 필요**.
+2. **코스가 삭제/deprecated되면**: ① 그 코스가 커버하던 **시험 항목**을 가이드에서 찾고 ② 대체 자료를 §11 규칙으로 검증해 `ALT_RES`에 넣고 ③ `WEEK_NOTE`에 사유·학습 지침을 적는다. **주차 구조·진행률(localStorage)은 건드리지 않는다.**
+3. **"코스 스킵" ≠ "내용 스킵".** 스킵 판단 시 그 코스가 다루던 것 중 **여전히 출제되는 항목**을 반드시 목록화하고 대체 커버 경로를 명시한다.
+   - 확정 사례: Keras 코스(id 12) **스킵**하되 ① `tf.distribute` 전략(§3.3) ② custom training 패키징(§3.2) ③ 학습·서빙 전처리 일관성(§5.1)은 **`Production Machine Learning Systems`(id 17)** + 분산학습·HPT codelab으로 **필수 커버**.
+4. **삭제/deprecated 코스의 기존 랩 데이터(`DAY_ASSIGN`/`ACTUAL_LABS`)는 지우지 않는다**(§9.4). 경고 노트로 안내만 한다.

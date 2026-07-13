@@ -5,6 +5,78 @@
 
 ---
 
+## 2026-07-13 — Claude (AI 작업자) — v29: 커리큘럼 개편 반영 (WEEK_COURSE 재매핑 + 대체 학습 자료 블록)
+
+**요약:** 계획서 승인 후 산출물 반영. path 17에서 삭제·deprecated된 코스를 교체하고, 배점 39%(Section 3+5) 공백을 검증된 대체 자료로 메움.
+
+**① `WEEK_COURSE` 재매핑**
+- W3: `Working with Notebooks in Vertex AI`(삭제됨) → **코스 없음** 명시 + 공식 문서·codelab 대체
+- W6·W7: `Feature Engineering`(id 11, 삭제됨) → **627** Engineer Data for Predictive Modeling with BigQuery ML
+- W8·W9: `Keras`(id 12, **[Depricated]**) → **17** Production Machine Learning Systems
+- W13: `MLOps with **Vertex AI**` → **`MLOps with Agent Platform: Manage Features`** (id 584 동일)
+- W14: → **1080** MLOps with Agent Platform: Model Evaluation (신규)
+- 결과: **삭제 id 11 · deprecated id 12 참조 0건**
+
+**② 신규 데이터·UI: `ALT_RES` + `WEEK_NOTE` + `altSection()`**
+- 11개 주차에 **검증된 대체 학습 자료 152개 링크**(공식 문서·codelab·Google Cloud Tech 영상·GitHub·whitepaper) 추가 → 일간 카드 드로어에 `📚 대체 학습 자료` 블록으로 노출
+- 8개 주차에 경고 노트(`.alt-note`) 추가: 코스 삭제/deprecated 사유 + **대체 학습 지침**
+
+**③ Keras 방침 확정 — "코스는 스킵, 개념 3종은 필수"**
+- 근거: 가이드 원문 *"The exam does not directly assess coding skills."*
+- 단, 시험에 **코드 스니펫이 나오므로 해석은 가능해야 함**. 코스가 다루던 것 중 **여전히 출제되는 3종**은 반드시 커버:
+  ① `tf.distribute` 전략(§3.3) ② custom training 패키징(§3.2) ③ 학습·서빙 전처리 일관성(§5.1)
+  → `Production Machine Learning Systems`(id 17, TF abstraction levels + distributed training 포함) + 분산학습·HPT codelab으로 커버. W8·W9 노트에 명시.
+
+**④ Vertex Explainable AI deprecated 대응 (W17)**
+- 실습 축을 **BigQuery ML XAI**(`ML.EXPLAIN_PREDICT` / `ML.GLOBAL_EXPLAIN`)로 이동. 기존 랩·코스(989)는 삭제하지 않고 유지(RULE §9.4), 경고 노트로 안내.
+
+**🔴 ⑤ 릴리즈 divergence 발견 (중요)**
+- `0000_RELEASE/index.html`에 **플랜 파일엔 없는 공유 버그수정**이 있었음(`lastSaveTime`, 15초 폴링 스킵, 30초 간격 — 커밋 `f0fc763`).
+- RULE §10대로 플랜→릴리즈 **단순 복사를 했으면 그 버그수정이 소실**될 뻔함. → 복사 대신 **릴리즈 파일에 패치를 직접 적용**하고 두 파일을 재수렴(md5 동일).
+- **RULE §10 보완 필요**: "복사 전 반드시 diff로 릴리즈 전용 변경 확인".
+
+**검증:** `/labs/` 160→160(무손실) · `course_sessions/` 0 · JS `node --check` OK · 공유 버그수정 3종 보존 확인 · 두 파일 md5 동일 · codex CLI 교차검증.
+
+**영향 파일:** `PMLE_18week_study_plan.html`, `0000_RELEASE/index.html`, `HISTORY.md`
+**백업:** `archive/PMLE_18week_study_plan__2026-07-13_v28_pre-curriculum-refresh.html`
+**관련 보고서:** `reports/2026-07-13_커리큘럼-개편-대응-계획서.md`
+
+**⚠️ 기존 이슈(패치와 무관):** RULE §9.5 체크리스트의 href `629218`이 **백업본에도 없음**(이전부터 누락). LINK.html 재추출 시 확인 필요.
+
+---
+
+## 2026-07-13 — Claude (AI 작업자) — 리서치 & 계획서 (산출물 미수정)
+
+**요약:** Skills Boost path 17 커리큘럼이 전면 개편되어(강의 삭제·deprecated) 대응 리서치 수행. **사이트는 수정하지 않고 계획서만 제출** (사용자 지시).
+
+**핵심 결론: 시험 가이드는 변경 없음. 강의 카탈로그만 개편됨.**
+- 공식 Exam Guide PDF 원문 확인 = **"as of June 1, 2026"** (우리 플랜 기준과 동일). 6개 섹션·비중 13/16/21/20/18/13 그대로.
+- 시험 정보 확정(기존 `확인필요` 해소): **2시간 / 50~60문항 / $200 / online·onsite proctored**.
+- 가이드 원문: *"The exam does not directly assess coding skills."* → **Keras 코스 deprecated의 근거**.
+
+**개편 내용 (검증 완료 — 코스 ID 18개 익명 로드 확인):**
+- **삭제**: Working with Notebooks in Vertex AI(W3), Feature Engineering id 11(W6·W7), ML Pipelines 코스
+- **deprecated**: Keras id 12(W8·W9) — 페이지 제목이 구글 오타 `[Depricated]`
+- **개명**: id 584·1080 = "Vertex AI" → **"Agent Platform"** (ID 동일 → 링크 안전)
+- **신규(플랜 미반영)**: 539 Intro to LLM · 927 MLOps for GenAI · 1080 Model Evaluation · 989 RAI Interpretability
+
+**커버리지 공백 진단:** Section 3(21%) + Section 5(18%) = **배점 39%를 공식 강의로 못 배움** → 공식 문서 + 무료 codelab + Google Cloud Tech 영상으로 대체안 수립.
+
+**추가 발견 리스크:**
+- 🔴 **Vertex Explainable AI deprecated (2026-03-16, 접근종료 2027-03-16)** → W15 XAI 실습을 **BigQuery ML XAI**(`ML.EXPLAIN_PREDICT`/`ML.GLOBAL_EXPLAIN`)로 교체 필요
+- 🟡 공식 문서 도메인 이전: `cloud.google.com` → **`docs.cloud.google.com`** (301)
+- 🟡 죽은 링크 차단: TFDV skew 문서 2건(404/퇴역), `mlops-with-vertex-ai` 레포(2026-04-19 아카이브), `llm-finetuning-supervised` codelab(구형 text-bison)
+
+**검증:** 공식 문서 40+ · codelab 20+ · Google Cloud Tech 영상 10편(oEmbed로 채널명 확인) · whitepaper 1 — 전부 실제 fetch 200 + 제목 일치. 비공식 유튜브 6건·로그인 게이트 랩은 **제외**(RULE §1).
+
+**영향 파일:** 없음 (산출물 무수정). 계획서만 신규 작성.
+
+**관련 보고서:** `reports/2026-07-13_커리큘럼-개편-대응-계획서.md`
+
+**다음 단계(승인 대기):** ① Keras 스킵 확정 ② W15 XAI 교체 ③ WEEK_COURSE 재매핑 + 대체자료 드로어 추가 (archive 백업 후, 진행률 무손상)
+
+---
+
 ## 2026-06-26 — Claude (AI 작업자) — v28: 실시간 공유 기능 (Vercel API + Upstash Redis)
 
 **요약:** 진행상황 실시간 공유 기능 추가. 뷰어(읽기 전용)/수정자(체크박스 수정 가능) 역할 구분.
