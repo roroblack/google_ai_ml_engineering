@@ -141,15 +141,22 @@ GCP / PMLE 시험 / 제품·랩 이름은 사실 정확성이 생명이다. 다�
 2. **저장 위치 = `DAY_ASSIGN`(주차→일자별 랩) + `ACTUAL_LABS`(주차→전체 랩).** 각 랩은 href로 저장하되 **반드시 `course_templates/<templateId>` 경로**를 쓴다. 진행배지는 LINK.html JSON 기준.
    - ⚠️ **`course_sessions/<sessionId>` 경로 금지.** 세션은 *개인 수강 인스턴스*라 등록·기간에 종속되어 본인도 재오픈 안 되고 **공유 불가**. 템플릿 경로는 *공개 코스*라 안정·공유 가능(랩 id는 동일, 부모 경로만 다름). LINK.html이 세션 경로로 export하면(등록 코스) **반드시 템플릿 id로 변환**해 저장한다.
    - 세션→템플릿 매핑(확인됨): `39074269→593`(Intro AI/ML) · `39716873→631`(Prepare Data) · `39907361→11`(Feature Engineering) · `39939973→626`(Create ML BQML). 새 매핑은 `skills.google/course_templates/<id>` WebFetch로 제목 확인 후 사용.
+   - **2026-07-15 새 export에서 확인된 매핑**: `40714026→627`(Engineer Data) · `40641415→17`(Production ML) · `40397046→985`(RAI Fairness). (구 `39907361→11`은 코스 삭제로 폐기.)
 3. **본문·칩 모두 링크 유지:** 모든 lab 제목을 **`linkify`의 매칭 대상으로 등록**(load 시 `LINK_MAP`에 추가 후 `LINK_RE` 재생성)한다. 그러면 `day-act` 본문의 랩 이름과 카드 칩(`labRowHTML`)·드로어(`daySection`) 모두 자동으로 링크된다. 이 등록 IIFE를 삭제하지 말 것.
 4. **어떤 재구성(옵션 B, 재라벨 등)도 `DAY_ASSIGN`/`ACTUAL_LABS`를 덮어쓰면 안 되고, 바꿔야 하면 반드시 `LINK.html`에서 다시 추출**해 채운다. 표시 라벨 시프트(W-4… 등)는 **내부 주차 키를 바꾸지 않는다**(데이터 무손상).
 5. **변경 후 필수 검증(매번):**
-   - `/labs/` href 개수가 줄지 않았는지(현재 기준 43개 랩, /labs/ 출현 ~87회).
-   - 대표 href 존재: Visitor Purchases(`612209`,`629113`), ML APIs(`629215/16/17/18`), Keras(`512769…`), Privacy(`584572/581`).
+   - `/labs/` href 개수가 줄지 않았는지(현재 기준 /labs/ 출현 160회 — 코스레벨 변경 시 무감소 유지).
    - `node --check`로 `<script>` 문법 통과.
    - **`course_sessions/` 잔존 0건**(전부 `course_templates/`).
    - 산출물을 열어 임의 주차에서 랩 링크가 클릭되는지 확인.
+   - ⚠️ 대표 href 목록(구): `612209/629113`, `629215~18`, `512769`, `584572/581` — **이 체크리스트는 구 커리큘럼 기준이라 낡음.** 아래 §9.7 랩 재추출 시 갱신한다. (예: `629218`은 구 백업본에도 없던 기존 누락 → 헛알람, 재추출로 해소.)
 6. 개별 랩 페이지는 **로그인 후** 열린다(비로그인은 홈 리다이렉트). 링크 자체는 정확해야 하며, 이 점만 UI에 안내한다.
+
+### 9.7 ⚠️ 랩 데이터 재추출 대기 (2026-07-15)
+
+1. path 17 개편으로 **`DAY_ASSIGN`/`ACTUAL_LABS`(랩 레벨 데이터)가 구 커리큘럼 기준**이다. **코스 레벨**(WEEK_COURSE / WEEK_CO / 진행배지)은 2026-07-15 새 export로 갱신 완료했으나, **랩 레벨은 미갱신**이다.
+2. 새 단일 출처 export = **`제목없음.html`(2026-07-15, 188MB) → `LINK.html`로 canonical 교체 예정.** 임베드 JSON 형식: `&quot;`(HTML entity) 인코딩, 진행 카드 = `{...,"title":..,"href":..,"isComplete":..,"inProgress":..,"progress":N}`. 등록 코스는 `course_sessions/<id>`, 미등록은 `course_templates/<id>`.
+3. **후속 작업(별도 신중 패스)**: 새 export에서 path 17 코스별 `/labs/<id>` 전수 추출 → 세션 경로는 템플릿 id로 변환 → `DAY_ASSIGN`/`ACTUAL_LABS` 재구성 → §9.5 검증 → §9.6 대표 href 목록 갱신. **이때 ALT_RES 그룹 라벨(자료 소제목)도 함께 처리**(같은 표시 영역이라 묶어서).
 
 ## 10. 배포(릴리즈)
 

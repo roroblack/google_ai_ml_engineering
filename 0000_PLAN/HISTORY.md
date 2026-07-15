@@ -5,6 +5,40 @@
 
 ---
 
+## 2026-07-15 — Claude (AI 작업자) — v30: 신규 코스 편입 + 실제 진행률 반영 (새 export 기반)
+
+**요약:** 사용자의 새 Skills Boost export(`제목없음.html` 188MB, 2026-07-15)를 검증·추출해, 개편으로 생긴 신규 코스를 주차에 편입하고 실제 진행률을 반영. codex CLI와 배치안 논의 후 진행.
+
+**① 새 export 검증·진행률 추출**
+- 데이터 무결성 확인: isComplete 508 / inProgress 264, 신규 코스 539·927·989·536 전부 포함.
+- 실제 진행률(코스): **631·626 완료(100%)**, 593(97%)·627(50%)·985(23%)·17(12%) 진행 중, 나머지 미시작, **927 미등록**, Keras(12) 23%(중단 대상).
+- 세션→템플릿 매핑 신규 확인: `40714026→627` · `40641415→17` · `40397046→985` (RULE §9.2 기록).
+
+**② 신규 코스 편입 (codex 합의안, 22주 유지)**
+- `WEEK_CO`(주당 복수 코스) + `WEEK_FIFTH_COURSE` + `coCourseSection()` 신설 → 드로어(openMat/openExtra)에 "➕ 함께 듣는 코스" 블록.
+- **539** Intro LLM → W14 필수(선행) · **927** MLOps for GenAI → W16 필수 · **989** RAI Interpretability → W17 필수 · **536** Intro GenAI → W13 선택(5회차).
+- genAI 순서: 536 → 539 → 1120 → 927.
+
+**③ 실제 진행률 반영 + 번들 해체 + 표기 정리**
+- `WEEK_COURSE.st`를 export 실데이터로 갱신(593/627/17/985=진행, 631/626=완료).
+- W14 번들 해체: "Generative AI 개요 + Model Evaluation" → "Model Evaluation + Intro to LLM".
+- 표시 텍스트 "Vertex AI" 정리: W13 제목 → **Agent Platform**(구글 실제 rename), W3(삭제 코스) → 토픽명(Notebooks/Workbench·Colab). **WEEK_NOTE의 실제 삭제-코스명·실제 영상 제목("End-to-end MLOps with Vertex AI")은 보존.**
+
+**④ 검증**
+- `/labs/` 160→160 무손실 · `course_sessions/` 0 · `node --check` OK · 공유 버그수정 3종 보존 · **plan==release md5 동일**.
+- **coCourseSection 런타임 실행 검증**(Node VM): 태그 균형·링크(539/536)·상태 배지·빈주 `""`·noopener 확인. (codex는 타임아웃 → 직접 실행으로 대체, 더 강한 증거.)
+- **신규 539/927/989 자동 완료 처리 안 됨**(전부 todo, 사용자 직접 체크).
+
+**⑤ 소스 교체**: `제목없음.html` → **`LINK.html`(canonical)**, 구 `LINK.html`(2026-06-15, 개편 전)은 `LINK_2026-06-15_pre-overhaul.html`로 보관. 둘 다 gitignore(≈188MB/124MB, 커밋 제외).
+
+**영향 파일:** `PMLE_18week_study_plan.html`, `0000_RELEASE/index.html`, `RULE.md`, `HISTORY.md`
+**백업:** `archive/PMLE_18week_study_plan__2026-07-15_v29_pre-newcourse.html`
+**관련 보고서:** `reports/2026-07-13_신규코스-재배치-및-잔여작업-계획서.md`
+
+**⏭️ 후속(별도 신중 패스, RULE §9.7):** 랩 레벨 데이터(`DAY_ASSIGN`/`ACTUAL_LABS`)는 아직 구 커리큘럼 기준 → 새 `LINK.html`에서 `/labs/<id>` 전수 재추출 필요. ALT_RES 그룹 라벨(자료 소제목)도 이때 함께 처리(재작업 방지).
+
+---
+
 ## 2026-07-13 — Claude (AI 작업자) — v29: 커리큘럼 개편 반영 (WEEK_COURSE 재매핑 + 대체 학습 자료 블록)
 
 **요약:** 계획서 승인 후 산출물 반영. path 17에서 삭제·deprecated된 코스를 교체하고, 배점 39%(Section 3+5) 공백을 검증된 대체 자료로 메움.
