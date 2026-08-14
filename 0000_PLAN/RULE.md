@@ -70,6 +70,12 @@ GCP / PMLE 시험 / 제품·랩 이름은 사실 정확성이 생명이다. 다�
    - 검증된 path 17 코스 ID(익명 로드 OK): 593(Intro to AI/ML) · 11(Feature Engineering) · 12(Keras Build/Train/Deploy) · 17(Production ML Systems) · 158(MLOps: Getting Started) · 985(Responsible AI: Fairness & Bias) · 1171(PMLE Study Guide). 191(ML Pipelines)·684 등은 익명 미로드 → 사용 금지(또는 재검증 후).
    - 제목은 현행 정식 명칭으로 정확히(예: focus 581 = “AI Platform: Qwik Start”). 구현: `WEEK_COURSE`/`COURSE_BASE`/`courseURL()`/`pathLine()`/`daySection()`/`weekLabsRefSection()`/`labRowHTML()`.
    - **링크는 추측으로 넣지 않는다.** 클릭검증 불가하면 그 한계를 사용자에게 사실대로 알리고, 검증된 상위(코스/경로) 링크로 연결한다.
+6. **모든 자료 링크에는 "읽기 범위"와 "권장 시간"을 반드시 병기한다.** (2026-08-13 신설)
+   - 링크만 나열하면 학습자는 그 문서의 **좌측 네비게이션 전체**를 통독 대상으로 오해한다. 링크는 목적지가 아니라 **범위 지정과 한 쌍**이어야 한다.
+   - 형식: `s` = 볼 절(節)·표·그림을 구체적으로 + **버릴 것**(“…는 스킵”, “통독 금지”)을 명시. `m` = 권장 소요 분(영상·코스는 생략하고 “길이만큼”).
+   - 판정 기준은 시험 가이드 원문 ***"The exam does not directly assess coding skills."*** — syntax·API 파라미터·SDK 시그니처·설치 절차는 **배점 0**으로 보고 범위에서 제외하고, **선택 기준(decision tree·비교 표)·용어 정의·적용 조건**은 남긴다.
+   - 단일 원본은 `PMLE_18week_study_plan.html`의 **`ALT_RES`**(항목별 `s`/`m` 필드)다. 보고서 자료 표의 `📖 읽을 범위` 열은 여기서 생성하며, 한쪽만 고치지 않는다. 렌더러: `scopeHTML()` / `scopeTotal()`.
+   - **부록으로 빼지 않는다.** 읽기 범위는 **링크와 같은 줄/바로 아래**에 있어야 학습에 쓰인다. 보고서 자료 표 형식은 `| 자료(클릭) | 📖 읽을 범위 | ⏱ | type |`로 통일한다.
 
 ---
 

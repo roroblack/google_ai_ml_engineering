@@ -5,6 +5,31 @@
 
 ---
 
+## 2026-08-13 — Claude (AI 작업자) — v31: 자료별 "읽기 범위" 지정 (어디를 얼마나 볼지)
+
+**배경:** 사용자 지적 — 계획서·드로어가 **링크만 나열하고 "어디를 얼마나 볼지"를 안 썼다**. 실제로 BigQuery ML 문서를 열면 `소개` 외에 모델 타입 8종·튜토리얼 10여 개가 네비에 붙어 있어 전체를 통독해야 하는지 판단할 근거가 없었음.
+
+**① 릴리즈 파일 반영** (`PMLE_18week_study_plan.html`, 백업 `archive/PMLE_18week_study_plan__2026-08-13_v30_pre-readscope.html`)
+- `ALT_RES` 전 항목(155건)에 **`s`(읽을 범위) · `m`(권장 분)** 필드 추가. 누락 0건 검증.
+- `scopeHTML()` / `scopeTotal()` 렌더러 신설 → 드로어 `📚 대체 학습 자료`의 링크 **바로 아래**에 "📖 ⏱N분 · 볼 절 / 버릴 것" 표시, 섹션 상단에 **주차별 권장 합계**와 원칙 legend 노출.
+- 스타일 `.alt-scope` · `.alt-scope .sc-min` · `.sc-skip`(스킵/통독 금지/선택을 적색 강조) · `.scope-legend` 추가. `node --check` 통과.
+
+**② 누락 자료 3건 추가 (W10 = Section 3.1)**
+- BQML **e2e-journey**(모델 타입 × 함수 조회표 — 통독 금지), BQML **model-monitoring-overview**(`ML.VALIDATE_DATA_SKEW` vs `ML.VALIDATE_DATA_DRIFT` — 단골 함정), ML Crash Course **production-ml-systems**(기존엔 `/monitoring` 서브페이지 1장만 인용돼 static/dynamic 추론·전처리 위치가 누락).
+- 3건 모두 WebFetch로 실제 로드·제목 확인.
+
+**③ 계획서 보강** (`reports/2026-07-13_커리큘럼-개편-대응-계획서.md`)
+- **자료 표 6개를 전부 재작성** — `| 자료 | URL | type |` → **`| 자료(클릭) | 📖 읽을 범위 | ⏱ | type |`**. 링크 **86행 전건**에 읽을 범위를 **인라인**으로 배치(부록 참조 방식 폐기 — 사용자 지적: "링크 밑에 다 있어야 학습이 된다"). 범위 문장의 **스킵/통독 금지/선택**은 굵게 강조.
+- §3 상단에 **📖 읽기 원칙** 블록, 표마다 **소계 시간** 줄 추가.
+- **§8 보강 기록** 신설, **부록 A는 본문 표가 없는 W1·W14·W17만** 남겨 중복 제거. 총 권장 합계 **약 29시간**(영상·코스 제외).
+- 오탐 수정 3건 — '선택'이 optional 이 아니라 '고르기'인 자리(embeddings 차원, custom-training-methods 비교 표, pipelines KFP vs TFX)를 강조 대상에서 제외. `ALT_RES`·보고서 동시 반영.
+
+**④ 규칙화** — `RULE.md §2.6` 신설: 모든 자료 링크에 읽기 범위·시간 병기, 단일 원본은 `ALT_RES`.
+
+**영향 파일:** `PMLE_18week_study_plan.html` · `0000_RELEASE/index.html`(배포본 동기화) · `reports/2026-07-13_커리큘럼-개편-대응-계획서.md` · `RULE.md` · `archive/…v30_pre-readscope.html` · `archive/…v31_read-scope.html`
+
+---
+
 ## 2026-07-15 — Claude (AI 작업자) — v30: 신규 코스 편입 + 실제 진행률 반영 (새 export 기반)
 
 **요약:** 사용자의 새 Skills Boost export(`제목없음.html` 188MB, 2026-07-15)를 검증·추출해, 개편으로 생긴 신규 코스를 주차에 편입하고 실제 진행률을 반영. codex CLI와 배치안 논의 후 진행.
